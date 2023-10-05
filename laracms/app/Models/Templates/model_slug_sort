@@ -1,0 +1,52 @@
+<?php
+
+namespace Eve\Models;
+
+use Lara\Common\Models\EntityBaseModel;
+
+use Cviebrock\EloquentSluggable\Sluggable;
+
+use Rutorika\Sortable\SortableTrait;
+
+use Carbon\Carbon;
+
+class $CLASS$ extends EntityBaseModel
+{
+
+	use Sluggable;
+
+	use SortableTrait;
+
+	/**
+	 * @var string
+	 */
+	protected $table = '$TABLENAME$';
+
+	/**
+	* @var array
+	*/
+	protected $guarded = [
+		'id',
+		'created_at',
+		'updated_at',
+		'deleted_at',
+	];
+
+	public function __construct(array $attributes = [])
+	{
+		parent::__construct($attributes);
+	}
+
+	/**
+	 * @return array
+	 */
+	public function sluggable(): array
+	{
+		return [
+			'slug' => [
+				'source' => 'title',
+			],
+		];
+	}
+
+}

@@ -1,0 +1,22 @@
+<?php
+
+namespace $NAMESPACE$;
+
+use Eve\Http\Controllers\Front\Base\AppFrontController;
+
+use Eve\Models\$MODEL$;
+
+class $CLASS$ extends AppFrontController
+{
+
+	public function __construct()
+	{
+		parent::__construct();
+	}
+
+	protected function make(): $MODEL$
+	{
+		return $MODEL$::create();
+	}
+
+}

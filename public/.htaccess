@@ -1,0 +1,55 @@
+
+<IfModule mod_rewrite.c>
+    <IfModule mod_negotiation.c>
+        Options -MultiViews -Indexes
+    </IfModule>
+
+    RewriteEngine On
+
+    ##
+	## Redirect HTTP to HTTPS
+	##
+    # RewriteCond %{HTTPS} !=on
+    # RewriteRule .* https://%{HTTP_HOST}%{REQUEST_URI} [NC,R=301,L]
+
+	##
+	## Redirect hard-coded LFM public vendor path
+	##
+	# RedirectMatch 301 /vendor/laravel-filemanager/(.*) /assets/admin/plugins/laravel-filemanager/$1
+
+    ##
+	## Black listed folders
+	##
+	RewriteRule ^laravel/.* index.php [L,NC]
+
+	##
+	## White listed folders
+	##
+	RewriteCond %{REQUEST_FILENAME} -f
+	RewriteCond %{REQUEST_FILENAME} !/.well-known/*
+	RewriteCond %{REQUEST_FILENAME} !/assets/.*
+	RewriteCond %{REQUEST_FILENAME} !/robots.txt
+	RewriteCond %{REQUEST_FILENAME} !/sitemap.xml
+	RewriteRule !^index.php index.php [L,NC]
+
+	##
+	## Block all PHP files, except index
+	##
+	RewriteCond %{REQUEST_FILENAME} -f
+	RewriteCond %{REQUEST_FILENAME} \.php$
+	RewriteRule !^index.php index.php [L,NC]
+
+    # Handle Authorization Header
+    RewriteCond %{HTTP:Authorization} .
+    RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+
+    # Redirect Trailing Slashes If Not A Folder...
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_URI} (.+)/$
+    RewriteRule ^ %1 [L,R=301]
+
+    # Handle Front Controller...
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^ index.php [L]
+</IfModule>

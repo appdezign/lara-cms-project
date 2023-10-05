@@ -1,0 +1,4 @@
+
+	public function set$ATTRIBUTE$Attribute($date) {
+		$this->attributes['$COLNAME$'] = Carbon::parse($date);
+	}

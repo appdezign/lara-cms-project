@@ -1,0 +1,86 @@
+#!/bin/bash
+
+BASEDIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && cd .. && pwd )"
+
+# colors
+CLR1='\033[1;33m' # yellow
+CLR2='\033[1;35m' # purple
+NC='\033[0m' # No Color
+
+newversion=$1
+
+# check arguments
+if [ $# -lt 1 ]
+  then
+	echo -e "${CLR1}Syntax: req [newversion]${NC}"
+	exit 1
+fi
+
+cd "${BASEDIR}" || exit
+
+
+if [[ $OSTYPE == 'linux-gnu' ]];
+then
+
+	# path vars
+	PHP7PATH="/opt/plesk/php/8.1/bin/php"
+	COMPPATH="/usr/lib64/plesk-9.0/composer.phar"
+
+	"$PHP7PATH" artisan down --render=maintenance
+
+	echo -e "${CLR1}~~~~~~~~~~~~~~~~ admin ~~~~~~~~~~~~~~~~${NC}"
+	"$PHP7PATH" "$COMPPATH" clear-cache
+	COMPOSER_MEMORY_LIMIT=-1 "$PHP7PATH" "$COMPPATH" require appdezign/lara-cms:"$newversion" --ignore-platform-reqs --no-scripts
+
+	sleep 2
+
+	echo -e "${CLR1}~~~~~~~~~~~~~~~~ base theme ~~~~~~~~~~~~~~~~${NC}"
+	"$PHP7PATH" "$COMPPATH" clear-cache
+	COMPOSER_MEMORY_LIMIT=-1 "$PHP7PATH" "$COMPPATH" require appdezign/lara-base-theme:"$newversion" --ignore-platform-reqs --no-scripts
+
+	sleep 2
+
+	echo -e "${CLR1}~~~~~~~~~~~~~~~~ demo theme ~~~~~~~~~~~~~~~~${NC}"
+	"$PHP7PATH" "$COMPPATH" clear-cache
+	COMPOSER_MEMORY_LIMIT=-1 "$PHP7PATH" "$COMPPATH" require appdezign/lara-demo-theme:"$newversion" --ignore-platform-reqs --no-scripts
+
+	sleep 2
+
+
+	echo -e "${CLR1}~~~~~~~~~~~~~~~~ chown ~~~~~~~~~~~~~~~~${NC}"
+
+	THIS=$(basename -- "$0")
+	USER=$(stat -c '%U' ./bin/$THIS)
+	GROUP=$(stat -c '%G' ./bin/$THIS)
+
+	echo "change owner of: /vendor/* to $USER:$GROUP"
+	chown -R $USER:$GROUP ./vendor
+
+	echo "change owner of: /laracms/* to $USER:$GROUP"
+	chown -R $USER:$GROUP ./laracms
+
+	echo "change owner of: /composer.lock to $USER:$GROUP"
+	chown $USER:$GROUP ./composer.lock
+
+	"$PHP7PATH" artisan up
+
+else
+
+	# path vars
+	PHP7PATH="/Users/hoeksms/Library/Application Support/Herd/bin/php81"
+	COMPPATH="/usr/local/bin/composer"
+
+	echo -e "${CLR1}~~~~~~~~~~~~~~~~ core ~~~~~~~~~~~~~~~~${NC}"
+	COMPOSER_MEMORY_LIMIT=-1 "$PHP7PATH" "$COMPPATH" require appdezign/lara-cms:"$newversion" --ignore-platform-reqs --no-scripts
+
+
+	echo -e "${CLR1}~~~~~~~~~~~~~~~~ base theme ~~~~~~~~~~~~~~~~${NC}"
+	COMPOSER_MEMORY_LIMIT=-1 "$PHP7PATH" "$COMPPATH" require appdezign/lara-base-theme:"$newversion" --ignore-platform-reqs --no-scripts
+
+	echo -e "${CLR1}~~~~~~~~~~~~~~~~ demo theme ~~~~~~~~~~~~~~~~${NC}"
+	COMPOSER_MEMORY_LIMIT=-1 "$PHP7PATH" "$COMPPATH" require appdezign/lara-demo-theme:"$newversion" --ignore-platform-reqs --no-scripts
+
+
+fi
+
+echo -e "${CLR1}~~~~~~~~~~~~ DONE ~~~~~~~~~~~~${NC}"

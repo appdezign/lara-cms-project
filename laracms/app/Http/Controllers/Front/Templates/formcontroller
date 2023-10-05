@@ -1,0 +1,24 @@
+<?php
+
+namespace $NAMESPACE$;
+
+use Eve\Http\Controllers\Front\Base\AppFormController;
+
+use Eve\Models\$MODEL$;
+
+class $CLASS$ extends AppFormController {
+
+	protected $emailSubject;
+
+	public function __construct() {
+		parent::__construct();
+
+		$this->emailSubject = "This is my brand new subject";
+
+	}
+
+	protected function make(): $MODEL$ {
+		return $MODEL$::create();
+	}
+
+}

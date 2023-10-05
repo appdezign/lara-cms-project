@@ -1,0 +1,5 @@
+
+	public function $METHOD$() {
+		return $this->$TYPE$('$MODELCLASS$', '$FOREIGNKEY$');
+	}
+

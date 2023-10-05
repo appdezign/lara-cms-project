@@ -1,0 +1,67 @@
+
+	public function $METHOD$(Request $request) {
+
+		// get params
+		$this->data->params = $this->getFrontParams($this->entity, $request);
+
+		// get objects
+		$this->data->objects = $this->getFrontObjects($this->language, $this->entity, $request);
+
+		// get tags
+		$this->data->tags = Tag::entityIs($this->entity->key)->get()->toHierarchy();
+
+
+		if ($this->params->showtags == 'filterbytaxonomy') {
+
+			// overrule layout for tag menu in left sidebar
+			$this->layout->content = 'boxed_sidebar_left_3';
+
+			$tag = Tag::entityIs($this->entity->key)
+				->where('slug', $this->params->filtertaxonomy)
+				->first();
+
+			// get current tag children
+			$children = $this->getTagChildren($this->entity, $this->params->filtertaxonomy);
+
+		} else {
+
+			$tag = null;
+			$children = null;
+
+		}
+
+		if ($this->data->params->showtags == 'filterbytaxonomy') {
+
+			// overrule layout for tag menu in left sidebar
+			$this->data->layout->content = 'boxed_sidebar_left_3';
+
+			$this->data->tag = Tag::entityIs($this->entity->key)
+				->where('slug', $this->data->params->filtertaxonomy)
+				->first();
+
+			// get current tag children
+			$this->data->children = $this->getTagChildren($this->entity, $this->data->params->filtertaxonomy);
+
+		} else {
+
+			$this->data->tag = null;
+			$this->data->children = null;
+
+		}
+
+		// get related page block for Layout, SEO, Intro, etc.
+		$this->data->block = $this->getEntityBlockBySlug($this->language, $this->entity, 'index');
+
+		// seo
+		$this->data->seo = $this->getSeo($this->data->block);
+
+		// override default layout with custom page block layout
+		$this->data->layout = $this->getObjectThemeLayout($block, $this->params);
+
+		$viewfile = $this->getFrontViewFile($this->entity);
+
+		return view($viewfile, [
+			'data' => $this->data,
+		]);
+
+	}
