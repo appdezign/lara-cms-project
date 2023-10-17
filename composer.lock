@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "2065ff7541d8e8d6cb251b33bfe7365d",
+    "content-hash": "1f42ff40576a40178fbf48430b537b5b",
     "packages": [
         {
             "name": "appdezign/lara-base-theme",
-            "version": "8.0.7",
+            "version": "8.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/appdezign/lara-base-theme.git",
-                "reference": "1e67a788ce2a4a16b444cb247c5d0782f0ed247e"
+                "reference": "ac02638428557b3e8666a6c5f9187c17aaf3fa86"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/appdezign/lara-base-theme/zipball/1e67a788ce2a4a16b444cb247c5d0782f0ed247e",
-                "reference": "1e67a788ce2a4a16b444cb247c5d0782f0ed247e",
+                "url": "https://api.github.com/repos/appdezign/lara-base-theme/zipball/ac02638428557b3e8666a6c5f9187c17aaf3fa86",
+                "reference": "ac02638428557b3e8666a6c5f9187c17aaf3fa86",
                 "shasum": ""
             },
             "require": {
@@ -65,29 +65,28 @@
             ],
             "support": {
                 "issues": "https://github.com/appdezign/lara-base-theme/issues",
-                "source": "https://github.com/appdezign/lara-base-theme/tree/v8.0.7"
+                "source": "https://github.com/appdezign/lara-base-theme/tree/v8.1.0"
             },
-            "time": "2023-10-12T09:41:55+00:00"
+            "time": "2023-10-17T13:54:58+00:00"
         },
         {
             "name": "appdezign/lara-cms",
-            "version": "8.0.7",
+            "version": "8.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/appdezign/lara-cms.git",
-                "reference": "1050693b740bd4fca197f889b6ff4eb8ebd8e42c"
+                "reference": "5f0d5bc2bdced42a96d746b2166e2adc03faaa8c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/appdezign/lara-cms/zipball/1050693b740bd4fca197f889b6ff4eb8ebd8e42c",
-                "reference": "1050693b740bd4fca197f889b6ff4eb8ebd8e42c",
+                "url": "https://api.github.com/repos/appdezign/lara-cms/zipball/5f0d5bc2bdced42a96d746b2166e2adc03faaa8c",
+                "reference": "5f0d5bc2bdced42a96d746b2166e2adc03faaa8c",
                 "shasum": ""
             },
             "require": {
                 "appdezign/lara-base-theme": "^8.0",
                 "appdezign/lara-demo-theme": "^8.0",
                 "arrilot/laravel-widgets": "^3.13",
-                "barryvdh/laravel-async-queue": "dev-patch-1 as 0.7.x-dev",
                 "barryvdh/laravel-httpcache": "^0.3.8",
                 "composer/installers": "~1.0",
                 "cviebrock/eloquent-sluggable": "^10.0",
@@ -163,22 +162,22 @@
                 "lara"
             ],
             "support": {
-                "source": "https://github.com/appdezign/lara-cms/tree/v8.0.7"
+                "source": "https://github.com/appdezign/lara-cms/tree/v8.1.0"
             },
-            "time": "2023-10-12T09:48:42+00:00"
+            "time": "2023-10-17T13:52:24+00:00"
         },
         {
             "name": "appdezign/lara-demo-theme",
-            "version": "8.0.7",
+            "version": "8.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/appdezign/lara-demo-theme.git",
-                "reference": "18ebcb63dbbdd2264e6b0b377e664107df7f0d44"
+                "reference": "3cd75721e48b2908d0883f79f6b402cc0edb4680"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/appdezign/lara-demo-theme/zipball/18ebcb63dbbdd2264e6b0b377e664107df7f0d44",
-                "reference": "18ebcb63dbbdd2264e6b0b377e664107df7f0d44",
+                "url": "https://api.github.com/repos/appdezign/lara-demo-theme/zipball/3cd75721e48b2908d0883f79f6b402cc0edb4680",
+                "reference": "3cd75721e48b2908d0883f79f6b402cc0edb4680",
                 "shasum": ""
             },
             "require": {
@@ -226,9 +225,9 @@
             ],
             "support": {
                 "issues": "https://github.com/appdezign/lara-demo-theme/issues",
-                "source": "https://github.com/appdezign/lara-demo-theme/tree/v8.0.7"
+                "source": "https://github.com/appdezign/lara-demo-theme/tree/v8.1.0"
             },
-            "time": "2023-10-12T09:43:52+00:00"
+            "time": "2023-10-17T13:58:54+00:00"
         },
         {
             "name": "arrilot/laravel-widgets",
@@ -444,63 +443,6 @@
                 "source": "https://github.com/aws/aws-sdk-php/tree/3.281.14"
             },
             "time": "2023-09-26T18:15:48+00:00"
-        },
-        {
-            "name": "barryvdh/laravel-async-queue",
-            "version": "dev-patch-1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/appdezign/laravel-async-queue.git",
-                "reference": "b97a2a31b6f87f45d5d234cb2d93f38568a550f5"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/appdezign/laravel-async-queue/zipball/b97a2a31b6f87f45d5d234cb2d93f38568a550f5",
-                "reference": "b97a2a31b6f87f45d5d234cb2d93f38568a550f5",
-                "shasum": ""
-            },
-            "require": {
-                "illuminate/console": "^6|^7|^8|^9|^10.0",
-                "illuminate/support": "^6|^7|^8|^9|^10.0",
-                "php": ">=7",
-                "symfony/process": "^4|^5|^6"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "0.7-dev"
-                },
-                "laravel": {
-                    "providers": [
-                        "Barryvdh\\Queue\\AsyncServiceProvider"
-                    ]
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Barryvdh\\Queue\\": "src/"
-                }
-            },
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Barry vd. Heuvel",
-                    "email": "barryvdh@gmail.com"
-                }
-            ],
-            "description": "Async Queue Driver for Laravel (Push to background)",
-            "keywords": [
-                "async",
-                "background",
-                "laravel",
-                "queue"
-            ],
-            "support": {
-                "source": "https://github.com/appdezign/laravel-async-queue/tree/patch-1"
-            },
-            "time": "2023-04-12T13:48:50+00:00"
         },
         {
             "name": "barryvdh/laravel-httpcache",
@@ -9970,5 +9912,5 @@
         "php": "^8.0"
     },
     "platform-dev": [],
-    "plugin-api-version": "2.2.0"
+    "plugin-api-version": "2.3.0"
 }
