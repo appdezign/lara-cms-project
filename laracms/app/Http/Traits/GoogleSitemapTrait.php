@@ -7,7 +7,7 @@ use Lara\Common\Models\Menu;
 use Lara\Common\Models\Menuitem;
 use Lara\Common\Models\Page;
 
-trait GoogleSitemap
+trait GoogleSitemapTrait
 {
 
 	private function generateGoogleSitemap(array $locales = null)

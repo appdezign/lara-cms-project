@@ -5,7 +5,8 @@ namespace Eve\Providers;
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Console\Scheduling\Schedule;
 
-use Lara\Admin\Http\Traits\LaraAdminHelpers;
+use Lara\Admin\Http\Traits\AdminTrait;
+
 use Lara\Admin\Http\Traits\AdminAnalyticsTrait;
 use Lara\Admin\Http\Traits\AdminSyncTrait;
 
@@ -13,7 +14,8 @@ use Lara\Admin\Http\Traits\AdminSyncTrait;
 class ScheduleServiceProvider extends ServiceProvider
 {
 
-	use LaraAdminHelpers;
+	use AdminTrait;
+
 	use AdminAnalyticsTrait;
 	use AdminSyncTrait;
 
