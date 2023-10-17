@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # ~~~~~~~~~~~~~~~~
-# This is the script for a LOCAL server, running HERD with PHP 8.1
+# This is the script for a SERVEBOLT server, running PHP 8.1
 # ~~~~~~~~~~~~~~~~
 
 BASEDIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && cd .. && pwd )"
@@ -23,19 +23,27 @@ fi
 cd "${BASEDIR}" || exit
 
 
-# path vars
-PHP7PATH="/Users/hoeksms/Library/Application Support/Herd/bin/php81"
-COMPPATH="/usr/local/bin/composer"
+php artisan down --render=maintenance
 
 echo -e "${CLR1}~~~~~~~~~~~~~~~~ core ~~~~~~~~~~~~~~~~${NC}"
-COMPOSER_MEMORY_LIMIT=-1 "$PHP7PATH" "$COMPPATH" require appdezign/lara-cms:"$newversion" --ignore-platform-reqs --no-scripts
+php composer clear-cache
+COMPOSER_MEMORY_LIMIT=-1 php composer require appdezign/lara-cms:"$newversion" --ignore-platform-reqs --no-scripts
 
+sleep 2
 
 echo -e "${CLR1}~~~~~~~~~~~~~~~~ base theme ~~~~~~~~~~~~~~~~${NC}"
-COMPOSER_MEMORY_LIMIT=-1 "$PHP7PATH" "$COMPPATH" require appdezign/lara-base-theme:"$newversion" --ignore-platform-reqs --no-scripts
+php composer clear-cache
+COMPOSER_MEMORY_LIMIT=-1 php composer require appdezign/lara-base-theme:"$newversion" --ignore-platform-reqs --no-scripts
+
+sleep 2
 
 echo -e "${CLR1}~~~~~~~~~~~~~~~~ demo theme ~~~~~~~~~~~~~~~~${NC}"
-COMPOSER_MEMORY_LIMIT=-1 "$PHP7PATH" "$COMPPATH" require appdezign/lara-demo-theme:"$newversion" --ignore-platform-reqs --no-scripts
+php composer clear-cache
+COMPOSER_MEMORY_LIMIT=-1 php composer require appdezign/lara-demo-theme:"$newversion" --ignore-platform-reqs --no-scripts
+
+sleep 2
+
+php artisan up
 
 
 echo -e "${CLR1}~~~~~~~~~~~~ DONE ~~~~~~~~~~~~${NC}"
