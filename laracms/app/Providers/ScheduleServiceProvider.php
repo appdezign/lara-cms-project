@@ -6,16 +6,16 @@ use Illuminate\Support\ServiceProvider;
 use Illuminate\Console\Scheduling\Schedule;
 
 use Lara\Admin\Http\Traits\LaraAdminHelpers;
-use Lara\Admin\Http\Traits\LaraAnalytics;
-use Lara\Admin\Http\Traits\LaraSync;
+use Lara\Admin\Http\Traits\AdminAnalyticsTrait;
+use Lara\Admin\Http\Traits\AdminSyncTrait;
 
 
 class ScheduleServiceProvider extends ServiceProvider
 {
 
 	use LaraAdminHelpers;
-	use LaraAnalytics;
-	use LaraSync;
+	use AdminAnalyticsTrait;
+	use AdminSyncTrait;
 
 	/**
 	 * Bootstrap the module services.
