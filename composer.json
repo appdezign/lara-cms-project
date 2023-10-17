@@ -1,7 +1,7 @@
 {
 	"name": "appdezign/lara-cms-project",
 	"description": "Lara CMS Project 8",
-	"version": "8.0.2",
+	"version": "8.1.0",
 	"keywords": ["Lara", "CMS"],
 	"license": "proprietary",
 	"type": "project",
@@ -39,12 +39,6 @@
 			"Tests\\": "tests/"
 		}
 	},
-	"repositories": [
-		{
-			"type": "vcs",
-			"url": "https://github.com/appdezign/laravel-async-queue.git"
-		}
-	],
 	"extra": {
 		"laravel": {
 			"dont-discover": [

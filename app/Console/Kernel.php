@@ -6,20 +6,20 @@ use Illuminate\Console\Scheduling\Schedule;
 use Illuminate\Foundation\Console\Kernel as ConsoleKernel;
 
 use Lara\Admin\Http\Traits\LaraAdminHelpers;
-use Lara\Admin\Http\Traits\LaraAnalytics;
-use Lara\Admin\Http\Traits\LaraSync;
-use Lara\Admin\Http\Traits\Cfs;
+use Lara\Admin\Http\Traits\AdminAnalyticsTrait;
+use Lara\Admin\Http\Traits\AdminSyncTrait;
+use Lara\Admin\Http\Traits\AdminCfsTrait;
 
-use Eve\Http\Traits\GoogleSitemap;
+use Eve\Http\Traits\GoogleSitemapTrait;
 
 class Kernel extends ConsoleKernel
 {
 
 	use LaraAdminHelpers;
-	use LaraAnalytics;
-	use LaraSync;
-	use Cfs;
-	use GoogleSitemap;
+	use AdminAnalyticsTrait;
+	use AdminSyncTrait;
+	use AdminCfsTrait;
+	use GoogleSitemapTrait;
 
 
 	/**

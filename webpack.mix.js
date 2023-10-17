@@ -71,21 +71,17 @@ const ADMIN_SRC_PATH = 'admin/Resources/Assets/';
 const DEST_THEME_PATH = PUBLIC_ASSET_PATH + 'themes/';
 const DEST_ADMIN_PATH = PUBLIC_ASSET_PATH + 'admin/';
 
-// Folders
-const JS_FOLDER = 'js';
-const SCSS_FOLDER = 'scss';
-
 // JS
-const SRC_ADMIN_JS = path.join(__dirname, LARA_CORE + ADMIN_SRC_PATH + '/' + JS_FOLDER);
-const SRC_BASE_JS = path.join(__dirname, THEME_SOURCE + BASE_THEME + '/_assets/' + JS_FOLDER);
-const SRC_DEMO_JS = path.join(__dirname, THEME_SOURCE + DEMO_THEME + '/_assets/' + JS_FOLDER);
-const SRC_CLIENT_JS = path.join(__dirname, THEME_SOURCE + CLIENT_THEME + '/_assets/' + JS_FOLDER);
+const SRC_ADMIN_JS = path.join(__dirname, LARA_CORE + ADMIN_SRC_PATH + '/js');
+const SRC_BASE_JS = path.join(__dirname, THEME_SOURCE + BASE_THEME + '/_assets/js');
+const SRC_DEMO_JS = path.join(__dirname, THEME_SOURCE + DEMO_THEME + '/_assets/js');
+const SRC_CLIENT_JS = path.join(__dirname, THEME_SOURCE + CLIENT_THEME + '/_assets/js');
 
 // SCSS
-const SRC_ADMIN_SCSS = path.join(__dirname, LARA_CORE + ADMIN_SRC_PATH + '/' + SCSS_FOLDER);
-const SRC_BASE_SCSS = path.join(__dirname, THEME_SOURCE + BASE_THEME + '/_assets/' + SCSS_FOLDER);
-const SRC_DEMO_SCSS = path.join(__dirname, THEME_SOURCE + DEMO_THEME + '/_assets/' + SCSS_FOLDER);
-const SRC_CLIENT_SCSS = path.join(__dirname, THEME_SOURCE + CLIENT_THEME + '/_assets/' + SCSS_FOLDER);
+const SRC_ADMIN_SCSS = path.join(__dirname, LARA_CORE + ADMIN_SRC_PATH + '/scss');
+const SRC_BASE_SCSS = path.join(__dirname, THEME_SOURCE + BASE_THEME + '/_assets/scss');
+const SRC_DEMO_SCSS = path.join(__dirname, THEME_SOURCE + DEMO_THEME + '/_assets/scss');
+const SRC_CLIENT_SCSS = path.join(__dirname, THEME_SOURCE + CLIENT_THEME + '/_assets/scss');
 
 // Public Assets
 const SRC_ADMIN_PUBLIC = path.join(__dirname, LARA_CORE + ADMIN_SRC_PATH + '/_public');

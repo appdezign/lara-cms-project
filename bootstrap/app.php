@@ -18,6 +18,9 @@ $app = new Illuminate\Foundation\Application(
 if(PHP_OS == 'Linux') {
 	// Set public path on Plesk Server
 	$app->usePublicPath(realpath(base_path('../httpdocs')));
+
+	// Set public path on Servebolt Server
+	// $app->usePublicPath(realpath(base_path('../public')));
 }
 
 /*
