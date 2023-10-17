@@ -2,7 +2,6 @@
 
 namespace Eve\Models;
 
-use Exception;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Lara\Common\Models\EntityBaseModel;
@@ -69,32 +68,17 @@ class Product extends EntityBaseModel
 		return $this->belongsTo('Eve\Models\City', 'city_id');
 	}
 
-	/**
-	 * @param string|null $date
-	 * @return void
-	 * @throws Exception
-	 */
-	public function setMydatetimeAttribute(string $date = null)
+	public function setMydatetimeAttribute($date)
 	{
 		$this->attributes['mydatetime'] = Carbon::parse($date);
 	}
 
-	/**
-	 * @param string|null $date
-	 * @return void
-	 * @throws Exception
-	 */
-	public function setMydateAttribute(string $date = null)
+	public function setMydateAttribute($date)
 	{
 		$this->attributes['mydate'] = Carbon::parse($date);
 	}
 
-	/**
-	 * @param string|null $date
-	 * @return void
-	 * @throws Exception
-	 */
-	public function setMytimeAttribute(string $date = null)
+	public function setMytimeAttribute($date)
 	{
 		$this->attributes['mytime'] = Carbon::parse($date);
 	}

@@ -26,20 +26,20 @@ cd "${BASEDIR}" || exit
 php artisan down --render=maintenance
 
 echo -e "${CLR1}~~~~~~~~~~~~~~~~ core ~~~~~~~~~~~~~~~~${NC}"
-php composer clear-cache
-COMPOSER_MEMORY_LIMIT=-1 php composer require appdezign/lara-cms:"$newversion" --ignore-platform-reqs --no-scripts
+php composer2 clear-cache
+COMPOSER_MEMORY_LIMIT=-1 php composer2 require appdezign/lara-cms:"$newversion" --ignore-platform-reqs --no-scripts
 
 sleep 2
 
 echo -e "${CLR1}~~~~~~~~~~~~~~~~ base theme ~~~~~~~~~~~~~~~~${NC}"
-php composer clear-cache
-COMPOSER_MEMORY_LIMIT=-1 php composer require appdezign/lara-base-theme:"$newversion" --ignore-platform-reqs --no-scripts
+php composer2 clear-cache
+COMPOSER_MEMORY_LIMIT=-1 php composer2 require appdezign/lara-base-theme:"$newversion" --ignore-platform-reqs --no-scripts
 
 sleep 2
 
 echo -e "${CLR1}~~~~~~~~~~~~~~~~ demo theme ~~~~~~~~~~~~~~~~${NC}"
-php composer clear-cache
-COMPOSER_MEMORY_LIMIT=-1 php composer require appdezign/lara-demo-theme:"$newversion" --ignore-platform-reqs --no-scripts
+php composer2 clear-cache
+COMPOSER_MEMORY_LIMIT=-1 php composer2 require appdezign/lara-demo-theme:"$newversion" --ignore-platform-reqs --no-scripts
 
 sleep 2
 

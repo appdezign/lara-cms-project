@@ -10,7 +10,7 @@ use Lara\Common\Models\Entity;
 use Lara\Common\Models\Entitygroup;
 use Lara\Common\Models\Translation;
 
-trait EveUpdate
+trait EveUpdateTrait
 {
 
 	private function checkForEveUpdates($process = false)
