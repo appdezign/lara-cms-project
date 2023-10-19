@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ab090ff4203362ca80defa4d1665c9ca",
+    "content-hash": "0089d0c1a5d44f55047063c119592491",
     "packages": [
         {
             "name": "appdezign/lara-base-theme",
-            "version": "8.1.1",
+            "version": "8.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/appdezign/lara-base-theme.git",
-                "reference": "a344e15e63cff750ae2257264ab66abf642acd89"
+                "reference": "e533e4d1fd8618bb0b03ed4a26f0b91c3aaefc70"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/appdezign/lara-base-theme/zipball/a344e15e63cff750ae2257264ab66abf642acd89",
-                "reference": "a344e15e63cff750ae2257264ab66abf642acd89",
+                "url": "https://api.github.com/repos/appdezign/lara-base-theme/zipball/e533e4d1fd8618bb0b03ed4a26f0b91c3aaefc70",
+                "reference": "e533e4d1fd8618bb0b03ed4a26f0b91c3aaefc70",
                 "shasum": ""
             },
             "require": {
@@ -58,29 +58,29 @@
                 }
             ],
             "description": "Lara CMS Base Theme",
-            "homepage": "http://firmaq.nl",
+            "homepage": "https://firmaq.nl",
             "keywords": [
                 "cms",
                 "lara"
             ],
             "support": {
                 "issues": "https://github.com/appdezign/lara-base-theme/issues",
-                "source": "https://github.com/appdezign/lara-base-theme/tree/v8.1.1"
+                "source": "https://github.com/appdezign/lara-base-theme/tree/v8.1.2"
             },
-            "time": "2023-10-19T12:42:30+00:00"
+            "time": "2023-10-19T13:24:21+00:00"
         },
         {
             "name": "appdezign/lara-cms",
-            "version": "8.1.1",
+            "version": "8.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/appdezign/lara-cms.git",
-                "reference": "2cf5f85be546ec2c8df4b20fc5902cad9ed6770f"
+                "reference": "75cdbdc09742574a5e5637a4e823f6ff3c9d6c67"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/appdezign/lara-cms/zipball/2cf5f85be546ec2c8df4b20fc5902cad9ed6770f",
-                "reference": "2cf5f85be546ec2c8df4b20fc5902cad9ed6770f",
+                "url": "https://api.github.com/repos/appdezign/lara-cms/zipball/75cdbdc09742574a5e5637a4e823f6ff3c9d6c67",
+                "reference": "75cdbdc09742574a5e5637a4e823f6ff3c9d6c67",
                 "shasum": ""
             },
             "require": {
@@ -156,28 +156,28 @@
                 }
             ],
             "description": "Lara CMS",
-            "homepage": "http://firmaq.nl",
+            "homepage": "https://firmaq.nl",
             "keywords": [
                 "cms",
                 "lara"
             ],
             "support": {
-                "source": "https://github.com/appdezign/lara-cms/tree/v8.1.1"
+                "source": "https://github.com/appdezign/lara-cms/tree/v8.1.2"
             },
-            "time": "2023-10-19T12:40:14+00:00"
+            "time": "2023-10-19T13:23:29+00:00"
         },
         {
             "name": "appdezign/lara-demo-theme",
-            "version": "8.1.1",
+            "version": "8.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/appdezign/lara-demo-theme.git",
-                "reference": "9b8b61955368f10b2255a55be3dca43bc0d62743"
+                "reference": "833dd55f5f324913880697652a7f9804c4781c3f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/appdezign/lara-demo-theme/zipball/9b8b61955368f10b2255a55be3dca43bc0d62743",
-                "reference": "9b8b61955368f10b2255a55be3dca43bc0d62743",
+                "url": "https://api.github.com/repos/appdezign/lara-demo-theme/zipball/833dd55f5f324913880697652a7f9804c4781c3f",
+                "reference": "833dd55f5f324913880697652a7f9804c4781c3f",
                 "shasum": ""
             },
             "require": {
@@ -218,16 +218,16 @@
                 }
             ],
             "description": "Lara CMS Demo Theme",
-            "homepage": "http://firmaq.nl",
+            "homepage": "https://firmaq.nl",
             "keywords": [
                 "cms",
                 "lara"
             ],
             "support": {
                 "issues": "https://github.com/appdezign/lara-demo-theme/issues",
-                "source": "https://github.com/appdezign/lara-demo-theme/tree/v8.1.1"
+                "source": "https://github.com/appdezign/lara-demo-theme/tree/v8.1.2"
             },
-            "time": "2023-10-19T12:43:53+00:00"
+            "time": "2023-10-19T13:25:39+00:00"
         },
         {
             "name": "arrilot/laravel-widgets",
