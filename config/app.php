@@ -161,7 +161,7 @@ return [
 		Laratheme\Demo\LaraDemoServiceProvider::class,
 
 		Eve\Providers\EveServiceProvider::class,
-		Eve\Providers\ScheduleServiceProvider::class,
+		Eve\Providers\RouteServiceProvider::class,
 
 	])->toArray(),
 

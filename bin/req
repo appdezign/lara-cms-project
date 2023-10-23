@@ -11,31 +11,45 @@ CLR1='\033[1;33m' # yellow
 CLR2='\033[1;35m' # purple
 NC='\033[0m' # No Color
 
-newversion=$1
+package=$1
+newversion=$2
 
 # check arguments
-if [ $# -lt 1 ]
+if [ $# -lt 2 ]
   then
-	echo -e "${CLR1}Syntax: req [newversion]${NC}"
+	echo -e "${CLR1}Syntax: req [core/base/demo] [newversion]${NC}"
+	exit 1
+fi
+
+if [ $package != "core" ] && [ $package != "base" ] && [ $package != "demo" ]
+  then
+	echo -e "${CLR1}Error: ${package} is not a valid package${NC}"
+	echo -e "${CLR1}Syntax: req [core/base/demo] [newversion]${NC}"
 	exit 1
 fi
 
 cd "${BASEDIR}" || exit
 
-
 # path vars
 PHP7PATH="/Users/hoeksms/Library/Application Support/Herd/bin/php81"
 COMPPATH="/usr/local/bin/composer"
 
-echo -e "${CLR1}~~~~~~~~~~~~~~~~ core ~~~~~~~~~~~~~~~~${NC}"
-COMPOSER_MEMORY_LIMIT=-1 "$PHP7PATH" "$COMPPATH" require appdezign/lara-cms:"$newversion" --ignore-platform-reqs --no-scripts
+if [ $package == "core" ]
+  then
+    echo -e "${CLR1}~~~~~~~~~~~~~~~~ core ~~~~~~~~~~~~~~~~${NC}"
+    COMPOSER_MEMORY_LIMIT=-1 "$PHP7PATH" "$COMPPATH" require appdezign/lara-cms:"$newversion" --ignore-platform-reqs --no-scripts
+fi
 
+if [ $package == "base" ]
+  then
+    echo -e "${CLR1}~~~~~~~~~~~~~~~~ base theme ~~~~~~~~~~~~~~~~${NC}"
+    COMPOSER_MEMORY_LIMIT=-1 "$PHP7PATH" "$COMPPATH" require appdezign/lara-base-theme:"$newversion" --ignore-platform-reqs --no-scripts
+fi
 
-echo -e "${CLR1}~~~~~~~~~~~~~~~~ base theme ~~~~~~~~~~~~~~~~${NC}"
-COMPOSER_MEMORY_LIMIT=-1 "$PHP7PATH" "$COMPPATH" require appdezign/lara-base-theme:"$newversion" --ignore-platform-reqs --no-scripts
-
-echo -e "${CLR1}~~~~~~~~~~~~~~~~ demo theme ~~~~~~~~~~~~~~~~${NC}"
-COMPOSER_MEMORY_LIMIT=-1 "$PHP7PATH" "$COMPPATH" require appdezign/lara-demo-theme:"$newversion" --ignore-platform-reqs --no-scripts
-
+if [ $package == "demo" ]
+  then
+    echo -e "${CLR1}~~~~~~~~~~~~~~~~ demo theme ~~~~~~~~~~~~~~~~${NC}"
+    COMPOSER_MEMORY_LIMIT=-1 "$PHP7PATH" "$COMPPATH" require appdezign/lara-demo-theme:"$newversion" --ignore-platform-reqs --no-scripts
+fi
 
 echo -e "${CLR1}~~~~~~~~~~~~ DONE ~~~~~~~~~~~~${NC}"

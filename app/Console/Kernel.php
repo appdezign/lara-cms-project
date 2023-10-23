@@ -5,7 +5,9 @@ namespace App\Console;
 use Illuminate\Console\Scheduling\Schedule;
 use Illuminate\Foundation\Console\Kernel as ConsoleKernel;
 
-use Lara\Admin\Http\Traits\LaraAdminHelpers;
+use Lara\Admin\Http\Traits\AdminTrait;
+use Lara\Admin\Http\Traits\AdminMediaTrait;
+
 use Lara\Admin\Http\Traits\AdminAnalyticsTrait;
 use Lara\Admin\Http\Traits\AdminSyncTrait;
 use Lara\Admin\Http\Traits\AdminCfsTrait;
@@ -15,7 +17,9 @@ use Eve\Http\Traits\GoogleSitemapTrait;
 class Kernel extends ConsoleKernel
 {
 
-	use LaraAdminHelpers;
+	use AdminTrait;
+	use AdminMediaTrait;
+
 	use AdminAnalyticsTrait;
 	use AdminSyncTrait;
 	use AdminCfsTrait;
