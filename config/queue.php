@@ -30,15 +30,6 @@ return [
 
     'connections' => [
 
-	    'async' => [
-		    'driver' => 'async',
-		    'table' => 'lara_sys_jobs',
-		    'queue' => 'default',
-		    'expire' => 60,
-			'binary' => '/Applications/MAMP/bin/php/php8.1.13/bin/php',
-		    // 'binary' => '/opt/plesk/php/8.1/bin/php',
-	    ],
-
         'sync' => [
             'driver' => 'sync',
         ],
