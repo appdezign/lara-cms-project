@@ -14,7 +14,7 @@
 	"require": {
 		"php": "^8.0",
 		"appdezign/lara-base-theme": "8.1.2",
-		"appdezign/lara-cms": "8.1.2",
+		"appdezign/lara-cms": "8.1.3",
 		"appdezign/lara-demo-theme": "8.1.2",
 		"laravel/framework": "^10.8",
 		"laravel/helpers": "^1.2",
