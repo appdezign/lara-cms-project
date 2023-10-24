@@ -4,6 +4,7 @@
 /bin/lara*
 /bin/readme.md
 /bootstrap/cache/*
+/config/lara.php
 /config/lara-*
 /mods/*
 /laracms/core/*
