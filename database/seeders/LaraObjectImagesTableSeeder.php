@@ -976,7 +976,7 @@ class LaraObjectImagesTableSeeder extends Seeder
                 'image_alt' => NULL,
                 'prevent_cropping' => 0,
                 'created_at' => '2023-03-13 15:44:46',
-                'updated_at' => '2023-09-20 13:21:52',
+                'updated_at' => '2023-10-23 10:42:34',
                 'position' => 132201,
             ),
             48 => 
@@ -1036,7 +1036,7 @@ class LaraObjectImagesTableSeeder extends Seeder
                 'image_alt' => NULL,
                 'prevent_cropping' => 0,
                 'created_at' => '2023-03-16 12:11:32',
-                'updated_at' => '2023-09-20 13:21:52',
+                'updated_at' => '2023-10-23 10:42:34',
                 'position' => 153201,
             ),
             51 => 
@@ -1196,7 +1196,7 @@ class LaraObjectImagesTableSeeder extends Seeder
                 'image_alt' => NULL,
                 'prevent_cropping' => 0,
                 'created_at' => '2023-03-16 15:22:19',
-                'updated_at' => '2023-08-24 14:58:01',
+                'updated_at' => '2023-10-16 10:34:37',
                 'position' => 4201301,
             ),
             59 => 
@@ -1316,7 +1316,7 @@ class LaraObjectImagesTableSeeder extends Seeder
                 'image_alt' => NULL,
                 'prevent_cropping' => 0,
                 'created_at' => '2023-08-21 12:58:24',
-                'updated_at' => '2023-08-21 12:58:24',
+                'updated_at' => '2023-10-13 16:13:39',
                 'position' => 116302,
             ),
             65 => 
@@ -1336,7 +1336,7 @@ class LaraObjectImagesTableSeeder extends Seeder
                 'image_alt' => NULL,
                 'prevent_cropping' => 0,
                 'created_at' => '2023-08-21 12:58:53',
-                'updated_at' => '2023-08-21 12:59:08',
+                'updated_at' => '2023-10-13 16:13:39',
                 'position' => 116303,
             ),
             66 => 
@@ -1376,7 +1376,7 @@ class LaraObjectImagesTableSeeder extends Seeder
                 'image_alt' => NULL,
                 'prevent_cropping' => 0,
                 'created_at' => '2023-08-24 14:51:42',
-                'updated_at' => '2023-08-24 14:58:28',
+                'updated_at' => '2023-10-16 10:34:37',
                 'position' => 4202301,
             ),
             68 => 
@@ -1538,6 +1538,26 @@ class LaraObjectImagesTableSeeder extends Seeder
                 'created_at' => '2023-08-24 14:57:03',
                 'updated_at' => '2023-08-24 14:58:28',
                 'position' => 4202309,
+            ),
+            76 => 
+            array (
+                'id' => 2593,
+                'entity_type' => 'Lara\\Common\\Models\\Slider',
+                'entity_id' => 209,
+                'title' => '20231013195822-20230313123640-cover.jpg',
+                'filename' => '20231013195822-20230313123640-cover.jpg',
+                'mimetype' => 'image/jpeg',
+                'featured' => 1,
+                'ishero' => 0,
+                'herosize' => 0,
+                'hide_in_gallery' => 1,
+                'caption' => NULL,
+                'image_title' => NULL,
+                'image_alt' => NULL,
+                'prevent_cropping' => 0,
+                'created_at' => '2023-10-13 19:58:24',
+                'updated_at' => '2023-10-13 19:58:24',
+                'position' => 2209101,
             ),
         ));
         

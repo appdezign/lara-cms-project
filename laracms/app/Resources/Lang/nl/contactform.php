@@ -2,7 +2,10 @@
 
 return [
 	'column' => [
+		'comment' => 'opmerking',
+		'email' => 'e-mail',
 		'name' => 'naam',
+		'telephone' => 'telefoon',
 		'title' => 'titel',
 	],
 	'entity' => [

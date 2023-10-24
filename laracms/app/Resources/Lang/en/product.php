@@ -3,6 +3,7 @@
 return [
 	'column' => [
 		'body' => 'body',
+		'city_id' => '_city_id',
 		'lead' => 'lead',
 		'myboolean' => 'myboolean',
 		'mydate' => 'mydate',

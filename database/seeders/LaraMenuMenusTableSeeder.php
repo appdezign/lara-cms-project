@@ -48,7 +48,7 @@ class LaraMenuMenusTableSeeder extends Seeder
                 'slug' => 'top',
                 'slug_lock' => 0,
                 'created_at' => '2020-11-03 10:52:00',
-                'updated_at' => '2023-02-10 12:04:15',
+                'updated_at' => '2023-10-13 16:22:05',
                 'locked_at' => NULL,
                 'locked_by' => NULL,
             ),

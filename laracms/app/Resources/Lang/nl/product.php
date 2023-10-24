@@ -3,6 +3,7 @@
 return [
 	'column' => [
 		'body' => 'beschrijving',
+		'city_id' => 'stad',
 		'lead' => 'inleiding',
 		'myboolean' => 'myboolean',
 		'mydate' => 'mydate',

@@ -1083,24 +1083,6 @@ class LaraEntEntityCustomColumnsTableSeeder extends Seeder
             ),
             59 => 
             array (
-                'id' => 856,
-                'entity_id' => 43,
-                'fieldtitle' => 'Youtube Code',
-                'fieldname' => 'youtubecode',
-                'fieldtype' => 'string',
-                'fieldhook' => 'after',
-                'fielddata' => '',
-                'primary' => 0,
-                'required' => 0,
-                'fieldstate' => 'enabled',
-                'condition_field' => NULL,
-                'condition_operator' => NULL,
-                'condition_value' => NULL,
-                'position' => 80,
-                'field_lock' => 0,
-            ),
-            60 => 
-            array (
                 'id' => 857,
                 'entity_id' => 20,
                 'fieldtitle' => 'Text Position',
@@ -1117,7 +1099,7 @@ class LaraEntEntityCustomColumnsTableSeeder extends Seeder
                 'position' => 81,
                 'field_lock' => 0,
             ),
-            61 => 
+            60 => 
             array (
                 'id' => 858,
                 'entity_id' => 20,
@@ -1135,7 +1117,7 @@ class LaraEntEntityCustomColumnsTableSeeder extends Seeder
                 'position' => 26,
                 'field_lock' => 0,
             ),
-            62 => 
+            61 => 
             array (
                 'id' => 859,
                 'entity_id' => 20,
@@ -1153,7 +1135,7 @@ class LaraEntEntityCustomColumnsTableSeeder extends Seeder
                 'position' => 78,
                 'field_lock' => 0,
             ),
-            63 => 
+            62 => 
             array (
                 'id' => 860,
                 'entity_id' => 20,
@@ -1171,7 +1153,7 @@ class LaraEntEntityCustomColumnsTableSeeder extends Seeder
                 'position' => 20,
                 'field_lock' => 0,
             ),
-            64 => 
+            63 => 
             array (
                 'id' => 861,
                 'entity_id' => 2,
@@ -1189,7 +1171,7 @@ class LaraEntEntityCustomColumnsTableSeeder extends Seeder
                 'position' => 3,
                 'field_lock' => 0,
             ),
-            65 => 
+            64 => 
             array (
                 'id' => 862,
                 'entity_id' => 3,
@@ -1207,7 +1189,7 @@ class LaraEntEntityCustomColumnsTableSeeder extends Seeder
                 'position' => 82,
                 'field_lock' => 0,
             ),
-            66 => 
+            65 => 
             array (
                 'id' => 880,
                 'entity_id' => 27,
@@ -1225,7 +1207,7 @@ class LaraEntEntityCustomColumnsTableSeeder extends Seeder
                 'position' => 100,
                 'field_lock' => 0,
             ),
-            67 => 
+            66 => 
             array (
                 'id' => 881,
                 'entity_id' => 27,
@@ -1243,7 +1225,7 @@ class LaraEntEntityCustomColumnsTableSeeder extends Seeder
                 'position' => 101,
                 'field_lock' => 0,
             ),
-            68 => 
+            67 => 
             array (
                 'id' => 882,
                 'entity_id' => 27,
@@ -1261,7 +1243,7 @@ class LaraEntEntityCustomColumnsTableSeeder extends Seeder
                 'position' => 102,
                 'field_lock' => 0,
             ),
-            69 => 
+            68 => 
             array (
                 'id' => 883,
                 'entity_id' => 27,
@@ -1279,7 +1261,7 @@ class LaraEntEntityCustomColumnsTableSeeder extends Seeder
                 'position' => 103,
                 'field_lock' => 0,
             ),
-            70 => 
+            69 => 
             array (
                 'id' => 884,
                 'entity_id' => 27,
@@ -1297,7 +1279,7 @@ class LaraEntEntityCustomColumnsTableSeeder extends Seeder
                 'position' => 104,
                 'field_lock' => 0,
             ),
-            71 => 
+            70 => 
             array (
                 'id' => 885,
                 'entity_id' => 27,
@@ -1315,7 +1297,7 @@ class LaraEntEntityCustomColumnsTableSeeder extends Seeder
                 'position' => 105,
                 'field_lock' => 0,
             ),
-            72 => 
+            71 => 
             array (
                 'id' => 886,
                 'entity_id' => 27,
@@ -1333,7 +1315,7 @@ class LaraEntEntityCustomColumnsTableSeeder extends Seeder
                 'position' => 106,
                 'field_lock' => 0,
             ),
-            73 => 
+            72 => 
             array (
                 'id' => 887,
                 'entity_id' => 27,
@@ -1351,7 +1333,7 @@ class LaraEntEntityCustomColumnsTableSeeder extends Seeder
                 'position' => 107,
                 'field_lock' => 0,
             ),
-            74 => 
+            73 => 
             array (
                 'id' => 888,
                 'entity_id' => 27,
@@ -1369,7 +1351,7 @@ class LaraEntEntityCustomColumnsTableSeeder extends Seeder
                 'position' => 108,
                 'field_lock' => 0,
             ),
-            75 => 
+            74 => 
             array (
                 'id' => 889,
                 'entity_id' => 69,
@@ -1387,7 +1369,7 @@ class LaraEntEntityCustomColumnsTableSeeder extends Seeder
                 'position' => 110,
                 'field_lock' => 0,
             ),
-            76 => 
+            75 => 
             array (
                 'id' => 890,
                 'entity_id' => 69,
@@ -1405,7 +1387,7 @@ class LaraEntEntityCustomColumnsTableSeeder extends Seeder
                 'position' => 111,
                 'field_lock' => 0,
             ),
-            77 => 
+            76 => 
             array (
                 'id' => 891,
                 'entity_id' => 70,
@@ -1423,7 +1405,7 @@ class LaraEntEntityCustomColumnsTableSeeder extends Seeder
                 'position' => 112,
                 'field_lock' => 0,
             ),
-            78 => 
+            77 => 
             array (
                 'id' => 892,
                 'entity_id' => 70,
@@ -1441,7 +1423,7 @@ class LaraEntEntityCustomColumnsTableSeeder extends Seeder
                 'position' => 113,
                 'field_lock' => 0,
             ),
-            79 => 
+            78 => 
             array (
                 'id' => 893,
                 'entity_id' => 71,
@@ -1459,7 +1441,7 @@ class LaraEntEntityCustomColumnsTableSeeder extends Seeder
                 'position' => 114,
                 'field_lock' => 0,
             ),
-            80 => 
+            79 => 
             array (
                 'id' => 895,
                 'entity_id' => 18,
@@ -1477,7 +1459,7 @@ class LaraEntEntityCustomColumnsTableSeeder extends Seeder
                 'position' => 116,
                 'field_lock' => 1,
             ),
-            81 => 
+            80 => 
             array (
                 'id' => 896,
                 'entity_id' => 18,
@@ -1495,7 +1477,7 @@ class LaraEntEntityCustomColumnsTableSeeder extends Seeder
                 'position' => 117,
                 'field_lock' => 1,
             ),
-            82 => 
+            81 => 
             array (
                 'id' => 899,
                 'entity_id' => 69,
@@ -1513,7 +1495,7 @@ class LaraEntEntityCustomColumnsTableSeeder extends Seeder
                 'position' => 119,
                 'field_lock' => 0,
             ),
-            83 => 
+            82 => 
             array (
                 'id' => 900,
                 'entity_id' => 85,
@@ -1531,7 +1513,7 @@ class LaraEntEntityCustomColumnsTableSeeder extends Seeder
                 'position' => 52,
                 'field_lock' => 0,
             ),
-            84 => 
+            83 => 
             array (
                 'id' => 901,
                 'entity_id' => 85,
@@ -1549,7 +1531,7 @@ class LaraEntEntityCustomColumnsTableSeeder extends Seeder
                 'position' => 53,
                 'field_lock' => 0,
             ),
-            85 => 
+            84 => 
             array (
                 'id' => 902,
                 'entity_id' => 85,
@@ -1567,7 +1549,7 @@ class LaraEntEntityCustomColumnsTableSeeder extends Seeder
                 'position' => 54,
                 'field_lock' => 0,
             ),
-            86 => 
+            85 => 
             array (
                 'id' => 903,
                 'entity_id' => 85,
@@ -1585,7 +1567,7 @@ class LaraEntEntityCustomColumnsTableSeeder extends Seeder
                 'position' => 55,
                 'field_lock' => 0,
             ),
-            87 => 
+            86 => 
             array (
                 'id' => 904,
                 'entity_id' => 85,
@@ -1603,7 +1585,7 @@ class LaraEntEntityCustomColumnsTableSeeder extends Seeder
                 'position' => 56,
                 'field_lock' => 0,
             ),
-            88 => 
+            87 => 
             array (
                 'id' => 905,
                 'entity_id' => 85,
@@ -1621,7 +1603,7 @@ class LaraEntEntityCustomColumnsTableSeeder extends Seeder
                 'position' => 57,
                 'field_lock' => 0,
             ),
-            89 => 
+            88 => 
             array (
                 'id' => 906,
                 'entity_id' => 85,
@@ -1639,7 +1621,7 @@ class LaraEntEntityCustomColumnsTableSeeder extends Seeder
                 'position' => 58,
                 'field_lock' => 0,
             ),
-            90 => 
+            89 => 
             array (
                 'id' => 907,
                 'entity_id' => 85,
@@ -1657,7 +1639,7 @@ class LaraEntEntityCustomColumnsTableSeeder extends Seeder
                 'position' => 59,
                 'field_lock' => 0,
             ),
-            91 => 
+            90 => 
             array (
                 'id' => 908,
                 'entity_id' => 85,
@@ -1675,7 +1657,7 @@ class LaraEntEntityCustomColumnsTableSeeder extends Seeder
                 'position' => 60,
                 'field_lock' => 0,
             ),
-            92 => 
+            91 => 
             array (
                 'id' => 909,
                 'entity_id' => 85,
@@ -1693,7 +1675,7 @@ class LaraEntEntityCustomColumnsTableSeeder extends Seeder
                 'position' => 62,
                 'field_lock' => 0,
             ),
-            93 => 
+            92 => 
             array (
                 'id' => 910,
                 'entity_id' => 85,
@@ -1711,7 +1693,7 @@ class LaraEntEntityCustomColumnsTableSeeder extends Seeder
                 'position' => 63,
                 'field_lock' => 0,
             ),
-            94 => 
+            93 => 
             array (
                 'id' => 911,
                 'entity_id' => 85,
@@ -1729,7 +1711,7 @@ class LaraEntEntityCustomColumnsTableSeeder extends Seeder
                 'position' => 64,
                 'field_lock' => 0,
             ),
-            95 => 
+            94 => 
             array (
                 'id' => 912,
                 'entity_id' => 85,
@@ -1747,7 +1729,7 @@ class LaraEntEntityCustomColumnsTableSeeder extends Seeder
                 'position' => 65,
                 'field_lock' => 0,
             ),
-            96 => 
+            95 => 
             array (
                 'id' => 913,
                 'entity_id' => 85,
@@ -1765,7 +1747,7 @@ class LaraEntEntityCustomColumnsTableSeeder extends Seeder
                 'position' => 66,
                 'field_lock' => 0,
             ),
-            97 => 
+            96 => 
             array (
                 'id' => 914,
                 'entity_id' => 85,
@@ -1783,7 +1765,7 @@ class LaraEntEntityCustomColumnsTableSeeder extends Seeder
                 'position' => 67,
                 'field_lock' => 0,
             ),
-            98 => 
+            97 => 
             array (
                 'id' => 915,
                 'entity_id' => 85,
@@ -1801,7 +1783,7 @@ class LaraEntEntityCustomColumnsTableSeeder extends Seeder
                 'position' => 61,
                 'field_lock' => 0,
             ),
-            99 => 
+            98 => 
             array (
                 'id' => 916,
                 'entity_id' => 1,
@@ -1819,7 +1801,7 @@ class LaraEntEntityCustomColumnsTableSeeder extends Seeder
                 'position' => 120,
                 'field_lock' => 0,
             ),
-            100 => 
+            99 => 
             array (
                 'id' => 917,
                 'entity_id' => 71,
@@ -1837,7 +1819,7 @@ class LaraEntEntityCustomColumnsTableSeeder extends Seeder
                 'position' => 121,
                 'field_lock' => 0,
             ),
-            101 => 
+            100 => 
             array (
                 'id' => 918,
                 'entity_id' => 71,
@@ -1855,7 +1837,7 @@ class LaraEntEntityCustomColumnsTableSeeder extends Seeder
                 'position' => 122,
                 'field_lock' => 0,
             ),
-            102 => 
+            101 => 
             array (
                 'id' => 919,
                 'entity_id' => 20,
@@ -1873,7 +1855,7 @@ class LaraEntEntityCustomColumnsTableSeeder extends Seeder
                 'position' => 21,
                 'field_lock' => 0,
             ),
-            103 => 
+            102 => 
             array (
                 'id' => 920,
                 'entity_id' => 3,
@@ -1891,7 +1873,7 @@ class LaraEntEntityCustomColumnsTableSeeder extends Seeder
                 'position' => 123,
                 'field_lock' => 0,
             ),
-            104 => 
+            103 => 
             array (
                 'id' => 921,
                 'entity_id' => 3,
@@ -1909,7 +1891,7 @@ class LaraEntEntityCustomColumnsTableSeeder extends Seeder
                 'position' => 124,
                 'field_lock' => 0,
             ),
-            105 => 
+            104 => 
             array (
                 'id' => 922,
                 'entity_id' => 3,
@@ -1927,7 +1909,7 @@ class LaraEntEntityCustomColumnsTableSeeder extends Seeder
                 'position' => 125,
                 'field_lock' => 0,
             ),
-            106 => 
+            105 => 
             array (
                 'id' => 923,
                 'entity_id' => 18,
@@ -1945,7 +1927,7 @@ class LaraEntEntityCustomColumnsTableSeeder extends Seeder
                 'position' => 126,
                 'field_lock' => 1,
             ),
-            107 => 
+            106 => 
             array (
                 'id' => 924,
                 'entity_id' => 18,
@@ -1963,7 +1945,7 @@ class LaraEntEntityCustomColumnsTableSeeder extends Seeder
                 'position' => 127,
                 'field_lock' => 1,
             ),
-            108 => 
+            107 => 
             array (
                 'id' => 957,
                 'entity_id' => 34,
@@ -1981,7 +1963,7 @@ class LaraEntEntityCustomColumnsTableSeeder extends Seeder
                 'position' => 50,
                 'field_lock' => 0,
             ),
-            109 => 
+            108 => 
             array (
                 'id' => 958,
                 'entity_id' => 69,
@@ -1999,7 +1981,7 @@ class LaraEntEntityCustomColumnsTableSeeder extends Seeder
                 'position' => 128,
                 'field_lock' => 0,
             ),
-            110 => 
+            109 => 
             array (
                 'id' => 959,
                 'entity_id' => 69,
@@ -2017,7 +1999,7 @@ class LaraEntEntityCustomColumnsTableSeeder extends Seeder
                 'position' => 129,
                 'field_lock' => 0,
             ),
-            111 => 
+            110 => 
             array (
                 'id' => 960,
                 'entity_id' => 69,
@@ -2035,7 +2017,7 @@ class LaraEntEntityCustomColumnsTableSeeder extends Seeder
                 'position' => 130,
                 'field_lock' => 0,
             ),
-            112 => 
+            111 => 
             array (
                 'id' => 961,
                 'entity_id' => 69,
@@ -2053,7 +2035,7 @@ class LaraEntEntityCustomColumnsTableSeeder extends Seeder
                 'position' => 131,
                 'field_lock' => 0,
             ),
-            113 => 
+            112 => 
             array (
                 'id' => 962,
                 'entity_id' => 69,

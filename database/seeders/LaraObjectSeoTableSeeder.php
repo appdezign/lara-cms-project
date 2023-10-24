@@ -301,11 +301,11 @@ class LaraObjectSeoTableSeeder extends Seeder
                 'entity_type' => 'Lara\\Common\\Models\\Page',
                 'entity_id' => 19,
                 'seo_focus' => NULL,
-                'seo_title' => NULL,
-                'seo_description' => NULL,
-                'seo_keywords' => NULL,
+                'seo_title' => 'Meet Our Team',
+                'seo_description' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+                'seo_keywords' => 'Lorem, ipsum, dolor, sit, amet',
                 'created_at' => '2023-03-16 14:00:27',
-                'updated_at' => '2023-03-16 14:00:27',
+                'updated_at' => '2023-10-14 16:58:50',
             ),
             24 => 
             array (
@@ -426,6 +426,66 @@ class LaraObjectSeoTableSeeder extends Seeder
                 'seo_keywords' => NULL,
                 'created_at' => '2023-09-18 11:45:48',
                 'updated_at' => '2023-09-18 11:45:48',
+            ),
+            34 => 
+            array (
+                'id' => 91,
+                'entity_type' => 'Lara\\Common\\Models\\Page',
+                'entity_id' => 1094,
+                'seo_focus' => NULL,
+                'seo_title' => NULL,
+                'seo_description' => NULL,
+                'seo_keywords' => NULL,
+                'created_at' => '2023-09-27 15:14:42',
+                'updated_at' => '2023-09-27 15:14:42',
+            ),
+            35 => 
+            array (
+                'id' => 92,
+                'entity_type' => 'Lara\\Common\\Models\\Page',
+                'entity_id' => 1072,
+                'seo_focus' => NULL,
+                'seo_title' => NULL,
+                'seo_description' => NULL,
+                'seo_keywords' => NULL,
+                'created_at' => '2023-09-27 16:03:47',
+                'updated_at' => '2023-09-27 16:03:47',
+            ),
+            36 => 
+            array (
+                'id' => 93,
+                'entity_type' => 'Eve\\Models\\Tezt',
+                'entity_id' => 1,
+                'seo_focus' => NULL,
+                'seo_title' => NULL,
+                'seo_description' => NULL,
+                'seo_keywords' => NULL,
+                'created_at' => '2023-09-27 16:14:03',
+                'updated_at' => '2023-09-27 16:14:03',
+            ),
+            37 => 
+            array (
+                'id' => 94,
+                'entity_type' => 'Eve\\Models\\Video',
+                'entity_id' => 2,
+                'seo_focus' => NULL,
+                'seo_title' => NULL,
+                'seo_description' => NULL,
+                'seo_keywords' => NULL,
+                'created_at' => '2023-10-11 11:07:52',
+                'updated_at' => '2023-10-11 11:07:52',
+            ),
+            38 => 
+            array (
+                'id' => 95,
+                'entity_type' => 'Eve\\Models\\Video',
+                'entity_id' => 3,
+                'seo_focus' => NULL,
+                'seo_title' => NULL,
+                'seo_description' => NULL,
+                'seo_keywords' => NULL,
+                'created_at' => '2023-10-11 11:08:10',
+                'updated_at' => '2023-10-11 11:08:10',
             ),
         ));
         

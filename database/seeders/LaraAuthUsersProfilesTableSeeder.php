@@ -25,7 +25,7 @@ class LaraAuthUsersProfilesTableSeeder extends Seeder
                 'user_id' => 2,
                 'dark_mode' => 0,
                 'created_at' => '2023-04-14 14:03:37',
-                'updated_at' => '2023-04-14 14:03:55',
+                'updated_at' => '2023-10-13 16:08:51',
             ),
             1 => 
             array (

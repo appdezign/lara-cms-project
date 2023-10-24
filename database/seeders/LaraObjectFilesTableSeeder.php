@@ -139,6 +139,18 @@ class LaraObjectFilesTableSeeder extends Seeder
                 'created_at' => '2023-09-22 11:15:29',
                 'updated_at' => '2023-09-22 11:15:29',
             ),
+            10 => 
+            array (
+                'id' => 14,
+                'entity_type' => 'Lara\\Common\\Models\\Page',
+                'entity_id' => 1072,
+                'title' => '20230927160402-test.pdf',
+                'filename' => '20230927160402-test.pdf',
+                'mimetype' => 'application/pdf',
+                'docdate' => '2023-09-27',
+                'created_at' => '2023-09-27 16:04:04',
+                'updated_at' => '2023-09-27 16:04:04',
+            ),
         ));
         
         

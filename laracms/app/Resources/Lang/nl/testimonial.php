@@ -3,7 +3,9 @@
 return [
 	'column' => [
 		'lead' => 'quote',
+		'quoteshort' => 'quote kort',
 		'role' => 'rol',
+		'stars' => 'sterren',
 		'title' => 'naam',
 	],
 	'entity' => [
