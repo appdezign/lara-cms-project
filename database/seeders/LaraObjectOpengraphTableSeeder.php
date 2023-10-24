@@ -195,6 +195,39 @@ class LaraObjectOpengraphTableSeeder extends Seeder
                 'created_at' => '2023-09-22 11:13:17',
                 'updated_at' => '2023-09-22 11:13:17',
             ),
+            16 => 
+            array (
+                'id' => 18,
+                'entity_type' => 'Lara\\Common\\Models\\Page',
+                'entity_id' => 1094,
+                'og_title' => '',
+                'og_description' => '',
+                'og_image' => '',
+                'created_at' => '2023-09-27 15:14:42',
+                'updated_at' => '2023-09-27 15:14:42',
+            ),
+            17 => 
+            array (
+                'id' => 19,
+                'entity_type' => 'Lara\\Common\\Models\\Page',
+                'entity_id' => 1072,
+                'og_title' => '',
+                'og_description' => '',
+                'og_image' => '',
+                'created_at' => '2023-09-27 16:03:47',
+                'updated_at' => '2023-09-27 16:03:47',
+            ),
+            18 => 
+            array (
+                'id' => 20,
+                'entity_type' => 'Eve\\Models\\Tezt',
+                'entity_id' => 1,
+                'og_title' => '',
+                'og_description' => '',
+                'og_image' => '',
+                'created_at' => '2023-09-27 16:14:03',
+                'updated_at' => '2023-09-27 16:14:03',
+            ),
         ));
         
         

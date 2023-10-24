@@ -52,6 +52,50 @@ class LaraObjectVideosTableSeeder extends Seeder
                 'created_at' => '2023-09-22 11:24:22',
                 'updated_at' => '2023-09-22 11:24:22',
             ),
+            3 => 
+            array (
+                'id' => 5,
+                'entity_type' => 'Eve\\Models\\Video',
+                'entity_id' => 1,
+                'title' => 'New York City #1',
+                'youtubecode' => 'hEO09YiGF6k',
+                'featured' => 1,
+                'created_at' => '2023-10-11 11:07:31',
+                'updated_at' => '2023-10-11 11:07:41',
+            ),
+            4 => 
+            array (
+                'id' => 6,
+                'entity_type' => 'Eve\\Models\\Video',
+                'entity_id' => 2,
+                'title' => 'New York City #2',
+                'youtubecode' => 'GVKmDg-XLJs',
+                'featured' => 1,
+                'created_at' => '2023-10-11 11:07:52',
+                'updated_at' => '2023-10-11 11:08:01',
+            ),
+            5 => 
+            array (
+                'id' => 7,
+                'entity_type' => 'Eve\\Models\\Video',
+                'entity_id' => 3,
+                'title' => 'New York City #3',
+                'youtubecode' => '3RFYO9ECWQM',
+                'featured' => 1,
+                'created_at' => '2023-10-11 11:08:10',
+                'updated_at' => '2023-10-11 11:08:22',
+            ),
+            6 => 
+            array (
+                'id' => 8,
+                'entity_type' => 'Eve\\Models\\Tezt',
+                'entity_id' => 1,
+                'title' => NULL,
+                'youtubecode' => 'LFxOaDeJmXk',
+                'featured' => 1,
+                'created_at' => '2023-10-17 15:33:24',
+                'updated_at' => '2023-10-17 15:33:24',
+            ),
         ));
         
         

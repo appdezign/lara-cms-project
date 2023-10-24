@@ -159,9 +159,9 @@ class LaraEntEntityViewsTableSeeder extends Seeder
                 'paginate' => 0,
                 'infinite' => 0,
                 'prevnext' => 0,
-                'publish' => 0,
+                'publish' => 1,
                 'created_at' => '2018-02-21 09:34:20',
-                'updated_at' => '2018-02-21 09:34:20',
+                'updated_at' => '2023-10-16 10:34:10',
             ),
             9 => 
             array (
@@ -175,9 +175,9 @@ class LaraEntEntityViewsTableSeeder extends Seeder
                 'paginate' => 0,
                 'infinite' => 0,
                 'prevnext' => 0,
-                'publish' => 0,
+                'publish' => 1,
                 'created_at' => '2018-02-21 09:34:33',
-                'updated_at' => '2018-02-21 09:34:33',
+                'updated_at' => '2023-10-16 10:34:10',
             ),
             10 => 
             array (

@@ -21,9 +21,9 @@ class LaraAuthHasRolesTableSeeder extends Seeder
         \DB::table('lara_auth_has_roles')->insert(array (
             0 => 
             array (
-                'role_id' => 1,
+                'role_id' => 4,
                 'entity_type' => 'Lara\\Common\\Models\\User',
-                'entity_id' => 2,
+                'entity_id' => 6,
                 'restricted_to_id' => NULL,
                 'restricted_to_type' => NULL,
                 'scope' => NULL,
@@ -32,7 +32,7 @@ class LaraAuthHasRolesTableSeeder extends Seeder
             array (
                 'role_id' => 4,
                 'entity_type' => 'Lara\\Common\\Models\\User',
-                'entity_id' => 6,
+                'entity_id' => 7,
                 'restricted_to_id' => NULL,
                 'restricted_to_type' => NULL,
                 'scope' => NULL,
@@ -41,7 +41,7 @@ class LaraAuthHasRolesTableSeeder extends Seeder
             array (
                 'role_id' => 4,
                 'entity_type' => 'Lara\\Common\\Models\\User',
-                'entity_id' => 7,
+                'entity_id' => 12,
                 'restricted_to_id' => NULL,
                 'restricted_to_type' => NULL,
                 'scope' => NULL,
@@ -50,7 +50,7 @@ class LaraAuthHasRolesTableSeeder extends Seeder
             array (
                 'role_id' => 4,
                 'entity_type' => 'Lara\\Common\\Models\\User',
-                'entity_id' => 12,
+                'entity_id' => 13,
                 'restricted_to_id' => NULL,
                 'restricted_to_type' => NULL,
                 'scope' => NULL,
@@ -59,7 +59,7 @@ class LaraAuthHasRolesTableSeeder extends Seeder
             array (
                 'role_id' => 4,
                 'entity_type' => 'Lara\\Common\\Models\\User',
-                'entity_id' => 13,
+                'entity_id' => 14,
                 'restricted_to_id' => NULL,
                 'restricted_to_type' => NULL,
                 'scope' => NULL,
@@ -68,7 +68,7 @@ class LaraAuthHasRolesTableSeeder extends Seeder
             array (
                 'role_id' => 4,
                 'entity_type' => 'Lara\\Common\\Models\\User',
-                'entity_id' => 14,
+                'entity_id' => 15,
                 'restricted_to_id' => NULL,
                 'restricted_to_type' => NULL,
                 'scope' => NULL,
@@ -77,7 +77,7 @@ class LaraAuthHasRolesTableSeeder extends Seeder
             array (
                 'role_id' => 4,
                 'entity_type' => 'Lara\\Common\\Models\\User',
-                'entity_id' => 15,
+                'entity_id' => 16,
                 'restricted_to_id' => NULL,
                 'restricted_to_type' => NULL,
                 'scope' => NULL,
@@ -86,25 +86,25 @@ class LaraAuthHasRolesTableSeeder extends Seeder
             array (
                 'role_id' => 4,
                 'entity_type' => 'Lara\\Common\\Models\\User',
-                'entity_id' => 16,
+                'entity_id' => 4,
                 'restricted_to_id' => NULL,
                 'restricted_to_type' => NULL,
                 'scope' => NULL,
             ),
             8 => 
             array (
-                'role_id' => 4,
+                'role_id' => 2,
                 'entity_type' => 'Lara\\Common\\Models\\User',
-                'entity_id' => 4,
+                'entity_id' => 3,
                 'restricted_to_id' => NULL,
                 'restricted_to_type' => NULL,
                 'scope' => NULL,
             ),
             9 => 
             array (
-                'role_id' => 2,
+                'role_id' => 1,
                 'entity_type' => 'Lara\\Common\\Models\\User',
-                'entity_id' => 3,
+                'entity_id' => 2,
                 'restricted_to_id' => NULL,
                 'restricted_to_type' => NULL,
                 'scope' => NULL,

@@ -71,26 +71,6 @@ class LaraObjectLayoutTableSeeder extends Seeder
             ),
             5 => 
             array (
-                'id' => 175,
-                'entity_type' => 'Lara\\Common\\Models\\Page',
-                'entity_id' => 16,
-                'layout_key' => 'content',
-                'layout_value' => 'boxed_default_col_10',
-                'created_at' => '2023-08-21 17:43:44',
-                'updated_at' => '2023-08-21 17:43:44',
-            ),
-            6 => 
-            array (
-                'id' => 176,
-                'entity_type' => 'Lara\\Common\\Models\\Page',
-                'entity_id' => 16,
-                'layout_key' => 'cta',
-                'layout_value' => 'contact',
-                'created_at' => '2023-08-21 17:43:44',
-                'updated_at' => '2023-08-21 17:43:44',
-            ),
-            7 => 
-            array (
                 'id' => 182,
                 'entity_type' => 'Lara\\Common\\Models\\Page',
                 'entity_id' => 19,
@@ -99,7 +79,7 @@ class LaraObjectLayoutTableSeeder extends Seeder
                 'created_at' => '2023-08-21 19:04:07',
                 'updated_at' => '2023-08-21 19:04:07',
             ),
-            8 => 
+            6 => 
             array (
                 'id' => 204,
                 'entity_type' => 'Lara\\Common\\Models\\Page',
@@ -109,7 +89,7 @@ class LaraObjectLayoutTableSeeder extends Seeder
                 'created_at' => '2023-08-22 09:41:35',
                 'updated_at' => '2023-08-22 09:41:35',
             ),
-            9 => 
+            7 => 
             array (
                 'id' => 205,
                 'entity_type' => 'Lara\\Common\\Models\\Page',
@@ -119,7 +99,7 @@ class LaraObjectLayoutTableSeeder extends Seeder
                 'created_at' => '2023-08-22 09:41:35',
                 'updated_at' => '2023-08-22 09:41:35',
             ),
-            10 => 
+            8 => 
             array (
                 'id' => 206,
                 'entity_type' => 'Lara\\Common\\Models\\Page',
@@ -129,7 +109,7 @@ class LaraObjectLayoutTableSeeder extends Seeder
                 'created_at' => '2023-08-22 09:41:35',
                 'updated_at' => '2023-08-22 09:41:35',
             ),
-            11 => 
+            9 => 
             array (
                 'id' => 207,
                 'entity_type' => 'Lara\\Common\\Models\\Page',
@@ -139,7 +119,7 @@ class LaraObjectLayoutTableSeeder extends Seeder
                 'created_at' => '2023-08-22 09:41:35',
                 'updated_at' => '2023-08-22 09:41:35',
             ),
-            12 => 
+            10 => 
             array (
                 'id' => 208,
                 'entity_type' => 'Lara\\Common\\Models\\Page',
@@ -149,7 +129,7 @@ class LaraObjectLayoutTableSeeder extends Seeder
                 'created_at' => '2023-08-22 09:41:35',
                 'updated_at' => '2023-08-22 09:41:35',
             ),
-            13 => 
+            11 => 
             array (
                 'id' => 209,
                 'entity_type' => 'Lara\\Common\\Models\\Page',
@@ -159,7 +139,7 @@ class LaraObjectLayoutTableSeeder extends Seeder
                 'created_at' => '2023-08-22 09:41:35',
                 'updated_at' => '2023-08-22 09:41:35',
             ),
-            14 => 
+            12 => 
             array (
                 'id' => 210,
                 'entity_type' => 'Lara\\Common\\Models\\Page',
@@ -168,6 +148,26 @@ class LaraObjectLayoutTableSeeder extends Seeder
                 'layout_value' => NULL,
                 'created_at' => '2023-08-22 09:41:35',
                 'updated_at' => '2023-08-22 09:41:35',
+            ),
+            13 => 
+            array (
+                'id' => 223,
+                'entity_type' => 'Lara\\Common\\Models\\Page',
+                'entity_id' => 16,
+                'layout_key' => 'content',
+                'layout_value' => 'boxed_default_col_10',
+                'created_at' => '2023-10-13 16:26:26',
+                'updated_at' => '2023-10-13 16:26:26',
+            ),
+            14 => 
+            array (
+                'id' => 224,
+                'entity_type' => 'Lara\\Common\\Models\\Page',
+                'entity_id' => 16,
+                'layout_key' => 'cta',
+                'layout_value' => 'contact',
+                'created_at' => '2023-10-13 16:26:26',
+                'updated_at' => '2023-10-13 16:26:26',
             ),
         ));
         

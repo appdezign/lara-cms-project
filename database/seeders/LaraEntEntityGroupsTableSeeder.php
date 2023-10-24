@@ -37,7 +37,7 @@ class LaraEntEntityGroupsTableSeeder extends Seeder
                 'group_has_sortable' => 1,
                 'group_has_managedtable' => 1,
                 'created_at' => NULL,
-                'updated_at' => '2023-05-11 16:58:12',
+                'updated_at' => '2023-10-24 13:13:03',
                 'locked_at' => NULL,
                 'locked_by' => NULL,
                 'position' => 1,

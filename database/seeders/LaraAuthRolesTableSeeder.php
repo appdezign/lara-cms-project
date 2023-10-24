@@ -41,7 +41,7 @@ class LaraAuthRolesTableSeeder extends Seeder
                 'scope' => NULL,
                 'has_backend_access' => 1,
                 'created_at' => NULL,
-                'updated_at' => '2023-09-21 12:07:24',
+                'updated_at' => '2023-10-14 16:28:59',
                 'locked_at' => NULL,
                 'locked_by' => NULL,
             ),

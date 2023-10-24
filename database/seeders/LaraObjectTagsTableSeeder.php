@@ -3310,7 +3310,7 @@ class LaraObjectTagsTableSeeder extends Seeder
                 'route' => 'team-news.tech-team-news',
                 'locked_by_admin' => 0,
                 'created_at' => '2023-08-24 13:24:32',
-                'updated_at' => '2023-08-24 13:24:32',
+                'updated_at' => '2023-10-13 16:30:00',
                 'publish' => 1,
                 'publish_from' => NULL,
                 'publish_to' => NULL,
