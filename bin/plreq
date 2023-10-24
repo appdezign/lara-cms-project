@@ -39,7 +39,6 @@ COMPPATH="/usr/lib64/plesk-9.0/composer.phar"
 if [ $package == "core" ]
   then
     echo -e "${CLR1}~~~~~~~~~~~~~~~~ core ~~~~~~~~~~~~~~~~${NC}"
-    "$PHP7PATH" "$COMPPATH" clear-cache
     COMPOSER_MEMORY_LIMIT=-1 "$PHP7PATH" "$COMPPATH" require appdezign/lara-cms:"$newversion" --ignore-platform-reqs --no-scripts
 fi
 
@@ -48,7 +47,6 @@ sleep 2
 if [ $package == "base" ]
   then
     echo -e "${CLR1}~~~~~~~~~~~~~~~~ base theme ~~~~~~~~~~~~~~~~${NC}"
-    "$PHP7PATH" "$COMPPATH" clear-cache
     COMPOSER_MEMORY_LIMIT=-1 "$PHP7PATH" "$COMPPATH" require appdezign/lara-base-theme:"$newversion" --ignore-platform-reqs --no-scripts
 fi
 
@@ -57,7 +55,6 @@ sleep 2
 if [ $package == "demo" ]
   then
     echo -e "${CLR1}~~~~~~~~~~~~~~~~ demo theme ~~~~~~~~~~~~~~~~${NC}"
-    "$PHP7PATH" "$COMPPATH" clear-cache
     COMPOSER_MEMORY_LIMIT=-1 "$PHP7PATH" "$COMPPATH" require appdezign/lara-demo-theme:"$newversion" --ignore-platform-reqs --no-scripts
 fi
 

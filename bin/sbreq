@@ -36,8 +36,7 @@ php artisan down --render=maintenance
 if [ $package == "core" ]
   then
     echo -e "${CLR1}~~~~~~~~~~~~~~~~ core ~~~~~~~~~~~~~~~~${NC}"
-    php composer2 clear-cache
-    COMPOSER_MEMORY_LIMIT=-1 php composer2 require appdezign/lara-cms:"$newversion" --ignore-platform-reqs --no-scripts
+    COMPOSER_MEMORY_LIMIT=-1 composer2 require appdezign/lara-cms:"$newversion" --ignore-platform-reqs --no-scripts
 fi
 
 sleep 2
@@ -45,8 +44,7 @@ sleep 2
 if [ $package == "base" ]
   then
     echo -e "${CLR1}~~~~~~~~~~~~~~~~ base theme ~~~~~~~~~~~~~~~~${NC}"
-    php composer2 clear-cache
-    COMPOSER_MEMORY_LIMIT=-1 php composer2 require appdezign/lara-base-theme:"$newversion" --ignore-platform-reqs --no-scripts
+    COMPOSER_MEMORY_LIMIT=-1 composer2 require appdezign/lara-base-theme:"$newversion" --ignore-platform-reqs --no-scripts
 fi
 
 sleep 2
@@ -54,8 +52,7 @@ sleep 2
 if [ $package == "demo" ]
   then
     echo -e "${CLR1}~~~~~~~~~~~~~~~~ demo theme ~~~~~~~~~~~~~~~~${NC}"
-    php composer2 clear-cache
-    COMPOSER_MEMORY_LIMIT=-1 php composer2 require appdezign/lara-demo-theme:"$newversion" --ignore-platform-reqs --no-scripts
+    COMPOSER_MEMORY_LIMIT=-1 composer2 require appdezign/lara-demo-theme:"$newversion" --ignore-platform-reqs --no-scripts
 fi
 
 sleep 2
