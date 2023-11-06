@@ -1,7 +1,7 @@
 {
 	"name": "appdezign/lara-cms-project",
 	"description": "Lara CMS Project 8",
-	"version": "8.1.11",
+	"version": "8.1.12",
 	"keywords": ["Lara", "CMS"],
 	"license": "proprietary",
 	"type": "project",
@@ -13,9 +13,9 @@
 	],
 	"require": {
 		"php": "^8.0",
-		"appdezign/lara-base-theme": "8.1.3",
-		"appdezign/lara-cms": "8.1.8",
-		"appdezign/lara-demo-theme": "8.1.3",
+		"appdezign/lara-base-theme": "8.1.4",
+		"appdezign/lara-cms": "8.1.9",
+		"appdezign/lara-demo-theme": "8.1.4",
 		"laravel/framework": "^10.8",
 		"laravel/helpers": "^1.2",
 		"laravel/tinker": "~2.4",
