@@ -9,6 +9,7 @@ const activeTheme = process.env.LARA_CLIENT_THEME;
 // Public Path
 const PUBLIC_ASSET_PATH = './public/assets/';
 // const PUBLIC_ASSET_PATH = './../httpdocs/assets/';
+// const PUBLIC_ASSET_PATH = './../public/assets/';
 
 // Media Temp Folder (copy media files only once)
 const mediafolder = PUBLIC_ASSET_PATH + 'media/_temp';
@@ -16,7 +17,13 @@ const mediafolder = PUBLIC_ASSET_PATH + 'media/_temp';
 // Theme - Client
 const CLIENT_THEME = activeTheme;
 
-const appMode = process.env.APP_ENV;
+const appMode = process.env.NODE_ENV;
+
+if (appMode != 'production') {
+	console.log('\x1b[35m', 'Mode: DEVELOPMENT')
+} else {
+	console.log('\x1b[35m', 'Mode: PRODUCTION')
+}
 
 // Process only one specific module
 // Set value in .env:
@@ -99,6 +106,12 @@ const DEST_CLIENT_DIR = path.join(__dirname, DEST_THEME_PATH + CLIENT_THEME)
 let cssFileName = 'app.css';
 let frontJsFileName = 'app.js';
 let adminJsFileName = 'app.js';
+if (appMode === 'production') {
+	cssFileName = 'app.min.css';
+	frontJsFileName = 'app.min.js';
+	adminJsFileName = 'app.min.js';
+}
+
 
 // set the public asset path
 mix.setPublicPath(PUBLIC_ASSET_PATH);
@@ -139,7 +152,6 @@ if (processBase) {
 	if (cssOnly) {
 		mix.sass(SRC_BASE_SCSS + '/app.scss', DEST_BASE_DIR + '/css/' + cssFileName)
 			.options({processCssUrls: false});
-		mix.minify(DEST_BASE_DIR + '/css/' + cssFileName);
 	} else {
 		mix.js(SRC_BASE_JS + '/app.js', DEST_BASE_DIR + '/js/' + frontJsFileName)
 			.sass(SRC_BASE_SCSS + '/app.scss', DEST_BASE_DIR + '/css/' + cssFileName)
@@ -149,8 +161,6 @@ if (processBase) {
 			.copy(SRC_BASE_PUBLIC + '/vendor', DEST_BASE_DIR + '/vendor/')
 			.options({processCssUrls: false});
 
-		mix.minify(DEST_BASE_DIR + '/js/' + frontJsFileName);
-		mix.minify(DEST_BASE_DIR + '/css/' + cssFileName);
 
 		if (activeTheme != 'demo') {
 			if (fs.existsSync(mediafolder)) {
@@ -169,7 +179,6 @@ if (processDemo) {
 	if (cssOnly) {
 		mix.sass(SRC_DEMO_SCSS + '/app.scss', DEST_DEMO_DIR + '/css/' + cssFileName)
 			.options({processCssUrls: false});
-		mix.minify(DEST_DEMO_DIR + '/css/' + cssFileName);
 	} else {
 		mix.js(SRC_DEMO_JS + '/app.js', DEST_DEMO_DIR + '/js/' + frontJsFileName)
 			.sass(SRC_DEMO_SCSS + '/app.scss', DEST_DEMO_DIR + '/css/' + cssFileName)
@@ -178,9 +187,6 @@ if (processDemo) {
 			.copy(SRC_DEMO_PUBLIC + '/images', DEST_DEMO_DIR + '/images')
 			.copy(SRC_DEMO_PUBLIC + '/vendor', DEST_DEMO_DIR + '/vendor')
 			.options({processCssUrls: false});
-
-		mix.minify(DEST_DEMO_DIR + '/js/' + frontJsFileName);
-		mix.minify(DEST_DEMO_DIR + '/css/' + cssFileName);
 
 		if (activeTheme == 'demo') {
 			if (fs.existsSync(mediafolder)) {
@@ -200,7 +206,6 @@ if (processClient && activeTheme != 'demo') {
 	if (cssOnly) {
 		mix.sass(SRC_CLIENT_SCSS + '/app.scss', DEST_CLIENT_DIR + '/css/' + cssFileName)
 			.options({processCssUrls: false});
-		mix.minify(DEST_CLIENT_DIR + '/css/' + cssFileName);
 	} else {
 		mix.js(SRC_CLIENT_JS + '/app.js', DEST_CLIENT_DIR + '/js/' + frontJsFileName)
 			.sass(SRC_CLIENT_SCSS + '/app.scss', DEST_CLIENT_DIR + '/css/' + cssFileName)
@@ -209,9 +214,6 @@ if (processClient && activeTheme != 'demo') {
 			.copy(SRC_CLIENT_PUBLIC + '/images', DEST_CLIENT_DIR + '/images')
 			.copy(SRC_CLIENT_PUBLIC + '/vendor', DEST_CLIENT_DIR + '/vendor/')
 			.options({processCssUrls: false});
-
-		mix.minify(DEST_CLIENT_DIR + '/js/' + frontJsFileName);
-		mix.minify(DEST_CLIENT_DIR + '/css/' + cssFileName);
 	}
 }
 
@@ -229,7 +231,6 @@ if (processAdmin) {
 	if (cssOnly) {
 		mix.sass(SRC_ADMIN_SCSS + '/style.scss', DEST_ADMIN_DIR + '/css/' + cssFileName)
 			.options({processCssUrls: false});
-		mix.minify(DEST_ADMIN_DIR + '/css/' + cssFileName);
 	} else {
 		mix.combine(adminJsFiles, DEST_ADMIN_DIR + '/js/' + adminJsFileName)
 			.sass(SRC_ADMIN_SCSS + '/style.scss', DEST_ADMIN_DIR + '/css/' + cssFileName)
@@ -240,8 +241,6 @@ if (processAdmin) {
 			.copy(SRC_ADMIN_PUBLIC + '/webfonts', DEST_ADMIN_DIR + '/webfonts')
 			.options({processCssUrls: false});
 
-		mix.minify(DEST_ADMIN_DIR + '/css/' + cssFileName);
-		mix.minify(DEST_ADMIN_DIR + '/js/' + adminJsFileName);
 	}
 }
 
@@ -288,14 +287,16 @@ function getAdminCleanOptions(options, cssOnly) {
 
 	// Clean Admin Before
 	let adminBefore = [];
-	if (cssOnly) {
-		let adminBefore = [
-			'admin/css/*',
-		];
-	} else {
-		let adminBefore = [
-			'admin/*',
-		];
+	if (appMode != 'production') {
+		if (cssOnly) {
+			let adminBefore = [
+				'admin/css/*',
+			];
+		} else {
+			let adminBefore = [
+				'admin/*',
+			];
+		}
 	}
 
 	bMerge = before.concat(adminBefore);
