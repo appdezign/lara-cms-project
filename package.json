@@ -3,8 +3,8 @@
 	"version": "1.0.0",
 	"description": "",
 	"scripts": {
-		"mix": "webpack --progress --config=node_modules/laravel-mix/setup/webpack.config.js",
-		"mix prod": "NODE_ENV=production webpack --progress --config=node_modules/laravel-mix/setup/webpack.config.js"
+		"mix dev": "webpack --progress --config=node_modules/laravel-mix/setup/webpack.config.js",
+		"mix prod": "webpack --progress --config=node_modules/laravel-mix/setup/webpack.config.js && NODE_ENV=production webpack --progress --config=node_modules/laravel-mix/setup/webpack.config.js"
 	},
 	"keywords": [],
 	"author": "",
