@@ -453,18 +453,6 @@ class LaraObjectSeoTableSeeder extends Seeder
             ),
             36 => 
             array (
-                'id' => 93,
-                'entity_type' => 'Eve\\Models\\Tezt',
-                'entity_id' => 1,
-                'seo_focus' => NULL,
-                'seo_title' => NULL,
-                'seo_description' => NULL,
-                'seo_keywords' => NULL,
-                'created_at' => '2023-09-27 16:14:03',
-                'updated_at' => '2023-09-27 16:14:03',
-            ),
-            37 => 
-            array (
                 'id' => 94,
                 'entity_type' => 'Eve\\Models\\Video',
                 'entity_id' => 2,
@@ -475,7 +463,7 @@ class LaraObjectSeoTableSeeder extends Seeder
                 'created_at' => '2023-10-11 11:07:52',
                 'updated_at' => '2023-10-11 11:07:52',
             ),
-            38 => 
+            37 => 
             array (
                 'id' => 95,
                 'entity_type' => 'Eve\\Models\\Video',

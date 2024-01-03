@@ -85,17 +85,6 @@ class LaraObjectVideosTableSeeder extends Seeder
                 'created_at' => '2023-10-11 11:08:10',
                 'updated_at' => '2023-10-11 11:08:22',
             ),
-            6 => 
-            array (
-                'id' => 8,
-                'entity_type' => 'Eve\\Models\\Tezt',
-                'entity_id' => 1,
-                'title' => NULL,
-                'youtubecode' => 'LFxOaDeJmXk',
-                'featured' => 1,
-                'created_at' => '2023-10-17 15:33:24',
-                'updated_at' => '2023-10-17 15:33:24',
-            ),
         ));
         
         

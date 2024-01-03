@@ -67,10 +67,10 @@ class LaraSysSettingsTableSeeder extends Seeder
                 'title' => 'Translation File Sync',
                 'cgroup' => 'system',
                 'key' => 'translation_file_sync',
-                'value' => '2023-10-24 13:15:48',
+                'value' => '2024-01-03 15:52:15',
                 'locked_by_admin' => 1,
                 'created_at' => '2017-10-20 12:59:00',
-                'updated_at' => '2023-10-24 13:15:48',
+                'updated_at' => '2024-01-03 15:52:15',
                 'locked_at' => NULL,
                 'locked_by' => NULL,
                 'position' => 1,
@@ -480,6 +480,20 @@ class LaraSysSettingsTableSeeder extends Seeder
                 'locked_at' => '2023-06-29 14:21:34',
                 'locked_by' => 2,
                 'position' => 126,
+            ),
+            33 => 
+            array (
+                'id' => 43,
+                'title' => 'Lara Translation Version',
+                'cgroup' => 'system',
+                'key' => 'lara_translation_version',
+                'value' => '8.1.9',
+                'locked_by_admin' => 0,
+                'created_at' => '2023-10-24 15:48:06',
+                'updated_at' => '2023-11-07 16:54:37',
+                'locked_at' => NULL,
+                'locked_by' => NULL,
+                'position' => 127,
             ),
         ));
         

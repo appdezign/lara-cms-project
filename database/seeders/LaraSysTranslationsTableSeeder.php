@@ -7909,7 +7909,7 @@ class LaraSysTranslationsTableSeeder extends Seeder
                 'key' => 'ability',
                 'value' => 'permissie',
                 'created_at' => '2023-02-13 14:36:55',
-                'updated_at' => '2023-02-13 14:36:55',
+                'updated_at' => '2023-10-25 11:26:04',
                 'deleted_at' => NULL,
             ),
             107 => 
@@ -15679,7 +15679,7 @@ class LaraSysTranslationsTableSeeder extends Seeder
             array (
                 'id' => 6752,
                 'language' => 'en',
-                'module' => 'lara-front',
+                'module' => 'lara-eve',
                 'cgroup' => 'classicform',
                 'tag' => 'button',
                 'key' => 'submit',
@@ -15692,7 +15692,7 @@ class LaraSysTranslationsTableSeeder extends Seeder
             array (
                 'id' => 6753,
                 'language' => 'en',
-                'module' => 'lara-front',
+                'module' => 'lara-eve',
                 'cgroup' => 'classicform',
                 'tag' => 'formfield',
                 'key' => 'blogid',
@@ -15705,7 +15705,7 @@ class LaraSysTranslationsTableSeeder extends Seeder
             array (
                 'id' => 6754,
                 'language' => 'en',
-                'module' => 'lara-front',
+                'module' => 'lara-eve',
                 'cgroup' => 'classicform',
                 'tag' => 'formfield',
                 'key' => 'dob',
@@ -15718,7 +15718,7 @@ class LaraSysTranslationsTableSeeder extends Seeder
             array (
                 'id' => 6755,
                 'language' => 'en',
-                'module' => 'lara-front',
+                'module' => 'lara-eve',
                 'cgroup' => 'classicform',
                 'tag' => 'formfield',
                 'key' => 'email',
@@ -15731,7 +15731,7 @@ class LaraSysTranslationsTableSeeder extends Seeder
             array (
                 'id' => 6756,
                 'language' => 'en',
-                'module' => 'lara-front',
+                'module' => 'lara-eve',
                 'cgroup' => 'classicform',
                 'tag' => 'formfield',
                 'key' => 'name',
@@ -15744,7 +15744,7 @@ class LaraSysTranslationsTableSeeder extends Seeder
             array (
                 'id' => 6757,
                 'language' => 'en',
-                'module' => 'lara-front',
+                'module' => 'lara-eve',
                 'cgroup' => 'classicform',
                 'tag' => 'formfield',
                 'key' => 'newsletter',
@@ -15757,7 +15757,7 @@ class LaraSysTranslationsTableSeeder extends Seeder
             array (
                 'id' => 6758,
                 'language' => 'en',
-                'module' => 'lara-front',
+                'module' => 'lara-eve',
                 'cgroup' => 'classicform',
                 'tag' => 'formfield',
                 'key' => 'startdate',
@@ -15770,7 +15770,7 @@ class LaraSysTranslationsTableSeeder extends Seeder
             array (
                 'id' => 6759,
                 'language' => 'en',
-                'module' => 'lara-front',
+                'module' => 'lara-eve',
                 'cgroup' => 'classicform',
                 'tag' => 'formfield',
                 'key' => 'subscribe',
@@ -15783,7 +15783,7 @@ class LaraSysTranslationsTableSeeder extends Seeder
             array (
                 'id' => 6760,
                 'language' => 'en',
-                'module' => 'lara-front',
+                'module' => 'lara-eve',
                 'cgroup' => 'classicform',
                 'tag' => 'formfield',
                 'key' => 'yesorno',
@@ -15796,7 +15796,7 @@ class LaraSysTranslationsTableSeeder extends Seeder
             array (
                 'id' => 6771,
                 'language' => 'en',
-                'module' => 'lara-front',
+                'module' => 'lara-eve',
                 'cgroup' => 'contactform',
                 'tag' => 'button',
                 'key' => 'submit',
@@ -15809,7 +15809,7 @@ class LaraSysTranslationsTableSeeder extends Seeder
             array (
                 'id' => 6772,
                 'language' => 'en',
-                'module' => 'lara-front',
+                'module' => 'lara-eve',
                 'cgroup' => 'contactform',
                 'tag' => 'email',
                 'key' => 'subject',
@@ -15822,7 +15822,7 @@ class LaraSysTranslationsTableSeeder extends Seeder
             array (
                 'id' => 6773,
                 'language' => 'en',
-                'module' => 'lara-front',
+                'module' => 'lara-eve',
                 'cgroup' => 'contactform',
                 'tag' => 'formfield',
                 'key' => 'comment',
@@ -15835,7 +15835,7 @@ class LaraSysTranslationsTableSeeder extends Seeder
             array (
                 'id' => 6774,
                 'language' => 'en',
-                'module' => 'lara-front',
+                'module' => 'lara-eve',
                 'cgroup' => 'contactform',
                 'tag' => 'formfield',
                 'key' => 'email',
@@ -15848,7 +15848,7 @@ class LaraSysTranslationsTableSeeder extends Seeder
             array (
                 'id' => 6775,
                 'language' => 'en',
-                'module' => 'lara-front',
+                'module' => 'lara-eve',
                 'cgroup' => 'contactform',
                 'tag' => 'formfield',
                 'key' => 'name',
@@ -15861,7 +15861,7 @@ class LaraSysTranslationsTableSeeder extends Seeder
             array (
                 'id' => 6776,
                 'language' => 'en',
-                'module' => 'lara-front',
+                'module' => 'lara-eve',
                 'cgroup' => 'contactform',
                 'tag' => 'formfield',
                 'key' => 'telephone',
@@ -16108,7 +16108,7 @@ class LaraSysTranslationsTableSeeder extends Seeder
             array (
                 'id' => 6795,
                 'language' => 'en',
-                'module' => 'lara-front',
+                'module' => 'lara-eve',
                 'cgroup' => 'user',
                 'tag' => 'button',
                 'key' => 'submit',
@@ -16225,7 +16225,7 @@ class LaraSysTranslationsTableSeeder extends Seeder
             array (
                 'id' => 6804,
                 'language' => 'nl',
-                'module' => 'lara-front',
+                'module' => 'lara-eve',
                 'cgroup' => 'classicform',
                 'tag' => 'button',
                 'key' => 'submit',
@@ -16238,7 +16238,7 @@ class LaraSysTranslationsTableSeeder extends Seeder
             array (
                 'id' => 6805,
                 'language' => 'nl',
-                'module' => 'lara-front',
+                'module' => 'lara-eve',
                 'cgroup' => 'classicform',
                 'tag' => 'formfield',
                 'key' => 'blogid',
@@ -16251,7 +16251,7 @@ class LaraSysTranslationsTableSeeder extends Seeder
             array (
                 'id' => 6806,
                 'language' => 'nl',
-                'module' => 'lara-front',
+                'module' => 'lara-eve',
                 'cgroup' => 'classicform',
                 'tag' => 'formfield',
                 'key' => 'dob',
@@ -16264,7 +16264,7 @@ class LaraSysTranslationsTableSeeder extends Seeder
             array (
                 'id' => 6807,
                 'language' => 'nl',
-                'module' => 'lara-front',
+                'module' => 'lara-eve',
                 'cgroup' => 'classicform',
                 'tag' => 'formfield',
                 'key' => 'email',
@@ -16277,7 +16277,7 @@ class LaraSysTranslationsTableSeeder extends Seeder
             array (
                 'id' => 6808,
                 'language' => 'nl',
-                'module' => 'lara-front',
+                'module' => 'lara-eve',
                 'cgroup' => 'classicform',
                 'tag' => 'formfield',
                 'key' => 'name',
@@ -16290,7 +16290,7 @@ class LaraSysTranslationsTableSeeder extends Seeder
             array (
                 'id' => 6809,
                 'language' => 'nl',
-                'module' => 'lara-front',
+                'module' => 'lara-eve',
                 'cgroup' => 'classicform',
                 'tag' => 'formfield',
                 'key' => 'newsletter',
@@ -16303,7 +16303,7 @@ class LaraSysTranslationsTableSeeder extends Seeder
             array (
                 'id' => 6810,
                 'language' => 'nl',
-                'module' => 'lara-front',
+                'module' => 'lara-eve',
                 'cgroup' => 'classicform',
                 'tag' => 'formfield',
                 'key' => 'startdate',
@@ -16316,7 +16316,7 @@ class LaraSysTranslationsTableSeeder extends Seeder
             array (
                 'id' => 6811,
                 'language' => 'nl',
-                'module' => 'lara-front',
+                'module' => 'lara-eve',
                 'cgroup' => 'classicform',
                 'tag' => 'formfield',
                 'key' => 'subscribe',
@@ -16329,7 +16329,7 @@ class LaraSysTranslationsTableSeeder extends Seeder
             array (
                 'id' => 6812,
                 'language' => 'nl',
-                'module' => 'lara-front',
+                'module' => 'lara-eve',
                 'cgroup' => 'classicform',
                 'tag' => 'formfield',
                 'key' => 'yesorno',
@@ -16342,7 +16342,7 @@ class LaraSysTranslationsTableSeeder extends Seeder
             array (
                 'id' => 6823,
                 'language' => 'nl',
-                'module' => 'lara-front',
+                'module' => 'lara-eve',
                 'cgroup' => 'contactform',
                 'tag' => 'button',
                 'key' => 'submit',
@@ -16355,20 +16355,20 @@ class LaraSysTranslationsTableSeeder extends Seeder
             array (
                 'id' => 6824,
                 'language' => 'nl',
-                'module' => 'lara-front',
+                'module' => 'lara-eve',
                 'cgroup' => 'contactform',
                 'tag' => 'email',
                 'key' => 'subject',
-                'value' => 'onderwerp',
+                'value' => 'verzoek via website',
                 'created_at' => '2023-02-13 14:36:55',
-                'updated_at' => '2023-02-13 14:36:55',
+                'updated_at' => '2024-01-03 15:37:08',
                 'deleted_at' => NULL,
             ),
             257 => 
             array (
                 'id' => 6825,
                 'language' => 'nl',
-                'module' => 'lara-front',
+                'module' => 'lara-eve',
                 'cgroup' => 'contactform',
                 'tag' => 'formfield',
                 'key' => 'comment',
@@ -16381,7 +16381,7 @@ class LaraSysTranslationsTableSeeder extends Seeder
             array (
                 'id' => 6826,
                 'language' => 'nl',
-                'module' => 'lara-front',
+                'module' => 'lara-eve',
                 'cgroup' => 'contactform',
                 'tag' => 'formfield',
                 'key' => 'email',
@@ -16394,7 +16394,7 @@ class LaraSysTranslationsTableSeeder extends Seeder
             array (
                 'id' => 6827,
                 'language' => 'nl',
-                'module' => 'lara-front',
+                'module' => 'lara-eve',
                 'cgroup' => 'contactform',
                 'tag' => 'formfield',
                 'key' => 'name',
@@ -16407,7 +16407,7 @@ class LaraSysTranslationsTableSeeder extends Seeder
             array (
                 'id' => 6828,
                 'language' => 'nl',
-                'module' => 'lara-front',
+                'module' => 'lara-eve',
                 'cgroup' => 'contactform',
                 'tag' => 'formfield',
                 'key' => 'telephone',
@@ -16654,7 +16654,7 @@ class LaraSysTranslationsTableSeeder extends Seeder
             array (
                 'id' => 6847,
                 'language' => 'nl',
-                'module' => 'lara-front',
+                'module' => 'lara-eve',
                 'cgroup' => 'user',
                 'tag' => 'button',
                 'key' => 'submit',
@@ -20868,7 +20868,7 @@ class LaraSysTranslationsTableSeeder extends Seeder
             array (
                 'id' => 7173,
                 'language' => 'en',
-                'module' => 'lara-front',
+                'module' => 'lara-eve',
                 'cgroup' => 'classicform',
                 'tag' => 'formfield',
                 'key' => 'condititons',
@@ -20881,7 +20881,7 @@ class LaraSysTranslationsTableSeeder extends Seeder
             array (
                 'id' => 7174,
                 'language' => 'nl',
-                'module' => 'lara-front',
+                'module' => 'lara-eve',
                 'cgroup' => 'classicform',
                 'tag' => 'formfield',
                 'key' => 'condititons',
@@ -20998,7 +20998,7 @@ class LaraSysTranslationsTableSeeder extends Seeder
             array (
                 'id' => 7287,
                 'language' => 'en',
-                'module' => 'lara-front',
+                'module' => 'lara-eve',
                 'cgroup' => 'classicform',
                 'tag' => 'formfield',
                 'key' => 'myname',
@@ -21011,7 +21011,7 @@ class LaraSysTranslationsTableSeeder extends Seeder
             array (
                 'id' => 7288,
                 'language' => 'nl',
-                'module' => 'lara-front',
+                'module' => 'lara-eve',
                 'cgroup' => 'classicform',
                 'tag' => 'formfield',
                 'key' => 'myname',
@@ -21024,7 +21024,7 @@ class LaraSysTranslationsTableSeeder extends Seeder
             array (
                 'id' => 7289,
                 'language' => 'en',
-                'module' => 'lara-front',
+                'module' => 'lara-eve',
                 'cgroup' => 'classicform',
                 'tag' => 'formfield',
                 'key' => 'myemail',
@@ -21037,7 +21037,7 @@ class LaraSysTranslationsTableSeeder extends Seeder
             array (
                 'id' => 7290,
                 'language' => 'nl',
-                'module' => 'lara-front',
+                'module' => 'lara-eve',
                 'cgroup' => 'classicform',
                 'tag' => 'formfield',
                 'key' => 'myemail',
@@ -21050,7 +21050,7 @@ class LaraSysTranslationsTableSeeder extends Seeder
             array (
                 'id' => 7291,
                 'language' => 'en',
-                'module' => 'lara-front',
+                'module' => 'lara-eve',
                 'cgroup' => 'classicform',
                 'tag' => 'formfield',
                 'key' => 'mycondititons',
@@ -21063,7 +21063,7 @@ class LaraSysTranslationsTableSeeder extends Seeder
             array (
                 'id' => 7292,
                 'language' => 'nl',
-                'module' => 'lara-front',
+                'module' => 'lara-eve',
                 'cgroup' => 'classicform',
                 'tag' => 'formfield',
                 'key' => 'mycondititons',
@@ -21076,7 +21076,7 @@ class LaraSysTranslationsTableSeeder extends Seeder
             array (
                 'id' => 7293,
                 'language' => 'en',
-                'module' => 'lara-front',
+                'module' => 'lara-eve',
                 'cgroup' => 'classicform',
                 'tag' => 'formfield',
                 'key' => 'mycomment',
@@ -21089,7 +21089,7 @@ class LaraSysTranslationsTableSeeder extends Seeder
             array (
                 'id' => 7294,
                 'language' => 'nl',
-                'module' => 'lara-front',
+                'module' => 'lara-eve',
                 'cgroup' => 'classicform',
                 'tag' => 'formfield',
                 'key' => 'mycomment',
@@ -21102,7 +21102,7 @@ class LaraSysTranslationsTableSeeder extends Seeder
             array (
                 'id' => 7295,
                 'language' => 'en',
-                'module' => 'lara-front',
+                'module' => 'lara-eve',
                 'cgroup' => 'classicform',
                 'tag' => 'formfield',
                 'key' => 'myselect',
@@ -21115,7 +21115,7 @@ class LaraSysTranslationsTableSeeder extends Seeder
             array (
                 'id' => 7296,
                 'language' => 'nl',
-                'module' => 'lara-front',
+                'module' => 'lara-eve',
                 'cgroup' => 'classicform',
                 'tag' => 'formfield',
                 'key' => 'myselect',
@@ -21128,7 +21128,7 @@ class LaraSysTranslationsTableSeeder extends Seeder
             array (
                 'id' => 7297,
                 'language' => 'en',
-                'module' => 'lara-front',
+                'module' => 'lara-eve',
                 'cgroup' => 'classicform',
                 'tag' => 'formfield',
                 'key' => 'myradio',
@@ -21141,7 +21141,7 @@ class LaraSysTranslationsTableSeeder extends Seeder
             array (
                 'id' => 7298,
                 'language' => 'nl',
-                'module' => 'lara-front',
+                'module' => 'lara-eve',
                 'cgroup' => 'classicform',
                 'tag' => 'formfield',
                 'key' => 'myradio',
@@ -21154,7 +21154,7 @@ class LaraSysTranslationsTableSeeder extends Seeder
             array (
                 'id' => 7299,
                 'language' => 'en',
-                'module' => 'lara-front',
+                'module' => 'lara-eve',
                 'cgroup' => 'classicform',
                 'tag' => 'formfield',
                 'key' => 'myyesno',
@@ -21167,7 +21167,7 @@ class LaraSysTranslationsTableSeeder extends Seeder
             array (
                 'id' => 7300,
                 'language' => 'nl',
-                'module' => 'lara-front',
+                'module' => 'lara-eve',
                 'cgroup' => 'classicform',
                 'tag' => 'formfield',
                 'key' => 'myyesno',
@@ -21180,7 +21180,7 @@ class LaraSysTranslationsTableSeeder extends Seeder
             array (
                 'id' => 7301,
                 'language' => 'en',
-                'module' => 'lara-front',
+                'module' => 'lara-eve',
                 'cgroup' => 'classicform',
                 'tag' => 'formfield',
                 'key' => 'myboolean',
@@ -21193,7 +21193,7 @@ class LaraSysTranslationsTableSeeder extends Seeder
             array (
                 'id' => 7302,
                 'language' => 'nl',
-                'module' => 'lara-front',
+                'module' => 'lara-eve',
                 'cgroup' => 'classicform',
                 'tag' => 'formfield',
                 'key' => 'myboolean',
@@ -21206,7 +21206,7 @@ class LaraSysTranslationsTableSeeder extends Seeder
             array (
                 'id' => 7303,
                 'language' => 'en',
-                'module' => 'lara-front',
+                'module' => 'lara-eve',
                 'cgroup' => 'classicform',
                 'tag' => 'formfield',
                 'key' => 'mydate',
@@ -21219,7 +21219,7 @@ class LaraSysTranslationsTableSeeder extends Seeder
             array (
                 'id' => 7304,
                 'language' => 'nl',
-                'module' => 'lara-front',
+                'module' => 'lara-eve',
                 'cgroup' => 'classicform',
                 'tag' => 'formfield',
                 'key' => 'mydate',
