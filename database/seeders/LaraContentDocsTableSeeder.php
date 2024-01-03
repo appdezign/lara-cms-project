@@ -78,44 +78,6 @@ class LaraContentDocsTableSeeder extends Seeder
             ),
             3 => 
             array (
-                'id' => 4,
-                'user_id' => 2,
-                'language_parent' => NULL,
-                'language' => 'nl',
-                'title' => 'Test for File Archive and Trash',
-                'slug' => 'test-for-file-archive-and-trash',
-                'slug_lock' => 0,
-                'lead' => '',
-                'created_at' => '2023-02-21 14:47:20',
-                'updated_at' => '2023-02-21 14:48:16',
-                'deleted_at' => '2023-02-21 14:48:16',
-                'publish' => 0,
-                'publish_hide' => 0,
-                'publish_from' => '2023-02-21 14:47:00',
-                'locked_at' => NULL,
-                'locked_by' => NULL,
-            ),
-            4 => 
-            array (
-                'id' => 5,
-                'user_id' => 2,
-                'language_parent' => NULL,
-                'language' => 'nl',
-                'title' => 'test',
-                'slug' => 'test',
-                'slug_lock' => 0,
-                'lead' => '',
-                'created_at' => '2023-02-21 14:49:14',
-                'updated_at' => '2023-03-17 14:34:26',
-                'deleted_at' => '2023-03-17 14:34:26',
-                'publish' => 0,
-                'publish_hide' => 0,
-                'publish_from' => '2023-02-21 00:00:00',
-                'locked_at' => NULL,
-                'locked_by' => NULL,
-            ),
-            5 => 
-            array (
                 'id' => 6,
                 'user_id' => 2,
                 'language_parent' => NULL,
@@ -133,7 +95,7 @@ class LaraContentDocsTableSeeder extends Seeder
                 'locked_at' => NULL,
                 'locked_by' => NULL,
             ),
-            6 => 
+            4 => 
             array (
                 'id' => 7,
                 'user_id' => 2,
@@ -152,7 +114,7 @@ class LaraContentDocsTableSeeder extends Seeder
                 'locked_at' => NULL,
                 'locked_by' => NULL,
             ),
-            7 => 
+            5 => 
             array (
                 'id' => 8,
                 'user_id' => 2,

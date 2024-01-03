@@ -217,17 +217,6 @@ class LaraObjectOpengraphTableSeeder extends Seeder
                 'created_at' => '2023-09-27 16:03:47',
                 'updated_at' => '2023-09-27 16:03:47',
             ),
-            18 => 
-            array (
-                'id' => 20,
-                'entity_type' => 'Eve\\Models\\Tezt',
-                'entity_id' => 1,
-                'og_title' => '',
-                'og_description' => '',
-                'og_image' => '',
-                'created_at' => '2023-09-27 16:14:03',
-                'updated_at' => '2023-09-27 16:14:03',
-            ),
         ));
         
         
