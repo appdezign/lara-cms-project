@@ -10,6 +10,8 @@ use Lara\Common\Models\Entity;
 use Lara\Common\Models\Entitygroup;
 use Lara\Common\Models\Translation;
 
+use Eve\Models\Video;
+
 trait EveUpdateTrait
 {
 
@@ -72,6 +74,14 @@ trait EveUpdateTrait
 
 					}
 
+					if (in_array('2.1.2', $updates)) {
+
+						$this->updateVideoFields();
+
+						$this->setEveSetting('system', 'lara_eve_version', '2.1.2');
+
+					}
+
 					// Post-update actions
 					$this->eveClearCache();
 
@@ -85,6 +95,43 @@ trait EveUpdateTrait
 
 		return $updates;
 
+	}
+
+	private function updateVideoFields(): bool
+	{
+		$entity = Entity::where('entity_key', 'video')->first();
+		if ($entity) {
+			// update video relation
+			$entity->objectrelations->update([
+				'has_videos' => 1,
+			]);
+
+			// hide custom video field
+			$customVideoField = $entity->customcolumns->where('fieldname', 'youtubecode')->first();
+			if($customVideoField) {
+				$customVideoField->fieldstate = 'hidden';
+				$customVideoField->save();
+			}
+		}
+
+		$objects = Video::get();
+		foreach ($objects as $object) {
+			if(property_exists($object,'youtubecode' )) {
+				$ytcode = $object->youtubecode;
+				if (!empty($ytcode)) {
+					// purge
+					$object->videos()->delete();
+					// create new video
+					$object->videos()->create([
+						'title'       => $object->title,
+						'youtubecode' => $ytcode,
+						'featured'    => 1,
+					]);
+				}
+			}
+		}
+
+		return true;
 	}
 
 	private function addFieldToContactform()
