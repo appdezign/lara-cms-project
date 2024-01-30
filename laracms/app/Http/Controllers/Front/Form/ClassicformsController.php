@@ -323,7 +323,7 @@ class ClassicformsController extends Controller
 			$fieldname = $field->fieldname;
 			$fieldvalue = $request->input($fieldname);
 			$maildata->content->data->$fieldname = [
-				'colname' => _lanq('lara-front::' . $this->entity->getEntityKey() . '.formfield.' . $fieldname),
+				'colname' => _lanq('lara-front::' . $this->entity->getEntityKey() . '.column.' . $fieldname),
 				'colval'  => $fieldvalue,
 			];
 		}
