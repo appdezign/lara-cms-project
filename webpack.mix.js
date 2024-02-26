@@ -161,15 +161,6 @@ if (processBase) {
 			.copy(SRC_BASE_PUBLIC + '/vendor', DEST_BASE_DIR + '/vendor/')
 			.options({processCssUrls: false});
 
-
-		if (activeTheme != 'demo') {
-			if (fs.existsSync(mediafolder)) {
-				console.log('mediafolder already copied');
-			} else {
-				console.log('copying base mediafolder');
-				mix.copy(SRC_BASE_PUBLIC + '/media', PUBLIC_ASSET_PATH + '/media')
-			}
-		}
 	}
 }
 
@@ -188,14 +179,6 @@ if (processDemo) {
 			.copy(SRC_DEMO_PUBLIC + '/vendor', DEST_DEMO_DIR + '/vendor')
 			.options({processCssUrls: false});
 
-		if (activeTheme == 'demo') {
-			if (fs.existsSync(mediafolder)) {
-				console.log('mediafolder already copied');
-			} else {
-				console.log('copying demo mediafolder');
-				mix.copy(SRC_DEMO_PUBLIC + '/media', PUBLIC_ASSET_PATH + '/media')
-			}
-		}
 	}
 
 }
@@ -214,6 +197,14 @@ if (processClient && activeTheme != 'demo') {
 			.copy(SRC_CLIENT_PUBLIC + '/images', DEST_CLIENT_DIR + '/images')
 			.copy(SRC_CLIENT_PUBLIC + '/vendor', DEST_CLIENT_DIR + '/vendor/')
 			.options({processCssUrls: false});
+
+		if (fs.existsSync(mediafolder)) {
+			console.log('mediafolder already copied');
+		} else {
+			console.log('copying demo mediafolder');
+			mix.copy(SRC_DEMO_PUBLIC + '/media', PUBLIC_ASSET_PATH + '/media')
+		}
+
 	}
 }
 

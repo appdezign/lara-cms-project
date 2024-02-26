@@ -29,7 +29,7 @@ class LaraContentVideosTableSeeder extends Seeder
                 'slug' => 'new-york-city-1',
                 'slug_lock' => 0,
                 'created_at' => '2019-08-11 20:32:49',
-                'updated_at' => '2023-10-11 11:07:43',
+                'updated_at' => '2024-01-18 14:20:01',
                 'deleted_at' => NULL,
                 'publish' => 1,
                 'publish_hide' => 0,

@@ -314,4 +314,7 @@ return [
     //Example: 'localesOrder' => ['es','en'],
     'localesOrder' => ['nl', 'en'],
 
+	// NOTE:
+	// For setting default language, check config('app.local)
+
 ];
