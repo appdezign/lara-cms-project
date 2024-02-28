@@ -138,7 +138,7 @@ class LaraContentBlogsTableSeeder extends Seeder
 <p>Ut pretium, urna sit amet ultricies pulvinar, nisl lorem tincidunt lorem, non gravida neque odio sit amet urna. Aenean maximus egestas sapien quis mollis. Integer volutpat sem nec ex mollis, in posuere quam ultrices. Sed suscipit, quam at blandit laoreet, dui nisi ultricies nunc, suscipit malesuada felis tellus ut arcu. Donec non rhoncus lectus. Phasellus eu mauris leo. Quisque ac nisl feugiat, scelerisque augue id, condimentum nulla.</p>
 <p>Suspendisse faucibus libero sit amet mi viverra, eu venenatis purus finibus. Mauris vehicula molestie purus ac vehicula. Ut pharetra posuere eros non malesuada. Curabitur tincidunt eu ex id volutpat. Etiam fringilla risus quis euismod luctus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Suspendisse et nisi leo. Proin dictum nulla vel massa faucibus, quis euismod augue dapibus. Donec dapibus metus vel leo fringilla, at egestas velit sagittis. Vestibulum varius purus magna, vel porttitor leo porta eu. Vestibulum bibendum eleifend ultrices. Sed euismod porta nunc, sed pellentesque massa molestie eget. Suspendisse nec justo et risus aliquet rutrum id sed arcu. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>',
                 'created_at' => '2023-03-12 12:00:00',
-                'updated_at' => '2023-10-16 10:33:54',
+                'updated_at' => '2024-02-19 20:29:41',
                 'deleted_at' => NULL,
                 'publish' => 0,
                 'publish_hide' => 0,
@@ -164,7 +164,7 @@ class LaraContentBlogsTableSeeder extends Seeder
 <p>Ut pretium, urna sit amet ultricies pulvinar, nisl lorem tincidunt lorem, non gravida neque odio sit amet urna. Aenean maximus egestas sapien quis mollis. Integer volutpat sem nec ex mollis, in posuere quam ultrices. Sed suscipit, quam at blandit laoreet, dui nisi ultricies nunc, suscipit malesuada felis tellus ut arcu. Donec non rhoncus lectus. Phasellus eu mauris leo. Quisque ac nisl feugiat, scelerisque augue id, condimentum nulla.</p>
 <p>Suspendisse faucibus libero sit amet mi viverra, eu venenatis purus finibus. Mauris vehicula molestie purus ac vehicula. Ut pharetra posuere eros non malesuada. Curabitur tincidunt eu ex id volutpat. Etiam fringilla risus quis euismod luctus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Suspendisse et nisi leo. Proin dictum nulla vel massa faucibus, quis euismod augue dapibus. Donec dapibus metus vel leo fringilla, at egestas velit sagittis. Vestibulum varius purus magna, vel porttitor leo porta eu. Vestibulum bibendum eleifend ultrices. Sed euismod porta nunc, sed pellentesque massa molestie eget. Suspendisse nec justo et risus aliquet rutrum id sed arcu. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>',
                 'created_at' => '2023-03-10 12:00:00',
-                'updated_at' => '2023-03-16 14:12:21',
+                'updated_at' => '2024-02-19 20:29:02',
                 'deleted_at' => NULL,
                 'publish' => 1,
                 'publish_hide' => 0,
