@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6d85716a00dce7e233738ecd767008f2",
+    "content-hash": "bbf16d2ec697ff08dfd62dd64237e477",
     "packages": [
         {
             "name": "appdezign/lara-base-theme",
@@ -71,16 +71,16 @@
         },
         {
             "name": "appdezign/lara-cms",
-            "version": "8.2.2",
+            "version": "8.2.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/appdezign/lara-cms.git",
-                "reference": "7d36d90642c6c6e500ca64f6c86f6768ef58999f"
+                "reference": "775141116d2a67492f21f5eb11d5bb552e523486"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/appdezign/lara-cms/zipball/7d36d90642c6c6e500ca64f6c86f6768ef58999f",
-                "reference": "7d36d90642c6c6e500ca64f6c86f6768ef58999f",
+                "url": "https://api.github.com/repos/appdezign/lara-cms/zipball/775141116d2a67492f21f5eb11d5bb552e523486",
+                "reference": "775141116d2a67492f21f5eb11d5bb552e523486",
                 "shasum": ""
             },
             "require": {
@@ -162,9 +162,9 @@
                 "lara"
             ],
             "support": {
-                "source": "https://github.com/appdezign/lara-cms/tree/v8.2.2"
+                "source": "https://github.com/appdezign/lara-cms/tree/v8.2.3"
             },
-            "time": "2024-02-29T16:40:14+00:00"
+            "time": "2024-02-29T17:00:55+00:00"
         },
         {
             "name": "appdezign/lara-demo-theme",
