@@ -21,16 +21,6 @@ class LaraObjectLayoutTableSeeder extends Seeder
         \DB::table('lara_object_layout')->insert(array (
             0 => 
             array (
-                'id' => 81,
-                'entity_type' => 'Lara\\Common\\Models\\Page',
-                'entity_id' => 32,
-                'layout_key' => 'content',
-                'layout_value' => 'boxed_default_col_10',
-                'created_at' => '2023-03-13 15:45:18',
-                'updated_at' => '2023-03-13 15:45:18',
-            ),
-            1 => 
-            array (
                 'id' => 90,
                 'entity_type' => 'Lara\\Common\\Models\\Page',
                 'entity_id' => 1063,
@@ -39,7 +29,7 @@ class LaraObjectLayoutTableSeeder extends Seeder
                 'created_at' => '2023-03-17 13:35:44',
                 'updated_at' => '2023-03-17 13:35:44',
             ),
-            2 => 
+            1 => 
             array (
                 'id' => 138,
                 'entity_type' => 'Lara\\Common\\Models\\Page',
@@ -49,7 +39,7 @@ class LaraObjectLayoutTableSeeder extends Seeder
                 'created_at' => '2023-08-21 11:13:35',
                 'updated_at' => '2023-08-21 11:13:35',
             ),
-            3 => 
+            2 => 
             array (
                 'id' => 139,
                 'entity_type' => 'Lara\\Common\\Models\\Page',
@@ -59,7 +49,7 @@ class LaraObjectLayoutTableSeeder extends Seeder
                 'created_at' => '2023-08-21 11:13:35',
                 'updated_at' => '2023-08-21 11:13:35',
             ),
-            4 => 
+            3 => 
             array (
                 'id' => 140,
                 'entity_type' => 'Lara\\Common\\Models\\Page',
@@ -69,7 +59,7 @@ class LaraObjectLayoutTableSeeder extends Seeder
                 'created_at' => '2023-08-21 11:13:35',
                 'updated_at' => '2023-08-21 11:13:35',
             ),
-            5 => 
+            4 => 
             array (
                 'id' => 182,
                 'entity_type' => 'Lara\\Common\\Models\\Page',
@@ -79,7 +69,7 @@ class LaraObjectLayoutTableSeeder extends Seeder
                 'created_at' => '2023-08-21 19:04:07',
                 'updated_at' => '2023-08-21 19:04:07',
             ),
-            6 => 
+            5 => 
             array (
                 'id' => 204,
                 'entity_type' => 'Lara\\Common\\Models\\Page',
@@ -89,7 +79,7 @@ class LaraObjectLayoutTableSeeder extends Seeder
                 'created_at' => '2023-08-22 09:41:35',
                 'updated_at' => '2023-08-22 09:41:35',
             ),
-            7 => 
+            6 => 
             array (
                 'id' => 205,
                 'entity_type' => 'Lara\\Common\\Models\\Page',
@@ -99,7 +89,7 @@ class LaraObjectLayoutTableSeeder extends Seeder
                 'created_at' => '2023-08-22 09:41:35',
                 'updated_at' => '2023-08-22 09:41:35',
             ),
-            8 => 
+            7 => 
             array (
                 'id' => 206,
                 'entity_type' => 'Lara\\Common\\Models\\Page',
@@ -109,7 +99,7 @@ class LaraObjectLayoutTableSeeder extends Seeder
                 'created_at' => '2023-08-22 09:41:35',
                 'updated_at' => '2023-08-22 09:41:35',
             ),
-            9 => 
+            8 => 
             array (
                 'id' => 207,
                 'entity_type' => 'Lara\\Common\\Models\\Page',
@@ -119,7 +109,7 @@ class LaraObjectLayoutTableSeeder extends Seeder
                 'created_at' => '2023-08-22 09:41:35',
                 'updated_at' => '2023-08-22 09:41:35',
             ),
-            10 => 
+            9 => 
             array (
                 'id' => 208,
                 'entity_type' => 'Lara\\Common\\Models\\Page',
@@ -129,7 +119,7 @@ class LaraObjectLayoutTableSeeder extends Seeder
                 'created_at' => '2023-08-22 09:41:35',
                 'updated_at' => '2023-08-22 09:41:35',
             ),
-            11 => 
+            10 => 
             array (
                 'id' => 209,
                 'entity_type' => 'Lara\\Common\\Models\\Page',
@@ -139,7 +129,7 @@ class LaraObjectLayoutTableSeeder extends Seeder
                 'created_at' => '2023-08-22 09:41:35',
                 'updated_at' => '2023-08-22 09:41:35',
             ),
-            12 => 
+            11 => 
             array (
                 'id' => 210,
                 'entity_type' => 'Lara\\Common\\Models\\Page',
@@ -149,25 +139,25 @@ class LaraObjectLayoutTableSeeder extends Seeder
                 'created_at' => '2023-08-22 09:41:35',
                 'updated_at' => '2023-08-22 09:41:35',
             ),
-            13 => 
+            12 => 
             array (
-                'id' => 223,
+                'id' => 232,
                 'entity_type' => 'Lara\\Common\\Models\\Page',
                 'entity_id' => 16,
                 'layout_key' => 'content',
                 'layout_value' => 'boxed_default_col_10',
-                'created_at' => '2023-10-13 16:26:26',
-                'updated_at' => '2023-10-13 16:26:26',
+                'created_at' => '2024-03-02 17:11:01',
+                'updated_at' => '2024-03-02 17:11:01',
             ),
-            14 => 
+            13 => 
             array (
-                'id' => 224,
+                'id' => 233,
                 'entity_type' => 'Lara\\Common\\Models\\Page',
                 'entity_id' => 16,
                 'layout_key' => 'cta',
                 'layout_value' => 'contact',
-                'created_at' => '2023-10-13 16:26:26',
-                'updated_at' => '2023-10-13 16:26:26',
+                'created_at' => '2024-03-02 17:11:01',
+                'updated_at' => '2024-03-02 17:11:01',
             ),
         ));
         

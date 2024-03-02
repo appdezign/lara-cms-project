@@ -252,7 +252,7 @@ class LaraEntEntityPanelsTableSeeder extends Seeder
                 'id' => 47,
                 'entity_id' => 61,
                 'has_search' => 0,
-                'has_batch' => 0,
+                'has_batch' => 1,
                 'has_filters' => 0,
                 'show_author' => 0,
                 'show_status' => 0,
@@ -402,6 +402,18 @@ class LaraEntEntityPanelsTableSeeder extends Seeder
                 'show_status' => 1,
                 'has_tiny_lead' => 1,
                 'has_tiny_body' => 1,
+            ),
+            32 => 
+            array (
+                'id' => 74,
+                'entity_id' => 89,
+                'has_search' => 0,
+                'has_batch' => 0,
+                'has_filters' => 0,
+                'show_author' => 0,
+                'show_status' => 0,
+                'has_tiny_lead' => 0,
+                'has_tiny_body' => 0,
             ),
         ));
         

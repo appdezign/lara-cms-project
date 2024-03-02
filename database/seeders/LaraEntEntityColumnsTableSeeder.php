@@ -755,6 +755,29 @@ class LaraEntEntityColumnsTableSeeder extends Seeder
                 'sort2_order' => NULL,
                 'has_fields' => 1,
             ),
+            32 => 
+            array (
+                'id' => 75,
+                'entity_id' => 89,
+                'has_user' => 0,
+                'has_lang' => 0,
+                'has_slug' => 0,
+                'has_lead' => 0,
+                'has_body' => 0,
+                'has_status' => 0,
+                'has_hideinlist' => 0,
+                'has_expiration' => 0,
+                'has_app' => 0,
+                'has_groups' => 1,
+                'group_values' => 'module, larawidget, textwidget, entitywidget, sliderwidget, ctawidget, pagetitlewidget',
+                'group_default' => NULL,
+                'is_sortable' => 0,
+                'sort_field' => NULL,
+                'sort_order' => 'asc',
+                'sort2_field' => NULL,
+                'sort2_order' => NULL,
+                'has_fields' => 0,
+            ),
         ));
         
         

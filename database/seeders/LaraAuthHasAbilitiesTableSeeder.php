@@ -1972,6 +1972,42 @@ class LaraAuthHasAbilitiesTableSeeder extends Seeder
                 'forbidden' => 0,
                 'scope' => NULL,
             ),
+            217 => 
+            array (
+                'id' => 2823,
+                'ability_id' => 489,
+                'entity_type' => 'lara_auth_roles',
+                'entity_id' => 1,
+                'forbidden' => 0,
+                'scope' => NULL,
+            ),
+            218 => 
+            array (
+                'id' => 2824,
+                'ability_id' => 490,
+                'entity_type' => 'lara_auth_roles',
+                'entity_id' => 1,
+                'forbidden' => 0,
+                'scope' => NULL,
+            ),
+            219 => 
+            array (
+                'id' => 2825,
+                'ability_id' => 491,
+                'entity_type' => 'lara_auth_roles',
+                'entity_id' => 1,
+                'forbidden' => 0,
+                'scope' => NULL,
+            ),
+            220 => 
+            array (
+                'id' => 2826,
+                'ability_id' => 492,
+                'entity_type' => 'lara_auth_roles',
+                'entity_id' => 1,
+                'forbidden' => 0,
+                'scope' => NULL,
+            ),
         ));
         
         
