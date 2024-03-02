@@ -226,6 +226,29 @@ class LaraEntEntityGroupsTableSeeder extends Seeder
                 'locked_by' => NULL,
                 'position' => 9,
             ),
+            9 => 
+            array (
+                'id' => 10,
+                'title' => 'SEO',
+                'key' => 'seo',
+                'path' => 'Lara',
+                'group_has_columns' => 1,
+                'group_has_objectrelations' => 0,
+                'group_has_filters' => 1,
+                'group_has_panels' => 0,
+                'group_has_media' => 0,
+                'group_has_customcolumns' => 0,
+                'group_has_relations' => 0,
+                'group_has_views' => 0,
+                'group_has_widgets' => 0,
+                'group_has_sortable' => 1,
+                'group_has_managedtable' => 0,
+                'created_at' => NULL,
+                'updated_at' => NULL,
+                'locked_at' => NULL,
+                'locked_by' => NULL,
+                'position' => 10,
+            ),
         ));
         
         

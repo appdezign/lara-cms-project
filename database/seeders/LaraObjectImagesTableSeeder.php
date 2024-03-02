@@ -898,7 +898,7 @@ class LaraObjectImagesTableSeeder extends Seeder
                 'image_alt' => NULL,
                 'prevent_cropping' => 0,
                 'created_at' => '2023-03-13 12:36:43',
-                'updated_at' => '2023-08-21 12:56:27',
+                'updated_at' => '2024-03-02 17:11:01',
                 'position' => 116201,
             ),
             42 => 
@@ -1024,7 +1024,7 @@ class LaraObjectImagesTableSeeder extends Seeder
                 'image_alt' => NULL,
                 'prevent_cropping' => 0,
                 'created_at' => '2023-03-13 15:44:46',
-                'updated_at' => '2023-11-02 16:29:16',
+                'updated_at' => '2024-03-02 17:56:15',
                 'position' => 132201,
             ),
             48 => 
@@ -1087,7 +1087,7 @@ class LaraObjectImagesTableSeeder extends Seeder
                 'image_alt' => NULL,
                 'prevent_cropping' => 0,
                 'created_at' => '2023-03-16 12:11:32',
-                'updated_at' => '2023-11-02 16:29:16',
+                'updated_at' => '2024-03-02 16:42:39',
                 'position' => 153201,
             ),
             51 => 

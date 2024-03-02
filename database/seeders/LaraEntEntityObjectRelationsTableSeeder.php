@@ -787,6 +787,30 @@ class LaraEntEntityObjectRelationsTableSeeder extends Seeder
                 'disk_videos' => 'localdisk',
                 'disk_files' => 'localdisk',
             ),
+            32 => 
+            array (
+                'id' => 74,
+                'entity_id' => 89,
+                'has_seo' => 0,
+                'has_opengraph' => 0,
+                'has_layout' => 0,
+                'has_related' => 0,
+                'is_relatable' => 0,
+                'has_tags' => 0,
+                'tag_default' => '',
+                'has_sync' => 0,
+                'has_images' => 0,
+                'has_videos' => 0,
+                'has_videofiles' => 0,
+                'has_files' => 0,
+                'max_images' => 1,
+                'max_videos' => 1,
+                'max_videofiles' => 1,
+                'max_files' => 1,
+                'disk_images' => 'localdisk',
+                'disk_videos' => 'localdisk',
+                'disk_files' => 'localdisk',
+            ),
         ));
         
         
