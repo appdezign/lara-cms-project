@@ -152,9 +152,9 @@ return [
 		 * Lara Service Providers
 		 * Important: these need to come AFTER the Application Service Providers
 		 */
+		Lara\Common\Providers\LaraCommonServiceProvider::class,
 		Lara\Admin\Providers\LaraAdminServiceProvider::class,
 		Lara\Admin\Providers\LaraEventServiceProvider::class,
-		Lara\Common\Providers\LaraCommonServiceProvider::class,
 		Lara\Front\Providers\LaraFrontServiceProvider::class,
 
 		Laratheme\Base\LaraBaseServiceProvider::class,
