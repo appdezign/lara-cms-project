@@ -17,11 +17,11 @@ newversion=$2
 # check arguments
 if [ $# -lt 2 ]
   then
-	echo -e "${CLR1}Syntax: req [core/base/demo] [newversion]${NC}"
+	echo -e "${CLR1}Syntax: req [core/base/demo/all] [newversion]${NC}"
 	exit 1
 fi
 
-if [ $package != "core" ] && [ $package != "base" ] && [ $package != "demo" ]
+if [ $package != "core" ] && [ $package != "base" ] && [ $package != "demo" ] && [ $package != "all" ]
   then
 	echo -e "${CLR1}Error: ${package} is not a valid package${NC}"
 	echo -e "${CLR1}Syntax: req [core/base/demo] [newversion]${NC}"
@@ -36,7 +36,7 @@ COMPPATH="/usr/lib64/plesk-9.0/composer.phar"
 
 "$PHP7PATH" artisan down --render=maintenance
 
-if [ $package == "core" ]
+if [ $package == "core" ] || [ $package == "all" ]
   then
     echo -e "${CLR1}~~~~~~~~~~~~~~~~ core ~~~~~~~~~~~~~~~~${NC}"
     COMPOSER_MEMORY_LIMIT=-1 "$PHP7PATH" "$COMPPATH" require appdezign/lara-cms:"$newversion" --ignore-platform-reqs --no-scripts
@@ -44,7 +44,7 @@ fi
 
 sleep 2
 
-if [ $package == "base" ]
+if [ $package == "base" ] || [ $package == "all" ]
   then
     echo -e "${CLR1}~~~~~~~~~~~~~~~~ base theme ~~~~~~~~~~~~~~~~${NC}"
     COMPOSER_MEMORY_LIMIT=-1 "$PHP7PATH" "$COMPPATH" require appdezign/lara-base-theme:"$newversion" --ignore-platform-reqs --no-scripts
@@ -52,7 +52,7 @@ fi
 
 sleep 2
 
-if [ $package == "demo" ]
+if [ $package == "demo" ] || [ $package == "all" ]
   then
     echo -e "${CLR1}~~~~~~~~~~~~~~~~ demo theme ~~~~~~~~~~~~~~~~${NC}"
     COMPOSER_MEMORY_LIMIT=-1 "$PHP7PATH" "$COMPPATH" require appdezign/lara-demo-theme:"$newversion" --ignore-platform-reqs --no-scripts
