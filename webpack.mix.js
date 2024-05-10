@@ -216,6 +216,7 @@ if (processAdmin) {
 	adminJsFiles = [
 		SRC_ADMIN_JS + '/_vendor/fast-delete.js',
 		SRC_ADMIN_JS + '/_vendor/image-picker.js',
+		SRC_ADMIN_JS + '/_vendor/jscolor.js',
 		SRC_ADMIN_JS + '/app.js',
 	];
 
