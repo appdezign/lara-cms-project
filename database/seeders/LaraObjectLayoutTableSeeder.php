@@ -159,6 +159,16 @@ class LaraObjectLayoutTableSeeder extends Seeder
                 'created_at' => '2024-03-02 17:11:01',
                 'updated_at' => '2024-03-02 17:11:01',
             ),
+            14 => 
+            array (
+                'id' => 236,
+                'entity_type' => 'Lara\\Common\\Models\\Page',
+                'entity_id' => 1097,
+                'layout_key' => 'content',
+                'layout_value' => 'boxed_default_col_10',
+                'created_at' => '2024-05-23 16:03:54',
+                'updated_at' => '2024-05-23 16:03:54',
+            ),
         ));
         
         

@@ -1024,7 +1024,7 @@ class LaraObjectImagesTableSeeder extends Seeder
                 'image_alt' => NULL,
                 'prevent_cropping' => 0,
                 'created_at' => '2023-03-13 15:44:46',
-                'updated_at' => '2024-03-02 17:56:15',
+                'updated_at' => '2024-05-23 15:46:17',
                 'position' => 132201,
             ),
             48 => 
@@ -1087,7 +1087,7 @@ class LaraObjectImagesTableSeeder extends Seeder
                 'image_alt' => NULL,
                 'prevent_cropping' => 0,
                 'created_at' => '2023-03-16 12:11:32',
-                'updated_at' => '2024-03-02 16:42:39',
+                'updated_at' => '2024-05-23 15:46:17',
                 'position' => 153201,
             ),
             51 => 
@@ -1635,6 +1635,27 @@ class LaraObjectImagesTableSeeder extends Seeder
                 'created_at' => '2023-10-13 19:58:24',
                 'updated_at' => '2023-10-13 19:58:24',
                 'position' => 2209101,
+            ),
+            77 => 
+            array (
+                'id' => 2594,
+                'entity_type' => 'Lara\\Common\\Models\\Page',
+                'entity_id' => 1097,
+                'title' => '20240523154753-hero-bg.jpg',
+                'filename' => '20240523154753-hero-bg.jpg',
+                'mimetype' => 'image/jpeg',
+                'featured' => 1,
+                'isicon' => 0,
+                'ishero' => 0,
+                'herosize' => 0,
+                'hide_in_gallery' => 1,
+                'caption' => NULL,
+                'image_title' => NULL,
+                'image_alt' => NULL,
+                'prevent_cropping' => 0,
+                'created_at' => '2024-05-23 15:47:55',
+                'updated_at' => '2024-05-23 15:47:55',
+                'position' => 1197101,
             ),
         ));
         

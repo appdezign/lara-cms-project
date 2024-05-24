@@ -14,12 +14,12 @@ class LaraSysSettingsTableSeeder extends Seeder
      */
     public function run()
     {
-
+        
 
         \DB::table('lara_sys_settings')->delete();
-
+        
         \DB::table('lara_sys_settings')->insert(array (
-            0 =>
+            0 => 
             array (
                 'id' => 1,
                 'title' => 'Company Name',
@@ -33,7 +33,7 @@ class LaraSysSettingsTableSeeder extends Seeder
                 'locked_by' => NULL,
                 'position' => 2,
             ),
-            1 =>
+            1 => 
             array (
                 'id' => 2,
                 'title' => 'Company Street',
@@ -47,7 +47,7 @@ class LaraSysSettingsTableSeeder extends Seeder
                 'locked_by' => NULL,
                 'position' => 4,
             ),
-            2 =>
+            2 => 
             array (
                 'id' => 3,
                 'title' => 'Company Email Address',
@@ -61,7 +61,7 @@ class LaraSysSettingsTableSeeder extends Seeder
                 'locked_by' => NULL,
                 'position' => 3,
             ),
-            3 =>
+            3 => 
             array (
                 'id' => 5,
                 'title' => 'Translation File Sync',
@@ -75,7 +75,7 @@ class LaraSysSettingsTableSeeder extends Seeder
                 'locked_by' => NULL,
                 'position' => 1,
             ),
-            4 =>
+            4 => 
             array (
                 'id' => 6,
                 'title' => 'Company Street Nr',
@@ -89,7 +89,7 @@ class LaraSysSettingsTableSeeder extends Seeder
                 'locked_by' => NULL,
                 'position' => 5,
             ),
-            5 =>
+            5 => 
             array (
                 'id' => 7,
                 'title' => 'Company Postal Code',
@@ -103,7 +103,7 @@ class LaraSysSettingsTableSeeder extends Seeder
                 'locked_by' => NULL,
                 'position' => 6,
             ),
-            6 =>
+            6 => 
             array (
                 'id' => 8,
                 'title' => 'Company City',
@@ -117,7 +117,7 @@ class LaraSysSettingsTableSeeder extends Seeder
                 'locked_by' => NULL,
                 'position' => 7,
             ),
-            7 =>
+            7 => 
             array (
                 'id' => 9,
                 'title' => 'Company Telephone',
@@ -131,7 +131,7 @@ class LaraSysSettingsTableSeeder extends Seeder
                 'locked_by' => NULL,
                 'position' => 10,
             ),
-            8 =>
+            8 => 
             array (
                 'id' => 10,
                 'title' => 'Company Region',
@@ -145,7 +145,7 @@ class LaraSysSettingsTableSeeder extends Seeder
                 'locked_by' => NULL,
                 'position' => 8,
             ),
-            9 =>
+            9 => 
             array (
                 'id' => 11,
                 'title' => 'Company Country',
@@ -159,7 +159,7 @@ class LaraSysSettingsTableSeeder extends Seeder
                 'locked_by' => NULL,
                 'position' => 9,
             ),
-            10 =>
+            10 => 
             array (
                 'id' => 12,
                 'title' => 'google_analytics_sync',
@@ -173,7 +173,7 @@ class LaraSysSettingsTableSeeder extends Seeder
                 'locked_by' => NULL,
                 'position' => 11,
             ),
-            11 =>
+            11 => 
             array (
                 'id' => 13,
                 'title' => 'Google Analytics 4 ID',
@@ -187,7 +187,7 @@ class LaraSysSettingsTableSeeder extends Seeder
                 'locked_by' => NULL,
                 'position' => 23,
             ),
-            12 =>
+            12 => 
             array (
                 'id' => 14,
                 'title' => 'AddThis ID',
@@ -201,21 +201,21 @@ class LaraSysSettingsTableSeeder extends Seeder
                 'locked_by' => NULL,
                 'position' => 24,
             ),
-            13 =>
+            13 => 
             array (
                 'id' => 15,
                 'title' => 'Lara DB Version',
                 'cgroup' => 'system',
                 'key' => 'lara_db_version',
-                'value' => '8.2.1',
+                'value' => '8.2.22',
                 'locked_by_admin' => 1,
                 'created_at' => '2018-06-12 11:18:52',
-                'updated_at' => '2024-03-01 13:11:05',
+                'updated_at' => '2024-04-19 11:43:30',
                 'locked_at' => NULL,
                 'locked_by' => NULL,
                 'position' => 25,
             ),
-            14 =>
+            14 => 
             array (
                 'id' => 16,
                 'title' => 'Company Latitude',
@@ -229,7 +229,7 @@ class LaraSysSettingsTableSeeder extends Seeder
                 'locked_by' => NULL,
                 'position' => 26,
             ),
-            15 =>
+            15 => 
             array (
                 'id' => 17,
                 'title' => 'Company Longitude',
@@ -243,7 +243,7 @@ class LaraSysSettingsTableSeeder extends Seeder
                 'locked_by' => NULL,
                 'position' => 27,
             ),
-            16 =>
+            16 => 
             array (
                 'id' => 18,
                 'title' => 'Company Url',
@@ -257,7 +257,7 @@ class LaraSysSettingsTableSeeder extends Seeder
                 'locked_by' => NULL,
                 'position' => 28,
             ),
-            17 =>
+            17 => 
             array (
                 'id' => 19,
                 'title' => 'Google Maps Zoom',
@@ -271,7 +271,7 @@ class LaraSysSettingsTableSeeder extends Seeder
                 'locked_by' => NULL,
                 'position' => 29,
             ),
-            18 =>
+            18 => 
             array (
                 'id' => 20,
                 'title' => 'lara_cleanup_orphans',
@@ -285,7 +285,7 @@ class LaraSysSettingsTableSeeder extends Seeder
                 'locked_by' => NULL,
                 'position' => 30,
             ),
-            19 =>
+            19 => 
             array (
                 'id' => 21,
                 'title' => 'Company Telephone Clean',
@@ -299,7 +299,7 @@ class LaraSysSettingsTableSeeder extends Seeder
                 'locked_by' => NULL,
                 'position' => 31,
             ),
-            20 =>
+            20 => 
             array (
                 'id' => 22,
                 'title' => 'Google Tag manager ID',
@@ -313,7 +313,7 @@ class LaraSysSettingsTableSeeder extends Seeder
                 'locked_by' => NULL,
                 'position' => 32,
             ),
-            21 =>
+            21 => 
             array (
                 'id' => 27,
                 'title' => 'OpenGraph Type',
@@ -327,7 +327,7 @@ class LaraSysSettingsTableSeeder extends Seeder
                 'locked_by' => NULL,
                 'position' => 114,
             ),
-            22 =>
+            22 => 
             array (
                 'id' => 28,
                 'title' => 'OpenGraph Image Width',
@@ -341,7 +341,7 @@ class LaraSysSettingsTableSeeder extends Seeder
                 'locked_by' => NULL,
                 'position' => 115,
             ),
-            23 =>
+            23 => 
             array (
                 'id' => 29,
                 'title' => 'OpenGraph Image Height',
@@ -355,7 +355,7 @@ class LaraSysSettingsTableSeeder extends Seeder
                 'locked_by' => NULL,
                 'position' => 116,
             ),
-            24 =>
+            24 => 
             array (
                 'id' => 30,
                 'title' => 'OpenGraph Description Max Length',
@@ -369,7 +369,7 @@ class LaraSysSettingsTableSeeder extends Seeder
                 'locked_by' => NULL,
                 'position' => 117,
             ),
-            25 =>
+            25 => 
             array (
                 'id' => 31,
                 'title' => 'OpenGraph Site Name',
@@ -383,21 +383,21 @@ class LaraSysSettingsTableSeeder extends Seeder
                 'locked_by' => NULL,
                 'position' => 118,
             ),
-            26 =>
+            26 => 
             array (
                 'id' => 32,
                 'title' => 'Eve Version',
                 'cgroup' => 'system',
                 'key' => 'lara_eve_version',
-                'value' => '2.1.2',
+                'value' => '8.0.1',
                 'locked_by_admin' => 0,
                 'created_at' => '2020-08-11 17:09:21',
-                'updated_at' => '2024-01-18 14:22:17',
+                'updated_at' => '2024-03-04 14:12:00',
                 'locked_at' => NULL,
                 'locked_by' => NULL,
                 'position' => 119,
             ),
-            27 =>
+            27 => 
             array (
                 'id' => 34,
                 'title' => 'Top post range days',
@@ -411,7 +411,7 @@ class LaraSysSettingsTableSeeder extends Seeder
                 'locked_by' => NULL,
                 'position' => 121,
             ),
-            28 =>
+            28 => 
             array (
                 'id' => 35,
                 'title' => 'Company Facebook Account',
@@ -425,7 +425,7 @@ class LaraSysSettingsTableSeeder extends Seeder
                 'locked_by' => NULL,
                 'position' => 122,
             ),
-            29 =>
+            29 => 
             array (
                 'id' => 36,
                 'title' => 'Company Instagram Account',
@@ -439,7 +439,7 @@ class LaraSysSettingsTableSeeder extends Seeder
                 'locked_by' => NULL,
                 'position' => 123,
             ),
-            30 =>
+            30 => 
             array (
                 'id' => 37,
                 'title' => 'Company Twitter Account',
@@ -453,7 +453,7 @@ class LaraSysSettingsTableSeeder extends Seeder
                 'locked_by' => NULL,
                 'position' => 124,
             ),
-            31 =>
+            31 => 
             array (
                 'id' => 38,
                 'title' => 'Company Linkedin Account',
@@ -467,7 +467,7 @@ class LaraSysSettingsTableSeeder extends Seeder
                 'locked_by' => NULL,
                 'position' => 125,
             ),
-            32 =>
+            32 => 
             array (
                 'id' => 39,
                 'title' => 'Team Photo Ratio',
@@ -481,22 +481,50 @@ class LaraSysSettingsTableSeeder extends Seeder
                 'locked_by' => 2,
                 'position' => 126,
             ),
-            33 =>
+            33 => 
             array (
                 'id' => 43,
                 'title' => 'Lara Translation Version',
                 'cgroup' => 'system',
                 'key' => 'lara_translation_version',
-                'value' => '8.2.4',
+                'value' => '8.2.25',
                 'locked_by_admin' => 0,
                 'created_at' => '2023-10-24 15:48:06',
-                'updated_at' => '2024-03-01 10:16:21',
+                'updated_at' => '2024-05-23 15:45:16',
                 'locked_at' => NULL,
                 'locked_by' => NULL,
                 'position' => 127,
             ),
+            34 => 
+            array (
+                'id' => 44,
+                'title' => 'Seo Description Max Length',
+                'cgroup' => 'system',
+                'key' => 'seo_desc_max_len',
+                'value' => '300',
+                'locked_by_admin' => 1,
+                'created_at' => '2024-04-19 11:08:59',
+                'updated_at' => '2024-04-19 11:08:59',
+                'locked_at' => NULL,
+                'locked_by' => NULL,
+                'position' => 128,
+            ),
+            35 => 
+            array (
+                'id' => 45,
+                'title' => 'Seo Keywords Max Length',
+                'cgroup' => 'system',
+                'key' => 'seo_keyw_max_len',
+                'value' => '300',
+                'locked_by_admin' => 1,
+                'created_at' => '2024-04-19 11:10:40',
+                'updated_at' => '2024-04-19 11:10:40',
+                'locked_at' => NULL,
+                'locked_by' => NULL,
+                'position' => 129,
+            ),
         ));
-
-
+        
+        
     }
 }

@@ -33,9 +33,9 @@ class LaraEntEntitiesTableSeeder extends Seeder
                 'menu_position' => 103,
                 'menu_icon' => 'fad fa-file-alt',
                 'created_at' => NULL,
-                'updated_at' => '2023-05-24 16:03:10',
-                'locked_at' => '2023-05-24 16:03:10',
-                'locked_by' => 2,
+                'updated_at' => '2024-05-23 15:48:26',
+                'locked_at' => NULL,
+                'locked_by' => NULL,
             ),
             1 => 
             array (
@@ -213,9 +213,9 @@ class LaraEntEntitiesTableSeeder extends Seeder
                 'menu_position' => NULL,
                 'menu_icon' => NULL,
                 'created_at' => '2018-02-21 09:33:29',
-                'updated_at' => '2024-03-01 10:20:05',
-                'locked_at' => '2024-03-01 10:20:05',
-                'locked_by' => 2,
+                'updated_at' => '2024-05-08 16:02:32',
+                'locked_at' => NULL,
+                'locked_by' => NULL,
             ),
             11 => 
             array (

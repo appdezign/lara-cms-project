@@ -251,6 +251,70 @@ class LaraSysTemplatefilesTableSeeder extends Seeder
                 'created_at' => '2024-03-02 17:35:14',
                 'updated_at' => '2024-03-02 17:35:14',
             ),
+            29 => 
+            array (
+                'id' => 31,
+                'template_file' => 'user_loginform',
+                'type' => 'module',
+                'created_at' => '2024-03-03 14:17:07',
+                'updated_at' => '2024-03-03 14:17:07',
+            ),
+            30 => 
+            array (
+                'id' => 32,
+                'template_file' => 'user_profile',
+                'type' => 'module',
+                'created_at' => '2024-03-03 14:25:21',
+                'updated_at' => '2024-03-03 14:25:21',
+            ),
+            31 => 
+            array (
+                'id' => 33,
+                'template_file' => 'doc_index',
+                'type' => 'module',
+                'created_at' => '2024-03-06 15:41:29',
+                'updated_at' => '2024-03-06 15:41:29',
+            ),
+            32 => 
+            array (
+                'id' => 34,
+                'template_file' => 'doc_show',
+                'type' => 'module',
+                'created_at' => '2024-03-06 15:41:32',
+                'updated_at' => '2024-03-06 15:41:32',
+            ),
+            33 => 
+            array (
+                'id' => 35,
+                'template_file' => 'event_show',
+                'type' => 'module',
+                'created_at' => '2024-03-06 15:42:04',
+                'updated_at' => '2024-03-06 15:42:04',
+            ),
+            34 => 
+            array (
+                'id' => 36,
+                'template_file' => 'gallery_index',
+                'type' => 'module',
+                'created_at' => '2024-03-06 15:42:34',
+                'updated_at' => '2024-03-06 15:42:34',
+            ),
+            35 => 
+            array (
+                'id' => 37,
+                'template_file' => 'gallery_show',
+                'type' => 'module',
+                'created_at' => '2024-03-06 15:42:37',
+                'updated_at' => '2024-03-06 15:42:37',
+            ),
+            36 => 
+            array (
+                'id' => 38,
+                'template_file' => 'team_show',
+                'type' => 'module',
+                'created_at' => '2024-03-06 15:43:33',
+                'updated_at' => '2024-03-06 15:43:33',
+            ),
         ));
         
         
