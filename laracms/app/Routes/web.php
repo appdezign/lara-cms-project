@@ -332,6 +332,7 @@ if (!App::runningInConsole() && !config('lara.needs_setup')) {
 				 */
 				Route::group(['prefix' => 'content'], function () {
 
+					// These prefixes are used for the route NAMES, and NOT the URI path
 					$content_prefix = 'content';
 					$content_tag_prefix = 'contenttag';
 
