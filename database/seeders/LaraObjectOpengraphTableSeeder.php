@@ -228,6 +228,17 @@ class LaraObjectOpengraphTableSeeder extends Seeder
                 'created_at' => '2024-03-02 17:56:15',
                 'updated_at' => '2024-03-02 17:56:15',
             ),
+            19 => 
+            array (
+                'id' => 21,
+                'entity_type' => 'Lara\\Common\\Models\\Page',
+                'entity_id' => 1097,
+                'og_title' => '',
+                'og_description' => '',
+                'og_image' => '',
+                'created_at' => '2024-05-23 15:46:37',
+                'updated_at' => '2024-05-23 15:46:37',
+            ),
         ));
         
         

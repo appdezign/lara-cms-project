@@ -25,8 +25,12 @@ class LaraSysLanguagesTableSeeder extends Seeder
                 'code' => 'nl',
                 'name' => 'Nederlands',
                 'default' => 1,
+                'backend' => 1,
+                'backend_default' => 1,
                 'publish' => 1,
                 'position' => 1,
+                'created_at' => NULL,
+                'updated_at' => '2024-03-05 17:50:09',
             ),
             1 => 
             array (
@@ -34,8 +38,12 @@ class LaraSysLanguagesTableSeeder extends Seeder
                 'code' => 'en',
                 'name' => 'English',
                 'default' => 0,
+                'backend' => 1,
+                'backend_default' => 0,
                 'publish' => 1,
                 'position' => 2,
+                'created_at' => NULL,
+                'updated_at' => '2024-03-05 17:50:09',
             ),
         ));
         

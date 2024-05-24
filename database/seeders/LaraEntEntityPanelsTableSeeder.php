@@ -28,7 +28,7 @@ class LaraEntEntityPanelsTableSeeder extends Seeder
                 'has_filters' => 0,
                 'show_author' => 1,
                 'show_status' => 1,
-                'has_tiny_lead' => 0,
+                'has_tiny_lead' => 1,
                 'has_tiny_body' => 1,
             ),
             1 => 

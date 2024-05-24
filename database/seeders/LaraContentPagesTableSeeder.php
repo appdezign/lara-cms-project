@@ -89,7 +89,7 @@ class LaraContentPagesTableSeeder extends Seeder
                 'lead' => NULL,
                 'body' => '<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum consectetur eleifend eleifend. Nam consectetur enim massa, non hendrerit nulla maximus quis. Nam dictum, nunc eu viverra semper, ante nibh gravida ante, sit amet lobortis diam lectus vel arcu. Nullam mollis justo quis euismod sollicitudin. Aliquam et ante ut nunc facilisis ultrices eleifend vel justo. Vestibulum aliquam, mi ac condimentum placerat, magna ex tristique mauris, ut porta dui enim ut massa. Nunc et tortor ac augue tincidunt scelerisque eget id ante. In in metus in neque porta elementum et ullamcorper enim.</p>',
                 'created_at' => '2017-11-10 11:47:23',
-                'updated_at' => '2023-10-17 15:34:20',
+                'updated_at' => '2024-04-19 11:18:37',
                 'deleted_at' => NULL,
                 'publish' => 1,
                 'publish_from' => '2023-03-16 00:00:00',
@@ -385,7 +385,7 @@ class LaraContentPagesTableSeeder extends Seeder
 <p>Functionaris gegevensbescherming<br />Ieder schoolbestuur is verplicht een functionaris gegevensbescherming aan te stellen. Voor onze stichting is dit Ferenc Jacobs. U kunt hem bereiken via <a href="mailto:privacy@ambion.nl">privacy@ambion.nl</a>.</p>
 <hr />',
                 'created_at' => '2020-03-14 16:28:56',
-                'updated_at' => '2023-10-17 15:34:20',
+                'updated_at' => '2024-03-28 13:04:43',
                 'deleted_at' => NULL,
                 'publish' => 1,
                 'publish_from' => '2020-03-14 16:30:00',
@@ -575,6 +575,34 @@ class LaraContentPagesTableSeeder extends Seeder
                 'locked_by' => NULL,
                 'cgroup' => 'module',
                 'position' => 8012,
+            ),
+            20 => 
+            array (
+                'id' => 1097,
+                'user_id' => 2,
+                'language_parent' => NULL,
+                'language' => 'nl',
+                'title' => 'Featured test',
+                'template' => 'featured_left_responsive',
+                'ishome' => 0,
+                'menuroute' => '',
+                'slug' => 'featured-test',
+                'slug_lock' => 0,
+                'lead' => '<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vel felis eget mi varius pellentesque. Suspendisse potenti. In vehicula ac nulla in condimentum. Sed bibendum, lectus id venenatis luctus, ante nisi elementum nulla, at commodo arcu arcu ut leo. Nunc cursus vehicula finibus. Mauris accumsan ante id aliquet placerat.</p>
+<p>Mauris iaculis purus lacus, eu pulvinar lectus sollicitudin id. Suspendisse a venenatis orci, at consequat dui. Vestibulum purus neque, posuere sit amet enim eget, accumsan elementum tellus. In venenatis volutpat malesuada. Integer congue felis sed nulla vulputate ultrices a accumsan ex. Vivamus fermentum, sapien ac dignissim suscipit, est magna ullamcorper quam, eu laoreet leo urna et felis.</p>',
+                'body' => '<p>&nbsp;</p>
+<p>Vestibulum id arcu tincidunt, pellentesque velit ut, luctus sapien. Phasellus maximus est nisl, nec luctus quam efficitur porta. Morbi fermentum, turpis eu ultricies pretium, velit mauris semper dui, non bibendum nunc nunc dictum metus. Curabitur accumsan viverra sem elementum tincidunt. Donec gravida, neque nec venenatis mollis, leo eros dapibus nulla, nec scelerisque leo urna sed metus. Nulla facilisi. Cras nec elit et mauris aliquam consequat. Sed dignissim, enim mollis finibus faucibus, elit nunc tincidunt lacus, nec pellentesque felis nibh vel felis. Donec vel tempor neque, ac vehicula risus. Fusce id malesuada justo. Etiam ac venenatis augue.</p>
+<p>Sed eget nisi lorem. Nam vel egestas nisl, congue placerat ante. Integer vitae hendrerit lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nullam ligula lectus, maximus eu lorem sed, venenatis hendrerit tortor. Fusce commodo, neque eget rhoncus fringilla, ex massa venenatis velit, non ultricies dolor purus nec nulla. Proin posuere viverra finibus. Vivamus cursus magna ac commodo ultricies. Donec pharetra, dolor in dignissim ultrices, nunc velit efficitur nibh, quis sodales orci mauris in risus. Morbi lorem quam, eleifend ac mi vitae, aliquet pellentesque elit. Nullam dui enim, eleifend in est a, aliquam scelerisque elit. In posuere rutrum rutrum. Sed vitae est sed est viverra mollis. Ut sollicitudin metus augue, a malesuada quam suscipit ac. Donec sollicitudin congue risus eget pellentesque.</p>',
+                'created_at' => '2024-05-23 15:46:29',
+                'updated_at' => '2024-05-23 16:05:13',
+                'deleted_at' => NULL,
+                'publish' => 1,
+                'publish_from' => '2024-05-23 00:00:00',
+                'show_in_app' => 0,
+                'locked_at' => NULL,
+                'locked_by' => NULL,
+                'cgroup' => 'page',
+                'position' => 9004,
             ),
         ));
         
