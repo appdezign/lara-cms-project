@@ -47,10 +47,12 @@ trait GoogleSitemapTrait
 						$entity = Entity::where('id', $menuItem->entity_id)->first();
 						$entityModel = $entity->entity_model_class;
 						$lastObject = $entityModel::where('publish', 1)->orderBy('updated_at', 'desc')->first();
-						$lastModified = $lastObject->updated_at;
-
+						if($lastObject) {
+							$lastModified = $lastObject->updated_at;
+						} else {
+							$lastModified = $menuItem->updated_at;
+						}
 						$entityMenuRoute = $menuItem->route;
-
 					} elseif ($menuItem->type == 'form') {
 						$lastModified = $menuItem->updated_at;
 					} else {
