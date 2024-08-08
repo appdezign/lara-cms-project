@@ -334,7 +334,8 @@ class ClassicformsController extends Controller
 
 		// mail to webmaster
 		$maildata->view = 'email.' . $this->entity->getEntityKey() . '.webmaster';
-		Mail::to($webmaster)->queue(new MailConfirmation($maildata));
+		$mlr = (config('app.env') == 'production') ? 'smtp' : 'dev';
+		Mail::mailer($mlr)->to($webmaster)->queue(new MailConfirmation($maildata));
 
 		return true;
 
