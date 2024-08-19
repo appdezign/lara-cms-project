@@ -56,8 +56,6 @@ trait EveUpdateTrait
 			return $updates;
 		}
 
-
-
 	}
 
 	private function myFirstUpdate()
