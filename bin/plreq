@@ -36,6 +36,8 @@ COMPPATH="/usr/lib64/plesk-9.0/composer.phar"
 
 "$PHP7PATH" artisan down --render=maintenance
 
+export COMPOSER_ALLOW_SUPERUSER=1
+
 if [ $package == "core" ] || [ $package == "all" ]
   then
     echo -e "${CLR1}~~~~~~~~~~~~~~~~ core ~~~~~~~~~~~~~~~~${NC}"
