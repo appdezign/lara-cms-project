@@ -2,7 +2,7 @@
 
 namespace Eve\Http\Traits;
 
-trait Filters
+trait EveAdminFilters
 {
 	private function customAdminEntityFilter($entity, $collection) {
 
