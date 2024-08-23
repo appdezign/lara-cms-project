@@ -2,11 +2,11 @@
 
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # This is the script for a PLESK server, running PHP 8.1
-# Version 8.2.37
+# Version 8.2.38
 # Date: 20-08-2024
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-SCRIPTVERSION="8.2.37"
+SCRIPTVERSION="8.2.38"
 
 fixdirpermissions() {
 
@@ -15,26 +15,27 @@ fixdirpermissions() {
 	local fileperm=$3
 	local verbose=$4
 
-	if [ "$verbose" != "silent" ]
-    then
-		echo "change owner of: /$dirname/* to $USER:$GROUP"
-    fi
-    chown -R $USER:$GROUP ./"$dirname"
-
-    if [ "$verbose" != "silent" ]
-	then
-		echo "change dir permissions of: /$dirname/* to $dirperm"
+	if [ $CURRENTUSER == "root" ]; then
+		if [ "$verbose" != "silent" ]; then
+			echo "change owner of: /$dirname/* to $USER:$GROUP"
+		fi
+		THIS=$(basename -- "$0")
+		USER=$(stat -c '%U' ./bin/$THIS)
+		GROUP=$(stat -c '%G' ./bin/$THIS)
+		chown -R $USER:$GROUP ./"$dirname"
 	fi
-    find "$dirname" -type d -print0 | xargs -0 chmod "$dirperm"
 
-	if [ "$verbose" != "silent" ]
-	then
+	if [ "$verbose" != "silent" ]; then
+		echo "change dir permissions of: /$dirname to $dirperm"
+	fi
+	find "$dirname" -type d -print0 | xargs -0 chmod "$dirperm"
+
+	if [ "$verbose" != "silent" ]; then
 		echo "change file permissions of: /$dirname/* to $fileperm"
 	fi
-    find "$dirname" -type f -print0 | xargs -0 chmod "$fileperm"
+	find "$dirname" -type f -print0 | xargs -0 chmod "$fileperm"
 
-	if [ "$verbose" != "silent" ]
-	then
+	if [ "$verbose" != "silent" ]; then
 		echo ""
 	fi
 }
@@ -45,28 +46,32 @@ fixfilepermissions() {
 	local fileperm=$2
 	local verbose=$3
 
-	if [ "$verbose" != "silent" ]
-	then
-		echo "change owner of: /$filename/* to $USER:$GROUP"
+	if [ $CURRENTUSER == "root" ]; then
+		if [ "$verbose" != "silent" ]; then
+			echo "change owner of: /$filename to $USER:$GROUP"
+		fi
+		THIS=$(basename -- "$0")
+		USER=$(stat -c '%U' ./bin/$THIS)
+		GROUP=$(stat -c '%G' ./bin/$THIS)
+		chown -R $USER:$GROUP ./"$dirname"
 	fi
 
-    chown $USER:$GROUP ./"$filename"
-
-	if [ "$verbose" != "silent" ]
-	then
-		echo "change file permissions of: /$filename/* to $fileperm"
+	if [ "$verbose" != "silent" ]; then
+		echo "change file permissions of: /$filename to $fileperm"
 	fi
 
-    chmod "$fileperm" ./"$filename"
+	chmod "$fileperm" ./"$filename"
 
-    if [ "$verbose" != "silent" ]
-	then
+	if [ "$verbose" != "silent" ]; then
 		echo ""
 	fi
 
 }
 
 BASEDIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && cd .. && pwd )"
+
+# current user
+CURRENTUSER=$(whoami)
 
 # colors
 CLR1='\033[1;33m' # yellow
@@ -78,14 +83,12 @@ package=$1
 newversion=$2
 
 # check arguments
-if [ $# -lt 2 ]
-  then
+if [ $# -lt 2 ]; then
 	echo -e "${CLR1}Syntax: req [core/base/demo/all] [newversion]${NC}"
 	exit 1
 fi
 
-if [ $package != "core" ] && [ $package != "base" ] && [ $package != "demo" ] && [ $package != "all" ]
-  then
+if [ $package != "core" ] && [ $package != "base" ] && [ $package != "demo" ] && [ $package != "all" ]; then
 	echo -e "${CLR1}Error: ${package} is not a valid package${NC}"
 	echo -e "${CLR1}Syntax: req [core/base/demo] [newversion]${NC}"
 	exit 1
@@ -98,13 +101,9 @@ cd "${BASEDIR}" || exit
 PHP8PATH="/opt/plesk/php/8.1/bin/php"
 COMPPATH="/usr/lib64/plesk-9.0/composer.phar"
 
-# user and group
-THIS=$(basename -- "$0")
-USER=$(stat -c '%U' ./bin/$THIS)
-GROUP=$(stat -c '%G' ./bin/$THIS)
-
 # start
 echo -e "${CLR2}~~~~~~~~~~~~ script version: $SCRIPTVERSION ~~~~~~~~~~~~${NC}"
+echo -e "${CLR2}~~~~~~~~~~~~ running script as: $CURRENTUSER ~~~~~~~~~~~~${NC}"
 echo ""
 
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -119,28 +118,25 @@ fixfilepermissions storage/framework/down 0644 silent
 export COMPOSER_ALLOW_SUPERUSER=1
 
 # Update Lara CORE
-if [ $package == "core" ] || [ $package == "all" ]
-  then
-    echo -e "${CLR1}~~~~~~~~~~~~~~~~ update core ~~~~~~~~~~~~~~~~${NC}"
-    COMPOSER_MEMORY_LIMIT=-1 "$PHP8PATH" "$COMPPATH" require appdezign/lara-cms:"$newversion" --ignore-platform-reqs --no-scripts
+if [ $package == "core" ] || [ $package == "all" ]; then
+	echo -e "${CLR1}~~~~~~~~~~~~~~~~ update core ~~~~~~~~~~~~~~~~${NC}"
+	COMPOSER_MEMORY_LIMIT=-1 "$PHP8PATH" "$COMPPATH" require appdezign/lara-cms:"$newversion" --ignore-platform-reqs --no-scripts
 fi
 
 sleep 2
 
 # Update Lara BASE
-if [ $package == "base" ] || [ $package == "all" ]
-  then
-    echo -e "${CLR1}~~~~~~~~~~~~~~~~ update base theme ~~~~~~~~~~~~~~~~${NC}"
-    COMPOSER_MEMORY_LIMIT=-1 "$PHP8PATH" "$COMPPATH" require appdezign/lara-base-theme:"$newversion" --ignore-platform-reqs --no-scripts
+if [ $package == "base" ] || [ $package == "all" ]; then
+	echo -e "${CLR1}~~~~~~~~~~~~~~~~ update base theme ~~~~~~~~~~~~~~~~${NC}"
+	COMPOSER_MEMORY_LIMIT=-1 "$PHP8PATH" "$COMPPATH" require appdezign/lara-base-theme:"$newversion" --ignore-platform-reqs --no-scripts
 fi
 
 sleep 2
 
 # Update Lara DEMO
-if [ $package == "demo" ] || [ $package == "all" ]
-  then
-    echo -e "${CLR1}~~~~~~~~~~~~~~~~ update demo theme ~~~~~~~~~~~~~~~~${NC}"
-    COMPOSER_MEMORY_LIMIT=-1 "$PHP8PATH" "$COMPPATH" require appdezign/lara-demo-theme:"$newversion" --ignore-platform-reqs --no-scripts
+if [ $package == "demo" ] || [ $package == "all" ]; then
+	echo -e "${CLR1}~~~~~~~~~~~~~~~~ update demo theme ~~~~~~~~~~~~~~~~${NC}"
+	COMPOSER_MEMORY_LIMIT=-1 "$PHP8PATH" "$COMPPATH" require appdezign/lara-demo-theme:"$newversion" --ignore-platform-reqs --no-scripts
 fi
 
 sleep 2
