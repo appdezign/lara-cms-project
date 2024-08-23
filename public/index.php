@@ -13,7 +13,24 @@ define('LARAVEL_START', microtime(true));
 
 /*
 |--------------------------------------------------------------------------
-| Maintenance Mode (Lara5)
+| Maintenance Mode (Laravel)
+|--------------------------------------------------------------------------
+|
+| Override the default Laravel maintenance
+|
+*/
+
+if (file_exists($down = __DIR__.'/../laravel/storage/framework/down')) {
+	$data = json_decode(file_get_contents($down), true);
+	$defaultOutput = '<html><body><h1>maintenance</h1></div></body></html>';
+	$output = (isset($data['template'])) ? $data['template'] : $defaultOutput;
+	echo $output;
+	exit();
+}
+
+/*
+|--------------------------------------------------------------------------
+| Maintenance Mode (manual)
 |--------------------------------------------------------------------------
 |
 | Define your own IP addresses in the array
@@ -23,8 +40,9 @@ define('LARAVEL_START', microtime(true));
 /*
 $ip_array = ['77.164.138.35'];
 if(!in_array($_SERVER['REMOTE_ADDR'], $ip_array)) {
-	$str = '<html><body><div style="padding-top:100px; font-family: Helvetica, Arial, sans-serif; text-align:center"><h1>maintenance</h1></div></body></html>';
-	exit($str);
+	$output = '<html><body><h1>maintenance</h1></div></body></html>';
+	echo $output;
+	exit();
 }
 */
 
