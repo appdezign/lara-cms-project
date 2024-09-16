@@ -2,11 +2,11 @@
 
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # This is the script for a PLESK server, running PHP 8.1
-# Version 8.2.38
+# Version 8.2.40
 # Date: 20-08-2024
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-SCRIPTVERSION="8.2.38"
+SCRIPTVERSION="8.2.40"
 
 fixdirpermissions() {
 
@@ -149,6 +149,7 @@ echo -e "${CLR1}~~~~~~~~~~~~~~~~ fix permission ~~~~~~~~~~~~~~~~${NC}"
 
 fixdirpermissions vendor 0755 0644
 fixdirpermissions laracms 0755 0644
+fixdirpermissions storage 0755 0644
 
 fixdirpermissions laracms/app/Http/Controllers/Admin/Entity 0755 0444 silent
 fixdirpermissions laracms/app/Http/Controllers/Admin/Form 0755 0444 silent
