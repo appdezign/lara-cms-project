@@ -132,7 +132,7 @@ class LaraBlocksCtasTableSeeder extends Seeder
                 'slug_lock' => 0,
                 'body' => 'Have a project in mind? To request a quote contact us directly or fill out the form and let us know how we can help.',
                 'created_at' => '2023-03-13 11:35:49',
-                'updated_at' => '2023-10-14 17:05:40',
+                'updated_at' => '2024-07-02 16:35:24',
                 'deleted_at' => NULL,
                 'publish' => 1,
                 'publish_from' => '2023-03-13 11:34:48',

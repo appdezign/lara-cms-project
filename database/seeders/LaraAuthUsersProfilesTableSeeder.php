@@ -25,7 +25,7 @@ class LaraAuthUsersProfilesTableSeeder extends Seeder
                 'user_id' => 2,
                 'dark_mode' => 0,
                 'created_at' => '2023-04-14 14:03:37',
-                'updated_at' => '2023-10-13 16:08:51',
+                'updated_at' => '2024-07-02 15:31:18',
             ),
             1 => 
             array (
@@ -33,7 +33,7 @@ class LaraAuthUsersProfilesTableSeeder extends Seeder
                 'user_id' => 3,
                 'dark_mode' => 0,
                 'created_at' => '2023-04-19 10:54:56',
-                'updated_at' => '2023-07-05 12:50:18',
+                'updated_at' => '2024-07-02 15:40:40',
             ),
             2 => 
             array (
@@ -42,6 +42,14 @@ class LaraAuthUsersProfilesTableSeeder extends Seeder
                 'dark_mode' => 0,
                 'created_at' => '2023-07-05 12:49:21',
                 'updated_at' => '2023-07-05 12:49:39',
+            ),
+            3 => 
+            array (
+                'id' => 4,
+                'user_id' => 17,
+                'dark_mode' => 0,
+                'created_at' => '2024-07-02 16:34:37',
+                'updated_at' => '2024-07-02 16:34:44',
             ),
         ));
         

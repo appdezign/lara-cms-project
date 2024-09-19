@@ -41,7 +41,7 @@ class LaraBlocksSlidersTableSeeder extends Seeder
                 'slug' => 'the-best-solutions-for-your-business',
                 'slug_lock' => 0,
                 'created_at' => '2017-10-09 22:35:03',
-                'updated_at' => '2024-01-03 16:18:00',
+                'updated_at' => '2024-07-02 16:35:16',
                 'deleted_at' => NULL,
                 'publish' => 1,
                 'publish_from' => '2017-10-09 22:35:00',
