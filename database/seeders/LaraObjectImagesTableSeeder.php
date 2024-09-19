@@ -1024,7 +1024,7 @@ class LaraObjectImagesTableSeeder extends Seeder
                 'image_alt' => NULL,
                 'prevent_cropping' => 0,
                 'created_at' => '2023-03-13 15:44:46',
-                'updated_at' => '2024-05-23 15:46:17',
+                'updated_at' => '2024-08-10 16:37:02',
                 'position' => 132201,
             ),
             48 => 
@@ -1087,7 +1087,7 @@ class LaraObjectImagesTableSeeder extends Seeder
                 'image_alt' => NULL,
                 'prevent_cropping' => 0,
                 'created_at' => '2023-03-16 12:11:32',
-                'updated_at' => '2024-05-23 15:46:17',
+                'updated_at' => '2024-08-10 16:37:02',
                 'position' => 153201,
             ),
             51 => 
