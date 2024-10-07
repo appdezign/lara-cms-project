@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "789bdcb12121fe654b056bd4aff73ac6",
+    "content-hash": "f8f3dbce1c5d39a7ef1ed1651b0afe4d",
     "packages": [
         {
             "name": "appdezign/lara-base-theme",
-            "version": "8.2.44",
+            "version": "8.2.45",
             "source": {
                 "type": "git",
                 "url": "https://github.com/appdezign/lara-base-theme.git",
-                "reference": "aa3e71252fe1ad2ea34f012cbbc16e26f91f3889"
+                "reference": "62f7ddf0f33a2cb2296f1f29ccfc5d46da64eeb6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/appdezign/lara-base-theme/zipball/aa3e71252fe1ad2ea34f012cbbc16e26f91f3889",
-                "reference": "aa3e71252fe1ad2ea34f012cbbc16e26f91f3889",
+                "url": "https://api.github.com/repos/appdezign/lara-base-theme/zipball/62f7ddf0f33a2cb2296f1f29ccfc5d46da64eeb6",
+                "reference": "62f7ddf0f33a2cb2296f1f29ccfc5d46da64eeb6",
                 "shasum": ""
             },
             "require": {
@@ -65,22 +65,22 @@
             ],
             "support": {
                 "issues": "https://github.com/appdezign/lara-base-theme/issues",
-                "source": "https://github.com/appdezign/lara-base-theme/tree/v8.2.44"
+                "source": "https://github.com/appdezign/lara-base-theme/tree/v8.2.45"
             },
-            "time": "2024-10-07T12:30:28+00:00"
+            "time": "2024-10-07T14:35:06+00:00"
         },
         {
             "name": "appdezign/lara-cms",
-            "version": "8.2.44",
+            "version": "8.2.45",
             "source": {
                 "type": "git",
                 "url": "https://github.com/appdezign/lara-cms.git",
-                "reference": "90f6edae25c249f8ba7cccec47f219f67188a269"
+                "reference": "eb706e4893cc65e70ff0a4bbefc03ffae139040b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/appdezign/lara-cms/zipball/90f6edae25c249f8ba7cccec47f219f67188a269",
-                "reference": "90f6edae25c249f8ba7cccec47f219f67188a269",
+                "url": "https://api.github.com/repos/appdezign/lara-cms/zipball/eb706e4893cc65e70ff0a4bbefc03ffae139040b",
+                "reference": "eb706e4893cc65e70ff0a4bbefc03ffae139040b",
                 "shasum": ""
             },
             "require": {
@@ -162,22 +162,22 @@
                 "lara"
             ],
             "support": {
-                "source": "https://github.com/appdezign/lara-cms/tree/v8.2.44"
+                "source": "https://github.com/appdezign/lara-cms/tree/v8.2.45"
             },
-            "time": "2024-10-07T12:19:49+00:00"
+            "time": "2024-10-07T14:34:03+00:00"
         },
         {
             "name": "appdezign/lara-demo-theme",
-            "version": "8.2.44",
+            "version": "8.2.45",
             "source": {
                 "type": "git",
                 "url": "https://github.com/appdezign/lara-demo-theme.git",
-                "reference": "51de31deaadff25e9b7760a00d252be550779e38"
+                "reference": "8844d52ed67b9af4d56dd86fb5e10a2e75adc5ae"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/appdezign/lara-demo-theme/zipball/51de31deaadff25e9b7760a00d252be550779e38",
-                "reference": "51de31deaadff25e9b7760a00d252be550779e38",
+                "url": "https://api.github.com/repos/appdezign/lara-demo-theme/zipball/8844d52ed67b9af4d56dd86fb5e10a2e75adc5ae",
+                "reference": "8844d52ed67b9af4d56dd86fb5e10a2e75adc5ae",
                 "shasum": ""
             },
             "require": {
@@ -225,9 +225,9 @@
             ],
             "support": {
                 "issues": "https://github.com/appdezign/lara-demo-theme/issues",
-                "source": "https://github.com/appdezign/lara-demo-theme/tree/v8.2.44"
+                "source": "https://github.com/appdezign/lara-demo-theme/tree/v8.2.45"
             },
-            "time": "2024-10-07T12:31:09+00:00"
+            "time": "2024-10-07T14:35:44+00:00"
         },
         {
             "name": "arrilot/laravel-widgets",
