@@ -2,11 +2,6 @@
 
 return [
 
-	/*
-	 * The account id of which you want to display data.
-	 */
-	'account_id' => env('ANALYTICS_ACCOUNT_ID'),
-
     /*
      * The property id of which you want to display data.
      */
