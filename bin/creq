@@ -1,0 +1,214 @@
+#!/bin/bash
+
+# -------------------------------------------------------
+# This is the script for a Plesk, Servebolt, or Herd server, running PHP 8.1
+# Version 8.2.45
+# Date: 09-10-2024
+# -------------------------------------------------------
+
+SCRIPTVERSION="8.3.0"
+
+fixdirpermissions() {
+
+	local dirname=$1
+	local dirperm=$2
+	local fileperm=$3
+	local verbose=$4
+
+	if [ "$verbose" != "silent" ]; then
+		echo "change dir permissions of: /$dirname to $dirperm"
+	fi
+	find "$dirname" -type d -print0 | xargs -0 chmod "$dirperm"
+
+	if [ "$verbose" != "silent" ]; then
+		echo "change file permissions of: /$dirname/* to $fileperm"
+	fi
+	find "$dirname" -type f -print0 | xargs -0 chmod "$fileperm"
+
+}
+
+fixfilepermissions() {
+
+	local filename=$1
+	local fileperm=$2
+	local verbose=$3
+
+	if [ "$verbose" != "silent" ]; then
+		echo "change file permissions of: /$filename to $fileperm"
+	fi
+
+	chmod "$fileperm" ./"$filename"
+
+}
+
+# Set home directories
+PLESKHOME=/var/www/vhosts
+SERVEBOLTHOME=/kunder/firmaq_13655
+
+# Detect OS
+if [[ $OSTYPE == "linux-gnu"* ]]; then
+	if [ -d $PLESKHOME ]; then
+		OPSYS="plesk"
+    fi
+	if [ -d $SERVEBOLTHOME ]; then
+		OPSYS="servebolt"
+	fi
+elif [[ $OSTYPE == "darwin"* ]]; then
+	OPSYS="herd"
+fi
+
+# Add PHP Path to session
+if [[ $OPSYS == "plesk" ]]; then
+	PATH=$PATH:/opt/plesk/php/8.1/bin/
+	COMPSR="composer"
+elif [[ $OPSYS == "servebolt" ]]; then
+	COMPSR="composer2"
+elif [[ $OPSYS == "herd" ]]; then
+	PATH=$PATH:~/Library/Application\ Support/Herd/bin/
+	COMPSR="composer"
+else
+	echo -e "${CLR2}NO VALID OS FOUND${NC}"
+   	exit 1
+fi
+
+# Get base directory
+BASEDIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && cd .. && pwd )"
+
+# Set colors
+CLR1='\033[1;33m' # yellow
+CLR2='\033[1;35m' # purple
+CLR3='\033[1;31m' # blue
+NC='\033[0m' # No Color
+
+# Set path vars
+COREPATH="./laracms"
+THEMEPATH="./laracms/themes"
+
+# Check current user
+CURRENTUSER=$(whoami)
+if [ $CURRENTUSER == "root" ]; then
+	echo -e "${CLR2}DO NOT RUN COMPOSER AS ROOT !!!${NC}"
+	exit 1
+fi
+
+# Get arguments
+package=$1
+newversion=$2
+
+# check arguments
+if [ $# -lt 2 ]; then
+	echo -e "${CLR1}Syntax: creq [core/base/demo/all] [newversion]${NC}"
+	exit 1
+fi
+
+if [ $package != "core" ] && [ $package != "base" ] && [ $package != "demo" ] && [ $package != "all" ]; then
+	echo -e "${CLR1}Error: ${package} is not a valid package${NC}"
+	echo -e "${CLR1}Syntax: creq [core/base/demo/all] [newversion]${NC}"
+	exit 1
+fi
+
+# Go to Base dir
+cd "${BASEDIR}" || exit
+
+# start
+echo ""
+echo -e "${CLR2}|--------------------------------------------------------|${NC}"
+echo -e "${CLR2}|  ${CLR3}Version:  $SCRIPTVERSION ${NC}"
+echo -e "${CLR2}|  ${CLR3}User:     $CURRENTUSER ${NC}"
+echo -e "${CLR2}|--------------------------------------------------------|${NC}"
+echo ""
+
+# --------------------------------
+# enable Laravel maintenance mode
+# --------------------------------
+echo ""
+echo -e "${CLR1}|---------------- ${CLR3}Maintenance${CLR1} ---------------------------|${NC}"
+echo ""
+php artisan down --render=maintenance
+if [[ $OPSYS == "plesk" ]]; then
+	fixfilepermissions storage/framework/maintenance.php 0644 silent
+	fixfilepermissions storage/framework/down 0644 silent
+fi
+
+# Update Lara CORE
+if [ $package == "core" ] || [ $package == "all" ]; then
+	echo ""
+	echo -e "${CLR1}|---------------- ${CLR3}Update core${CLR1} ---------------------------|${NC}"
+	echo ""
+	rm -rf "$COREPATH"/core
+	COMPOSER_MEMORY_LIMIT=-1 "$COMPSR" require appdezign/lara-cms:"$newversion" --ignore-platform-reqs --no-scripts
+fi
+
+sleep 2
+
+# Update Lara BASE
+if [ $package == "base" ] || [ $package == "all" ]; then
+	echo ""
+	echo -e "${CLR1}|---------------- ${CLR3}Update base theme${CLR1} ---------------------|${NC}"
+	echo ""
+	rm -rf "$THEMEPATH"/base
+	COMPOSER_MEMORY_LIMIT=-1 "$COMPSR" require appdezign/lara-base-theme:"$newversion" --ignore-platform-reqs --no-scripts
+fi
+
+sleep 2
+
+# Update Lara DEMO
+if [ $package == "demo" ] || [ $package == "all" ]; then
+	echo ""
+	echo -e "${CLR1}|---------------- ${CLR3}Update demo theme${CLR1} ---------------------|${NC}"
+	echo ""
+	rm -rf "$THEMEPATH"/demo
+	COMPOSER_MEMORY_LIMIT=-1 "$COMPSR" require appdezign/lara-demo-theme:"$newversion" --ignore-platform-reqs --no-scripts
+fi
+
+sleep 2
+
+# ---------------------------------------------
+# Fix dir and file permissions
+# ---------------------------------------------
+
+if [[ $OPSYS == "plesk" ]]; then
+
+	echo -e "${CLR1}|---------------- ${CLR3}Fix permission (Plesk)${CLR1} ----------------|${NC}"
+
+	fixdirpermissions vendor 0755 0644
+	fixdirpermissions laracms 0755 0644
+	fixdirpermissions storage 0755 0644
+
+	fixdirpermissions laracms/app/Http/Controllers/Admin/Entity 0755 0444 silent
+	fixdirpermissions laracms/app/Http/Controllers/Admin/Form 0755 0444 silent
+	fixdirpermissions laracms/app/Http/Controllers/Front/Entity 0755 0444 silent
+	fixdirpermissions laracms/app/Http/Controllers/Front/Form 0755 0444 silent
+	fixdirpermissions laracms/app/Lara 0755 0444 silent
+	fixdirpermissions laracms/app/Models 0755 0444 silent
+
+	fixfilepermissions composer.json 0644 silent
+	fixfilepermissions composer.lock 0644 silent
+
+fi
+
+# ---------------------------------
+# Clear cache
+# ---------------------------------
+echo ""
+echo -e "${CLR1}|---------------- ${CLR3}Clear Cache${CLR1} ---------------------------|${NC}"
+echo ""
+php artisan config:clear
+php artisan route:clear
+php artisan view:clear
+php artisan cache:clear
+php artisan httpcache:clear
+
+# ---------------------------------
+# Disable Laravel maintenance mode
+# ---------------------------------
+echo ""
+echo -e "${CLR1}|---------------- ${CLR3}Maintenance${CLR1} ---------------------------|${NC}"
+echo ""
+php artisan up
+
+echo ""
+echo -e "${CLR2}|--------------------------------------------------------|${NC}"
+echo -e "${CLR2}|  ${CLR3}Done ${NC}"
+echo -e "${CLR2}|--------------------------------------------------------|${NC}"
+echo ""
