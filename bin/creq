@@ -2,11 +2,11 @@
 
 # -------------------------------------------------------
 # This is the script for a Plesk, Servebolt, or Herd server, running PHP 8.1
-# Version 8.2.45
+# Version 8.3.3
 # Date: 09-10-2024
 # -------------------------------------------------------
 
-SCRIPTVERSION="8.3.0"
+SCRIPTVERSION="8.3.3"
 
 fixdirpermissions() {
 
@@ -92,8 +92,8 @@ if [ $CURRENTUSER == "root" ]; then
 fi
 
 # Get arguments
-package=$1
-newversion=$2
+PACKAGE=$1
+NEWVERSION=$2
 
 # check arguments
 if [ $# -lt 2 ]; then
@@ -101,8 +101,8 @@ if [ $# -lt 2 ]; then
 	exit 1
 fi
 
-if [ $package != "core" ] && [ $package != "base" ] && [ $package != "demo" ] && [ $package != "all" ]; then
-	echo -e "${CLR1}Error: ${package} is not a valid package${NC}"
+if [ $PACKAGE != "core" ] && [ $PACKAGE != "base" ] && [ $PACKAGE != "demo" ] && [ $PACKAGE != "all" ]; then
+	echo -e "${CLR1}Error: ${PACKAGE} is not a valid package${NC}"
 	echo -e "${CLR1}Syntax: creq [core/base/demo/all] [newversion]${NC}"
 	exit 1
 fi
@@ -112,17 +112,17 @@ cd "${BASEDIR}" || exit
 
 # start
 echo ""
-echo -e "${CLR2}|--------------------------------------------------------|${NC}"
+echo -e "${CLR2}|--------------------------------------------------------------------|${NC}"
 echo -e "${CLR2}|  ${CLR3}Version:  $SCRIPTVERSION ${NC}"
 echo -e "${CLR2}|  ${CLR3}User:     $CURRENTUSER ${NC}"
-echo -e "${CLR2}|--------------------------------------------------------|${NC}"
+echo -e "${CLR2}|--------------------------------------------------------------------|${NC}"
 echo ""
 
 # --------------------------------
 # enable Laravel maintenance mode
 # --------------------------------
 echo ""
-echo -e "${CLR1}|---------------- ${CLR3}Maintenance${CLR1} ---------------------------|${NC}"
+echo -e "${CLR1}|---------------- ${CLR3}Maintenance ${CLR1}- ${CLR2}${CURRENTUSER}${CLR1} ---------------------------|${NC}"
 echo ""
 php artisan down --render=maintenance
 if [[ $OPSYS == "plesk" ]]; then
@@ -131,34 +131,34 @@ if [[ $OPSYS == "plesk" ]]; then
 fi
 
 # Update Lara CORE
-if [ $package == "core" ] || [ $package == "all" ]; then
+if [ $PACKAGE == "core" ] || [ $PACKAGE == "all" ]; then
 	echo ""
-	echo -e "${CLR1}|---------------- ${CLR3}Update core${CLR1} ---------------------------|${NC}"
+	echo -e "${CLR1}|---------------- ${CLR3}Update core ${CLR1}- ${CLR2}${CURRENTUSER}${CLR1} ---------------------------|${NC}"
 	echo ""
 	rm -rf "$COREPATH"/core
-	COMPOSER_MEMORY_LIMIT=-1 "$COMPSR" require appdezign/lara-cms:"$newversion" --ignore-platform-reqs --no-scripts
+	COMPOSER_MEMORY_LIMIT=-1 "$COMPSR" require appdezign/lara-cms:"$NEWVERSION" --ignore-platform-reqs --no-scripts
 fi
 
 sleep 2
 
 # Update Lara BASE
-if [ $package == "base" ] || [ $package == "all" ]; then
+if [ $PACKAGE == "base" ] || [ $PACKAGE == "all" ]; then
 	echo ""
-	echo -e "${CLR1}|---------------- ${CLR3}Update base theme${CLR1} ---------------------|${NC}"
+	echo -e "${CLR1}|---------------- ${CLR3}Update base theme ${CLR1}- ${CLR2}${CURRENTUSER}${CLR1} ---------------------|${NC}"
 	echo ""
 	rm -rf "$THEMEPATH"/base
-	COMPOSER_MEMORY_LIMIT=-1 "$COMPSR" require appdezign/lara-base-theme:"$newversion" --ignore-platform-reqs --no-scripts
+	COMPOSER_MEMORY_LIMIT=-1 "$COMPSR" require appdezign/lara-base-theme:"$NEWVERSION" --ignore-platform-reqs --no-scripts
 fi
 
 sleep 2
 
 # Update Lara DEMO
-if [ $package == "demo" ] || [ $package == "all" ]; then
+if [ $PACKAGE == "demo" ] || [ $PACKAGE == "all" ]; then
 	echo ""
-	echo -e "${CLR1}|---------------- ${CLR3}Update demo theme${CLR1} ---------------------|${NC}"
+	echo -e "${CLR1}|---------------- ${CLR3}Update demo theme ${CLR1}- ${CLR2}${CURRENTUSER}${CLR1} ---------------------|${NC}"
 	echo ""
 	rm -rf "$THEMEPATH"/demo
-	COMPOSER_MEMORY_LIMIT=-1 "$COMPSR" require appdezign/lara-demo-theme:"$newversion" --ignore-platform-reqs --no-scripts
+	COMPOSER_MEMORY_LIMIT=-1 "$COMPSR" require appdezign/lara-demo-theme:"$NEWVERSION" --ignore-platform-reqs --no-scripts
 fi
 
 sleep 2
@@ -169,7 +169,7 @@ sleep 2
 
 if [[ $OPSYS == "plesk" ]]; then
 
-	echo -e "${CLR1}|---------------- ${CLR3}Fix permission (Plesk)${CLR1} ----------------|${NC}"
+	echo -e "${CLR1}|---------------- ${CLR3}Fix permission (Plesk) ${CLR1}- ${CLR2}${CURRENTUSER}${CLR1} ----------------|${NC}"
 
 	fixdirpermissions vendor 0755 0644
 	fixdirpermissions laracms 0755 0644
@@ -191,7 +191,7 @@ fi
 # Clear cache
 # ---------------------------------
 echo ""
-echo -e "${CLR1}|---------------- ${CLR3}Clear Cache${CLR1} ---------------------------|${NC}"
+echo -e "${CLR1}|---------------- ${CLR3}Clear Cache ${CLR1}- ${CLR2}${CURRENTUSER}${CLR1} ---------------------------|${NC}"
 echo ""
 php artisan config:clear
 php artisan route:clear
@@ -203,12 +203,12 @@ php artisan httpcache:clear
 # Disable Laravel maintenance mode
 # ---------------------------------
 echo ""
-echo -e "${CLR1}|---------------- ${CLR3}Maintenance${CLR1} ---------------------------|${NC}"
+echo -e "${CLR1}|---------------- ${CLR3}Maintenance ${CLR1}- ${CLR2}${CURRENTUSER}${CLR1} ---------------------------|${NC}"
 echo ""
 php artisan up
 
 echo ""
-echo -e "${CLR2}|--------------------------------------------------------|${NC}"
+echo -e "${CLR2}|--------------------------------------------------------------------|${NC}"
 echo -e "${CLR2}|  ${CLR3}Done ${NC}"
-echo -e "${CLR2}|--------------------------------------------------------|${NC}"
+echo -e "${CLR2}|--------------------------------------------------------------------|${NC}"
 echo ""
