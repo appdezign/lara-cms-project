@@ -2,11 +2,11 @@
 
 # -------------------------------------------------------
 # This is the script for a Plesk, Servebolt, or Herd server, running PHP 8.1
-# Version 8.3.3
-# Date: 09-10-2024
+# Version 8.5
+# Date: 5-11-2024
 # -------------------------------------------------------
 
-SCRIPTVERSION="8.3.3"
+SCRIPTVERSION="8.5"
 
 fixdirpermissions() {
 
