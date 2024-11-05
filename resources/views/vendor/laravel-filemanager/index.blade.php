@@ -20,9 +20,9 @@
   <link rel="stylesheet" href="{{ asset('assets/admin/plugins/laravel-filemanager/css/cropper.min.css') }}">
   <link rel="stylesheet" href="{{ asset('assets/admin/plugins/laravel-filemanager/css/dropzone.min.css') }}">
   <link rel="stylesheet" href="{{ asset('assets/admin/plugins/laravel-filemanager/css/mime-icons.min.css') }}">
-  <style>{!! \File::get(base_path('vendor/unisharp/laravel-filemanager/public/css/lfm.css')) !!}</style>
-  {{-- Use the line below instead of the above if you need to cache the css. --}}
-  {{-- <link rel="stylesheet" href="{{ asset('/assets/admin/plugins/laravel-filemanager/css/lfm.css') }}"> --}}
+	{{-- <style>{!! \File::get(base_path('vendor/unisharp/laravel-filemanager/public/css/lfm.css')) !!}</style> --}}
+	{{-- Use the line below instead of the above if you need to cache the css. --}}
+  <link rel="stylesheet" href="{{ asset('assets/admin/plugins/laravel-filemanager/css/lfm.css') }}">
 </head>
 <body>
   <nav class="navbar sticky-top navbar-expand-lg navbar-dark" id="nav">
@@ -136,6 +136,17 @@
   </div>
 
   <div class="modal fade" id="notify" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-body"></div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary w-100" data-dismiss="modal">{{ trans('laravel-filemanager::lfm.btn-close') }}</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="confirm" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog modal-lg">
       <div class="modal-content">
         <div class="modal-body"></div>
@@ -260,9 +271,9 @@
       }
     ];
   </script>
-  <script>{!! \File::get(base_path('vendor/unisharp/laravel-filemanager/public/js/script.js')) !!}</script>
+  {{-- <script>{!! \File::get(base_path('vendor/unisharp/laravel-filemanager/public/js/script.js')) !!}</script> --}}
   {{-- Use the line below instead of the above if you need to cache the script. --}}
-  {{-- <script src="{{ asset('assets/admin/plugins/laravel-filemanager/js/script.js') }}"></script> --}}
+  <script src="{{ asset('assets/admin/plugins/laravel-filemanager/js/script.js') }}"></script>
   <script>
     Dropzone.options.uploadForm = {
       paramName: "upload[]", // The name that will be used to transfer the file
