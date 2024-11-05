@@ -2008,6 +2008,150 @@ class LaraAuthHasAbilitiesTableSeeder extends Seeder
                 'forbidden' => 0,
                 'scope' => NULL,
             ),
+            221 => 
+            array (
+                'id' => 2827,
+                'ability_id' => 493,
+                'entity_type' => 'lara_auth_roles',
+                'entity_id' => 1,
+                'forbidden' => 0,
+                'scope' => NULL,
+            ),
+            222 => 
+            array (
+                'id' => 2828,
+                'ability_id' => 494,
+                'entity_type' => 'lara_auth_roles',
+                'entity_id' => 1,
+                'forbidden' => 0,
+                'scope' => NULL,
+            ),
+            223 => 
+            array (
+                'id' => 2829,
+                'ability_id' => 495,
+                'entity_type' => 'lara_auth_roles',
+                'entity_id' => 1,
+                'forbidden' => 0,
+                'scope' => NULL,
+            ),
+            224 => 
+            array (
+                'id' => 2830,
+                'ability_id' => 496,
+                'entity_type' => 'lara_auth_roles',
+                'entity_id' => 1,
+                'forbidden' => 0,
+                'scope' => NULL,
+            ),
+            225 => 
+            array (
+                'id' => 2831,
+                'ability_id' => 497,
+                'entity_type' => 'lara_auth_roles',
+                'entity_id' => 1,
+                'forbidden' => 0,
+                'scope' => NULL,
+            ),
+            226 => 
+            array (
+                'id' => 2832,
+                'ability_id' => 498,
+                'entity_type' => 'lara_auth_roles',
+                'entity_id' => 1,
+                'forbidden' => 0,
+                'scope' => NULL,
+            ),
+            227 => 
+            array (
+                'id' => 2833,
+                'ability_id' => 499,
+                'entity_type' => 'lara_auth_roles',
+                'entity_id' => 1,
+                'forbidden' => 0,
+                'scope' => NULL,
+            ),
+            228 => 
+            array (
+                'id' => 2834,
+                'ability_id' => 500,
+                'entity_type' => 'lara_auth_roles',
+                'entity_id' => 1,
+                'forbidden' => 0,
+                'scope' => NULL,
+            ),
+            229 => 
+            array (
+                'id' => 2835,
+                'ability_id' => 2,
+                'entity_type' => 'lara_auth_roles',
+                'entity_id' => 3,
+                'forbidden' => 0,
+                'scope' => NULL,
+            ),
+            230 => 
+            array (
+                'id' => 2836,
+                'ability_id' => 4,
+                'entity_type' => 'lara_auth_roles',
+                'entity_id' => 3,
+                'forbidden' => 0,
+                'scope' => NULL,
+            ),
+            231 => 
+            array (
+                'id' => 2837,
+                'ability_id' => 3,
+                'entity_type' => 'lara_auth_roles',
+                'entity_id' => 3,
+                'forbidden' => 0,
+                'scope' => NULL,
+            ),
+            232 => 
+            array (
+                'id' => 2838,
+                'ability_id' => 1,
+                'entity_type' => 'lara_auth_roles',
+                'entity_id' => 3,
+                'forbidden' => 0,
+                'scope' => NULL,
+            ),
+            233 => 
+            array (
+                'id' => 2839,
+                'ability_id' => 290,
+                'entity_type' => 'lara_auth_roles',
+                'entity_id' => 3,
+                'forbidden' => 0,
+                'scope' => NULL,
+            ),
+            234 => 
+            array (
+                'id' => 2840,
+                'ability_id' => 292,
+                'entity_type' => 'lara_auth_roles',
+                'entity_id' => 3,
+                'forbidden' => 0,
+                'scope' => NULL,
+            ),
+            235 => 
+            array (
+                'id' => 2841,
+                'ability_id' => 291,
+                'entity_type' => 'lara_auth_roles',
+                'entity_id' => 3,
+                'forbidden' => 0,
+                'scope' => NULL,
+            ),
+            236 => 
+            array (
+                'id' => 2842,
+                'ability_id' => 289,
+                'entity_type' => 'lara_auth_roles',
+                'entity_id' => 3,
+                'forbidden' => 0,
+                'scope' => NULL,
+            ),
         ));
         
         

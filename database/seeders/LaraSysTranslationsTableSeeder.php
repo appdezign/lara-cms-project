@@ -22302,38 +22302,12 @@ class LaraSysTranslationsTableSeeder extends Seeder
                 'cgroup' => 'product',
                 'tag' => 'column',
                 'key' => 'mycolor',
-                'value' => '_mycolor',
+                'value' => 'mycolorz',
                 'created_at' => '2024-05-08 16:02:49',
-                'updated_at' => '2024-05-08 16:02:49',
+                'updated_at' => '2024-10-24 16:08:06',
                 'deleted_at' => NULL,
             ),
             214 => 
-            array (
-                'id' => 7392,
-                'language' => 'en',
-                'module' => 'lara-admin',
-                'cgroup' => 'role',
-                'tag' => 'boxtitle',
-                'key' => 'seo',
-                'value' => '_seo',
-                'created_at' => '2024-07-02 16:30:45',
-                'updated_at' => '2024-07-02 16:30:45',
-                'deleted_at' => NULL,
-            ),
-            215 => 
-            array (
-                'id' => 7393,
-                'language' => 'nl',
-                'module' => 'lara-admin',
-                'cgroup' => 'role',
-                'tag' => 'boxtitle',
-                'key' => 'seo',
-                'value' => '_seo',
-                'created_at' => '2024-07-02 16:30:45',
-                'updated_at' => '2024-07-02 16:30:45',
-                'deleted_at' => NULL,
-            ),
-            216 => 
             array (
                 'id' => 7394,
                 'language' => 'en',
@@ -22346,7 +22320,7 @@ class LaraSysTranslationsTableSeeder extends Seeder
                 'updated_at' => '2024-09-17 12:11:16',
                 'deleted_at' => NULL,
             ),
-            217 => 
+            215 => 
             array (
                 'id' => 7395,
                 'language' => 'nl',
@@ -22359,7 +22333,7 @@ class LaraSysTranslationsTableSeeder extends Seeder
                 'updated_at' => '2024-09-17 12:11:16',
                 'deleted_at' => NULL,
             ),
-            218 => 
+            216 => 
             array (
                 'id' => 7396,
                 'language' => 'en',
@@ -22372,7 +22346,7 @@ class LaraSysTranslationsTableSeeder extends Seeder
                 'updated_at' => '2024-09-17 17:05:17',
                 'deleted_at' => NULL,
             ),
-            219 => 
+            217 => 
             array (
                 'id' => 7397,
                 'language' => 'nl',
@@ -22380,12 +22354,12 @@ class LaraSysTranslationsTableSeeder extends Seeder
                 'cgroup' => 'auth',
                 'tag' => 'passwordforgot',
                 'key' => 'placeholder_email',
-                'value' => 'email',
+                'value' => 'e-mail',
                 'created_at' => '2024-09-17 17:05:17',
-                'updated_at' => '2024-09-17 21:50:40',
+                'updated_at' => '2024-09-19 13:41:25',
                 'deleted_at' => NULL,
             ),
-            220 => 
+            218 => 
             array (
                 'id' => 7404,
                 'language' => 'en',
@@ -22398,7 +22372,7 @@ class LaraSysTranslationsTableSeeder extends Seeder
                 'updated_at' => '2024-09-17 17:06:25',
                 'deleted_at' => NULL,
             ),
-            221 => 
+            219 => 
             array (
                 'id' => 7405,
                 'language' => 'nl',
@@ -22408,10 +22382,10 @@ class LaraSysTranslationsTableSeeder extends Seeder
                 'key' => 'password_forgot_title',
                 'value' => 'wachtwoord vergeten',
                 'created_at' => '2024-09-17 17:06:25',
-                'updated_at' => '2024-09-17 21:50:27',
+                'updated_at' => '2024-09-19 13:41:25',
                 'deleted_at' => NULL,
             ),
-            222 => 
+            220 => 
             array (
                 'id' => 7406,
                 'language' => 'en',
@@ -22424,7 +22398,7 @@ class LaraSysTranslationsTableSeeder extends Seeder
                 'updated_at' => '2024-09-17 17:08:55',
                 'deleted_at' => NULL,
             ),
-            223 => 
+            221 => 
             array (
                 'id' => 7407,
                 'language' => 'nl',
@@ -22434,10 +22408,10 @@ class LaraSysTranslationsTableSeeder extends Seeder
                 'key' => 'send_password_reset_link',
                 'value' => 'verstuur link',
                 'created_at' => '2024-09-17 17:08:55',
-                'updated_at' => '2024-09-17 21:48:28',
+                'updated_at' => '2024-09-19 13:41:25',
                 'deleted_at' => NULL,
             ),
-            224 => 
+            222 => 
             array (
                 'id' => 7408,
                 'language' => 'en',
@@ -22450,7 +22424,7 @@ class LaraSysTranslationsTableSeeder extends Seeder
                 'updated_at' => '2024-09-17 17:08:55',
                 'deleted_at' => NULL,
             ),
-            225 => 
+            223 => 
             array (
                 'id' => 7409,
                 'language' => 'nl',
@@ -22460,10 +22434,10 @@ class LaraSysTranslationsTableSeeder extends Seeder
                 'key' => 'back_to_login',
                 'value' => 'terug naar login',
                 'created_at' => '2024-09-17 17:08:55',
-                'updated_at' => '2024-09-17 21:47:52',
+                'updated_at' => '2024-09-19 13:41:25',
                 'deleted_at' => NULL,
             ),
-            226 => 
+            224 => 
             array (
                 'id' => 7410,
                 'language' => 'en',
@@ -22476,7 +22450,7 @@ class LaraSysTranslationsTableSeeder extends Seeder
                 'updated_at' => '2024-09-17 17:09:22',
                 'deleted_at' => NULL,
             ),
-            227 => 
+            225 => 
             array (
                 'id' => 7411,
                 'language' => 'nl',
@@ -22486,10 +22460,10 @@ class LaraSysTranslationsTableSeeder extends Seeder
                 'key' => 'forgot_password',
                 'value' => 'wachtwoord vergeten',
                 'created_at' => '2024-09-17 17:09:22',
-                'updated_at' => '2024-09-17 21:48:02',
+                'updated_at' => '2024-09-19 13:41:25',
                 'deleted_at' => NULL,
             ),
-            228 => 
+            226 => 
             array (
                 'id' => 7414,
                 'language' => 'en',
@@ -22502,7 +22476,7 @@ class LaraSysTranslationsTableSeeder extends Seeder
                 'updated_at' => '2024-09-17 17:52:05',
                 'deleted_at' => NULL,
             ),
-            229 => 
+            227 => 
             array (
                 'id' => 7415,
                 'language' => 'nl',
@@ -22512,10 +22486,10 @@ class LaraSysTranslationsTableSeeder extends Seeder
                 'key' => 'password',
                 'value' => 'wachtwoord',
                 'created_at' => '2024-09-17 17:52:05',
-                'updated_at' => '2024-09-17 21:48:57',
+                'updated_at' => '2024-09-19 13:41:25',
                 'deleted_at' => NULL,
             ),
-            230 => 
+            228 => 
             array (
                 'id' => 7416,
                 'language' => 'en',
@@ -22528,7 +22502,7 @@ class LaraSysTranslationsTableSeeder extends Seeder
                 'updated_at' => '2024-09-17 17:52:05',
                 'deleted_at' => NULL,
             ),
-            231 => 
+            229 => 
             array (
                 'id' => 7417,
                 'language' => 'nl',
@@ -22538,10 +22512,10 @@ class LaraSysTranslationsTableSeeder extends Seeder
                 'key' => 'confirm_password',
                 'value' => 'wachtwoord herhalen',
                 'created_at' => '2024-09-17 17:52:05',
-                'updated_at' => '2024-09-17 21:48:45',
+                'updated_at' => '2024-09-19 13:43:31',
                 'deleted_at' => NULL,
             ),
-            232 => 
+            230 => 
             array (
                 'id' => 7418,
                 'language' => 'en',
@@ -22554,7 +22528,7 @@ class LaraSysTranslationsTableSeeder extends Seeder
                 'updated_at' => '2024-09-17 17:52:23',
                 'deleted_at' => NULL,
             ),
-            233 => 
+            231 => 
             array (
                 'id' => 7419,
                 'language' => 'nl',
@@ -22564,10 +22538,10 @@ class LaraSysTranslationsTableSeeder extends Seeder
                 'key' => 'email',
                 'value' => 'e-mail',
                 'created_at' => '2024-09-17 17:52:23',
-                'updated_at' => '2024-09-18 14:21:33',
+                'updated_at' => '2024-09-19 13:41:25',
                 'deleted_at' => NULL,
             ),
-            234 => 
+            232 => 
             array (
                 'id' => 7420,
                 'language' => 'en',
@@ -22580,7 +22554,7 @@ class LaraSysTranslationsTableSeeder extends Seeder
                 'updated_at' => '2024-09-17 18:06:56',
                 'deleted_at' => NULL,
             ),
-            235 => 
+            233 => 
             array (
                 'id' => 7421,
                 'language' => 'nl',
@@ -22590,10 +22564,10 @@ class LaraSysTranslationsTableSeeder extends Seeder
                 'key' => 'reset_password',
                 'value' => 'opslaan',
                 'created_at' => '2024-09-17 18:06:56',
-                'updated_at' => '2024-09-18 14:17:04',
+                'updated_at' => '2024-09-19 13:41:25',
                 'deleted_at' => NULL,
             ),
-            236 => 
+            234 => 
             array (
                 'id' => 7422,
                 'language' => 'en',
@@ -22606,7 +22580,7 @@ class LaraSysTranslationsTableSeeder extends Seeder
                 'updated_at' => '2024-09-17 20:59:38',
                 'deleted_at' => NULL,
             ),
-            237 => 
+            235 => 
             array (
                 'id' => 7423,
                 'language' => 'nl',
@@ -22616,10 +22590,10 @@ class LaraSysTranslationsTableSeeder extends Seeder
                 'key' => 'password_reset_title',
                 'value' => 'wachtwoord resetten',
                 'created_at' => '2024-09-17 20:59:38',
-                'updated_at' => '2024-09-17 21:50:35',
+                'updated_at' => '2024-09-19 13:41:25',
                 'deleted_at' => NULL,
             ),
-            238 => 
+            236 => 
             array (
                 'id' => 7424,
                 'language' => 'en',
@@ -22632,7 +22606,7 @@ class LaraSysTranslationsTableSeeder extends Seeder
                 'updated_at' => '2024-09-18 13:43:38',
                 'deleted_at' => NULL,
             ),
-            239 => 
+            237 => 
             array (
                 'id' => 7425,
                 'language' => 'nl',
@@ -22642,10 +22616,10 @@ class LaraSysTranslationsTableSeeder extends Seeder
                 'key' => 'username',
                 'value' => 'gebruikersnaam',
                 'created_at' => '2024-09-18 13:43:38',
-                'updated_at' => '2024-09-18 13:45:11',
+                'updated_at' => '2024-09-19 13:41:25',
                 'deleted_at' => NULL,
             ),
-            240 => 
+            238 => 
             array (
                 'id' => 7426,
                 'language' => 'en',
@@ -22658,7 +22632,7 @@ class LaraSysTranslationsTableSeeder extends Seeder
                 'updated_at' => '2024-09-18 13:43:38',
                 'deleted_at' => NULL,
             ),
-            241 => 
+            239 => 
             array (
                 'id' => 7427,
                 'language' => 'nl',
@@ -22669,6 +22643,448 @@ class LaraSysTranslationsTableSeeder extends Seeder
                 'value' => 'gebruikersnaam',
                 'created_at' => '2024-09-18 13:43:38',
                 'updated_at' => '2024-09-18 13:45:23',
+                'deleted_at' => NULL,
+            ),
+            240 => 
+            array (
+                'id' => 7430,
+                'language' => 'en',
+                'module' => 'lara-eve',
+                'cgroup' => 'product',
+                'tag' => 'column',
+                'key' => 'mycustom',
+                'value' => '_mycustom',
+                'created_at' => '2024-10-24 10:32:52',
+                'updated_at' => '2024-10-24 10:32:52',
+                'deleted_at' => NULL,
+            ),
+            241 => 
+            array (
+                'id' => 7431,
+                'language' => 'nl',
+                'module' => 'lara-eve',
+                'cgroup' => 'product',
+                'tag' => 'column',
+                'key' => 'mycustom',
+                'value' => 'mycustom',
+                'created_at' => '2024-10-24 10:32:52',
+                'updated_at' => '2024-10-24 16:07:21',
+                'deleted_at' => NULL,
+            ),
+            242 => 
+            array (
+                'id' => 7432,
+                'language' => 'en',
+                'module' => 'lara-eve',
+                'cgroup' => 'cal',
+                'tag' => 'entity',
+                'key' => 'entity_title',
+                'value' => '_entity_title',
+                'created_at' => '2024-10-24 16:22:24',
+                'updated_at' => '2024-10-24 16:22:24',
+                'deleted_at' => NULL,
+            ),
+            243 => 
+            array (
+                'id' => 7433,
+                'language' => 'nl',
+                'module' => 'lara-eve',
+                'cgroup' => 'cal',
+                'tag' => 'entity',
+                'key' => 'entity_title',
+                'value' => '_entity_title',
+                'created_at' => '2024-10-24 16:22:24',
+                'updated_at' => '2024-10-24 16:22:24',
+                'deleted_at' => NULL,
+            ),
+            244 => 
+            array (
+                'id' => 7434,
+                'language' => 'en',
+                'module' => 'lara-eve',
+                'cgroup' => 'cal',
+                'tag' => 'entity',
+                'key' => 'entity_plural',
+                'value' => '_entity_plural',
+                'created_at' => '2024-10-24 16:22:24',
+                'updated_at' => '2024-10-24 16:22:24',
+                'deleted_at' => NULL,
+            ),
+            245 => 
+            array (
+                'id' => 7435,
+                'language' => 'nl',
+                'module' => 'lara-eve',
+                'cgroup' => 'cal',
+                'tag' => 'entity',
+                'key' => 'entity_plural',
+                'value' => '_entity_plural',
+                'created_at' => '2024-10-24 16:22:24',
+                'updated_at' => '2024-10-24 16:22:24',
+                'deleted_at' => NULL,
+            ),
+            246 => 
+            array (
+                'id' => 7436,
+                'language' => 'en',
+                'module' => 'lara-eve',
+                'cgroup' => 'cal',
+                'tag' => 'entity',
+                'key' => 'entity_single',
+                'value' => '_entity_single',
+                'created_at' => '2024-10-24 16:22:24',
+                'updated_at' => '2024-10-24 16:22:24',
+                'deleted_at' => NULL,
+            ),
+            247 => 
+            array (
+                'id' => 7437,
+                'language' => 'nl',
+                'module' => 'lara-eve',
+                'cgroup' => 'cal',
+                'tag' => 'entity',
+                'key' => 'entity_single',
+                'value' => '_entity_single',
+                'created_at' => '2024-10-24 16:22:24',
+                'updated_at' => '2024-10-24 16:22:24',
+                'deleted_at' => NULL,
+            ),
+            248 => 
+            array (
+                'id' => 7438,
+                'language' => 'en',
+                'module' => 'lara-eve',
+                'cgroup' => 'cal',
+                'tag' => 'column',
+                'key' => 'title',
+                'value' => '_title',
+                'created_at' => '2024-10-24 16:22:24',
+                'updated_at' => '2024-10-24 16:22:24',
+                'deleted_at' => NULL,
+            ),
+            249 => 
+            array (
+                'id' => 7439,
+                'language' => 'nl',
+                'module' => 'lara-eve',
+                'cgroup' => 'cal',
+                'tag' => 'column',
+                'key' => 'title',
+                'value' => '_title',
+                'created_at' => '2024-10-24 16:22:24',
+                'updated_at' => '2024-10-24 16:22:24',
+                'deleted_at' => NULL,
+            ),
+            250 => 
+            array (
+                'id' => 7440,
+                'language' => 'en',
+                'module' => 'lara-eve',
+                'cgroup' => 'cal',
+                'tag' => 'column',
+                'key' => 'loc_id',
+                'value' => '_loc_id',
+                'created_at' => '2024-10-24 16:22:28',
+                'updated_at' => '2024-10-24 16:22:28',
+                'deleted_at' => NULL,
+            ),
+            251 => 
+            array (
+                'id' => 7441,
+                'language' => 'nl',
+                'module' => 'lara-eve',
+                'cgroup' => 'cal',
+                'tag' => 'column',
+                'key' => 'loc_id',
+                'value' => '_loc_id',
+                'created_at' => '2024-10-24 16:22:28',
+                'updated_at' => '2024-10-24 16:22:28',
+                'deleted_at' => NULL,
+            ),
+            252 => 
+            array (
+                'id' => 7442,
+                'language' => 'en',
+                'module' => 'lara-eve',
+                'cgroup' => 'cal',
+                'tag' => 'column',
+                'key' => 'body',
+                'value' => '_body',
+                'created_at' => '2024-10-24 16:22:28',
+                'updated_at' => '2024-10-24 16:22:28',
+                'deleted_at' => NULL,
+            ),
+            253 => 
+            array (
+                'id' => 7443,
+                'language' => 'nl',
+                'module' => 'lara-eve',
+                'cgroup' => 'cal',
+                'tag' => 'column',
+                'key' => 'body',
+                'value' => '_body',
+                'created_at' => '2024-10-24 16:22:28',
+                'updated_at' => '2024-10-24 16:22:28',
+                'deleted_at' => NULL,
+            ),
+            254 => 
+            array (
+                'id' => 7444,
+                'language' => 'en',
+                'module' => 'lara-eve',
+                'cgroup' => 'cal',
+                'tag' => 'column',
+                'key' => 'mystring',
+                'value' => '_mystring',
+                'created_at' => '2024-10-24 16:22:28',
+                'updated_at' => '2024-10-24 16:22:28',
+                'deleted_at' => NULL,
+            ),
+            255 => 
+            array (
+                'id' => 7445,
+                'language' => 'nl',
+                'module' => 'lara-eve',
+                'cgroup' => 'cal',
+                'tag' => 'column',
+                'key' => 'mystring',
+                'value' => '_mystring',
+                'created_at' => '2024-10-24 16:22:28',
+                'updated_at' => '2024-10-24 16:22:28',
+                'deleted_at' => NULL,
+            ),
+            256 => 
+            array (
+                'id' => 7446,
+                'language' => 'en',
+                'module' => 'lara-eve',
+                'cgroup' => 'cal',
+                'tag' => 'column',
+                'key' => 'mydate',
+                'value' => '_mydate',
+                'created_at' => '2024-10-24 16:22:28',
+                'updated_at' => '2024-10-24 16:22:28',
+                'deleted_at' => NULL,
+            ),
+            257 => 
+            array (
+                'id' => 7447,
+                'language' => 'nl',
+                'module' => 'lara-eve',
+                'cgroup' => 'cal',
+                'tag' => 'column',
+                'key' => 'mydate',
+                'value' => '_mydate',
+                'created_at' => '2024-10-24 16:22:28',
+                'updated_at' => '2024-10-24 16:22:28',
+                'deleted_at' => NULL,
+            ),
+            258 => 
+            array (
+                'id' => 7448,
+                'language' => 'en',
+                'module' => 'lara-eve',
+                'cgroup' => 'loc',
+                'tag' => 'entity',
+                'key' => 'entity_title',
+                'value' => '_entity_title',
+                'created_at' => '2024-10-24 16:22:39',
+                'updated_at' => '2024-10-24 16:22:39',
+                'deleted_at' => NULL,
+            ),
+            259 => 
+            array (
+                'id' => 7449,
+                'language' => 'nl',
+                'module' => 'lara-eve',
+                'cgroup' => 'loc',
+                'tag' => 'entity',
+                'key' => 'entity_title',
+                'value' => '_entity_title',
+                'created_at' => '2024-10-24 16:22:39',
+                'updated_at' => '2024-10-24 16:22:39',
+                'deleted_at' => NULL,
+            ),
+            260 => 
+            array (
+                'id' => 7450,
+                'language' => 'en',
+                'module' => 'lara-eve',
+                'cgroup' => 'loc',
+                'tag' => 'entity',
+                'key' => 'entity_plural',
+                'value' => '_entity_plural',
+                'created_at' => '2024-10-24 16:22:39',
+                'updated_at' => '2024-10-24 16:22:39',
+                'deleted_at' => NULL,
+            ),
+            261 => 
+            array (
+                'id' => 7451,
+                'language' => 'nl',
+                'module' => 'lara-eve',
+                'cgroup' => 'loc',
+                'tag' => 'entity',
+                'key' => 'entity_plural',
+                'value' => '_entity_plural',
+                'created_at' => '2024-10-24 16:22:39',
+                'updated_at' => '2024-10-24 16:22:39',
+                'deleted_at' => NULL,
+            ),
+            262 => 
+            array (
+                'id' => 7452,
+                'language' => 'en',
+                'module' => 'lara-eve',
+                'cgroup' => 'loc',
+                'tag' => 'entity',
+                'key' => 'entity_single',
+                'value' => '_entity_single',
+                'created_at' => '2024-10-24 16:22:39',
+                'updated_at' => '2024-10-24 16:22:39',
+                'deleted_at' => NULL,
+            ),
+            263 => 
+            array (
+                'id' => 7453,
+                'language' => 'nl',
+                'module' => 'lara-eve',
+                'cgroup' => 'loc',
+                'tag' => 'entity',
+                'key' => 'entity_single',
+                'value' => '_entity_single',
+                'created_at' => '2024-10-24 16:22:39',
+                'updated_at' => '2024-10-24 16:22:39',
+                'deleted_at' => NULL,
+            ),
+            264 => 
+            array (
+                'id' => 7454,
+                'language' => 'en',
+                'module' => 'lara-eve',
+                'cgroup' => 'loc',
+                'tag' => 'column',
+                'key' => 'title',
+                'value' => '_title',
+                'created_at' => '2024-10-24 16:22:39',
+                'updated_at' => '2024-10-24 16:22:39',
+                'deleted_at' => NULL,
+            ),
+            265 => 
+            array (
+                'id' => 7455,
+                'language' => 'nl',
+                'module' => 'lara-eve',
+                'cgroup' => 'loc',
+                'tag' => 'column',
+                'key' => 'title',
+                'value' => '_title',
+                'created_at' => '2024-10-24 16:22:39',
+                'updated_at' => '2024-10-24 16:22:39',
+                'deleted_at' => NULL,
+            ),
+            266 => 
+            array (
+                'id' => 7456,
+                'language' => 'en',
+                'module' => 'lara-eve',
+                'cgroup' => 'loc',
+                'tag' => 'column',
+                'key' => 'body',
+                'value' => '_body',
+                'created_at' => '2024-10-24 16:22:41',
+                'updated_at' => '2024-10-24 16:22:41',
+                'deleted_at' => NULL,
+            ),
+            267 => 
+            array (
+                'id' => 7457,
+                'language' => 'nl',
+                'module' => 'lara-eve',
+                'cgroup' => 'loc',
+                'tag' => 'column',
+                'key' => 'body',
+                'value' => '_body',
+                'created_at' => '2024-10-24 16:22:41',
+                'updated_at' => '2024-10-24 16:22:41',
+                'deleted_at' => NULL,
+            ),
+            268 => 
+            array (
+                'id' => 7458,
+                'language' => 'en',
+                'module' => 'lara-eve',
+                'cgroup' => 'loc',
+                'tag' => 'column',
+                'key' => 'myboolean',
+                'value' => '_myboolean',
+                'created_at' => '2024-10-24 16:22:41',
+                'updated_at' => '2024-10-24 16:22:41',
+                'deleted_at' => NULL,
+            ),
+            269 => 
+            array (
+                'id' => 7459,
+                'language' => 'nl',
+                'module' => 'lara-eve',
+                'cgroup' => 'loc',
+                'tag' => 'column',
+                'key' => 'myboolean',
+                'value' => '_myboolean',
+                'created_at' => '2024-10-24 16:22:41',
+                'updated_at' => '2024-10-24 16:22:41',
+                'deleted_at' => NULL,
+            ),
+            270 => 
+            array (
+                'id' => 7460,
+                'language' => 'en',
+                'module' => 'lara-admin',
+                'cgroup' => 'default',
+                'tag' => 'button',
+                'key' => 'manage_menu_positions',
+                'value' => '_manage_menu_positions',
+                'created_at' => '2024-10-25 13:46:56',
+                'updated_at' => '2024-10-25 13:46:56',
+                'deleted_at' => NULL,
+            ),
+            271 => 
+            array (
+                'id' => 7461,
+                'language' => 'nl',
+                'module' => 'lara-admin',
+                'cgroup' => 'default',
+                'tag' => 'button',
+                'key' => 'manage_menu_positions',
+                'value' => 'menu posities',
+                'created_at' => '2024-10-25 13:46:56',
+                'updated_at' => '2024-10-25 13:47:46',
+                'deleted_at' => NULL,
+            ),
+            272 => 
+            array (
+                'id' => 7462,
+                'language' => 'en',
+                'module' => 'lara-admin',
+                'cgroup' => 'menuitem',
+                'tag' => 'column',
+                'key' => 'url',
+                'value' => '_url',
+                'created_at' => '2024-11-04 14:09:09',
+                'updated_at' => '2024-11-04 14:09:09',
+                'deleted_at' => NULL,
+            ),
+            273 => 
+            array (
+                'id' => 7463,
+                'language' => 'nl',
+                'module' => 'lara-admin',
+                'cgroup' => 'menuitem',
+                'tag' => 'column',
+                'key' => 'url',
+                'value' => '_url',
+                'created_at' => '2024-11-04 14:09:09',
+                'updated_at' => '2024-11-04 14:09:09',
                 'deleted_at' => NULL,
             ),
         ));

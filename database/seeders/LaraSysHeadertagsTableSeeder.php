@@ -537,6 +537,34 @@ class LaraSysHeadertagsTableSeeder extends Seeder
                 'locked_at' => NULL,
                 'locked_by' => NULL,
             ),
+            37 => 
+            array (
+                'id' => 39,
+                'title' => 'Cal Index',
+                'cgroup' => 'module',
+                'templatefile_id' => 39,
+                'title_tag' => 'h1',
+                'subtitle_tag' => 'h2',
+                'list_tag' => 'h3',
+                'created_at' => '2024-10-24 16:29:17',
+                'updated_at' => '2024-10-24 16:29:17',
+                'locked_at' => NULL,
+                'locked_by' => NULL,
+            ),
+            38 => 
+            array (
+                'id' => 40,
+                'title' => 'Cal Show',
+                'cgroup' => 'module',
+                'templatefile_id' => 40,
+                'title_tag' => 'h1',
+                'subtitle_tag' => 'h2',
+                'list_tag' => 'h3',
+                'created_at' => '2024-10-24 16:30:26',
+                'updated_at' => '2024-10-24 16:30:26',
+                'locked_at' => NULL,
+                'locked_by' => NULL,
+            ),
         ));
         
         

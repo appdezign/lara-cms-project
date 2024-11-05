@@ -26,7 +26,7 @@ class LaraMenuMenusTableSeeder extends Seeder
                 'slug' => 'main',
                 'slug_lock' => 1,
                 'created_at' => '2017-11-26 12:50:34',
-                'updated_at' => '2023-05-10 11:45:06',
+                'updated_at' => '2024-10-25 13:52:27',
                 'locked_at' => NULL,
                 'locked_by' => NULL,
             ),

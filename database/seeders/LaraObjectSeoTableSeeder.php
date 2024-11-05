@@ -74,10 +74,10 @@ class LaraObjectSeoTableSeeder extends Seeder
                 'entity_id' => 1,
                 'seo_focus' => NULL,
                 'seo_title' => 'Home page',
-                'seo_description' => '',
-                'seo_keywords' => '',
+                'seo_description' => NULL,
+                'seo_keywords' => NULL,
                 'created_at' => '2023-03-10 18:07:28',
-                'updated_at' => '2024-03-01 11:23:12',
+                'updated_at' => '2024-10-23 15:44:57',
             ),
             5 => 
             array (
@@ -510,18 +510,6 @@ class LaraObjectSeoTableSeeder extends Seeder
                 'seo_keywords' => '',
                 'created_at' => '2024-03-01 11:23:12',
                 'updated_at' => '2024-03-01 11:23:12',
-            ),
-            41 => 
-            array (
-                'id' => 99,
-                'entity_type' => 'Lara\\Common\\Models\\Page',
-                'entity_id' => 1097,
-                'seo_focus' => NULL,
-                'seo_title' => NULL,
-                'seo_description' => NULL,
-                'seo_keywords' => NULL,
-                'created_at' => '2024-05-23 15:46:37',
-                'updated_at' => '2024-05-23 15:46:37',
             ),
         ));
         

@@ -376,7 +376,7 @@ class LaraEntEntityCustomColumnsTableSeeder extends Seeder
                 'condition_field' => NULL,
                 'condition_operator' => NULL,
                 'condition_value' => NULL,
-                'position' => 83,
+                'position' => 84,
                 'field_lock' => 0,
             ),
             20 => 
@@ -826,7 +826,7 @@ class LaraEntEntityCustomColumnsTableSeeder extends Seeder
                 'condition_field' => NULL,
                 'condition_operator' => NULL,
                 'condition_value' => NULL,
-                'position' => 65,
+                'position' => 66,
                 'field_lock' => 0,
             ),
             45 => 
@@ -862,7 +862,7 @@ class LaraEntEntityCustomColumnsTableSeeder extends Seeder
                 'condition_field' => NULL,
                 'condition_operator' => NULL,
                 'condition_value' => NULL,
-                'position' => 67,
+                'position' => 68,
                 'field_lock' => 0,
             ),
             47 => 
@@ -898,7 +898,7 @@ class LaraEntEntityCustomColumnsTableSeeder extends Seeder
                 'condition_field' => NULL,
                 'condition_operator' => NULL,
                 'condition_value' => NULL,
-                'position' => 72,
+                'position' => 73,
                 'field_lock' => 0,
             ),
             49 => 
@@ -916,7 +916,7 @@ class LaraEntEntityCustomColumnsTableSeeder extends Seeder
                 'condition_field' => 'geolocation',
                 'condition_operator' => 'isequal',
                 'condition_value' => 'manual',
-                'position' => 73,
+                'position' => 74,
                 'field_lock' => 1,
             ),
             50 => 
@@ -934,7 +934,7 @@ class LaraEntEntityCustomColumnsTableSeeder extends Seeder
                 'condition_field' => 'geolocation',
                 'condition_operator' => 'isequal',
                 'condition_value' => 'manual',
-                'position' => 74,
+                'position' => 75,
                 'field_lock' => 1,
             ),
             51 => 
@@ -952,7 +952,7 @@ class LaraEntEntityCustomColumnsTableSeeder extends Seeder
                 'condition_field' => NULL,
                 'condition_operator' => NULL,
                 'condition_value' => NULL,
-                'position' => 68,
+                'position' => 69,
                 'field_lock' => 0,
             ),
             52 => 
@@ -970,7 +970,7 @@ class LaraEntEntityCustomColumnsTableSeeder extends Seeder
                 'condition_field' => NULL,
                 'condition_operator' => NULL,
                 'condition_value' => NULL,
-                'position' => 69,
+                'position' => 70,
                 'field_lock' => 0,
             ),
             53 => 
@@ -988,7 +988,7 @@ class LaraEntEntityCustomColumnsTableSeeder extends Seeder
                 'condition_field' => NULL,
                 'condition_operator' => NULL,
                 'condition_value' => NULL,
-                'position' => 70,
+                'position' => 71,
                 'field_lock' => 0,
             ),
             54 => 
@@ -1006,7 +1006,7 @@ class LaraEntEntityCustomColumnsTableSeeder extends Seeder
                 'condition_field' => NULL,
                 'condition_operator' => NULL,
                 'condition_value' => NULL,
-                'position' => 71,
+                'position' => 72,
                 'field_lock' => 0,
             ),
             55 => 
@@ -1024,7 +1024,7 @@ class LaraEntEntityCustomColumnsTableSeeder extends Seeder
                 'condition_field' => 'type',
                 'condition_operator' => 'isequal',
                 'condition_value' => 'payoff',
-                'position' => 77,
+                'position' => 78,
                 'field_lock' => 0,
             ),
             56 => 
@@ -1042,7 +1042,7 @@ class LaraEntEntityCustomColumnsTableSeeder extends Seeder
                 'condition_field' => NULL,
                 'condition_operator' => NULL,
                 'condition_value' => NULL,
-                'position' => 79,
+                'position' => 80,
                 'field_lock' => 0,
             ),
             57 => 
@@ -1060,7 +1060,7 @@ class LaraEntEntityCustomColumnsTableSeeder extends Seeder
                 'condition_field' => 'type',
                 'condition_operator' => 'isequal',
                 'condition_value' => 'payoff',
-                'position' => 81,
+                'position' => 82,
                 'field_lock' => 0,
             ),
             58 => 
@@ -1096,7 +1096,7 @@ class LaraEntEntityCustomColumnsTableSeeder extends Seeder
                 'condition_field' => 'type',
                 'condition_operator' => 'isequal',
                 'condition_value' => 'payoff',
-                'position' => 78,
+                'position' => 79,
                 'field_lock' => 0,
             ),
             60 => 
@@ -1150,7 +1150,7 @@ class LaraEntEntityCustomColumnsTableSeeder extends Seeder
                 'condition_field' => NULL,
                 'condition_operator' => NULL,
                 'condition_value' => NULL,
-                'position' => 82,
+                'position' => 83,
                 'field_lock' => 0,
             ),
             63 => 
@@ -1168,7 +1168,7 @@ class LaraEntEntityCustomColumnsTableSeeder extends Seeder
                 'condition_field' => 'type',
                 'condition_operator' => 'isequal',
                 'condition_value' => 'module',
-                'position' => 100,
+                'position' => 101,
                 'field_lock' => 0,
             ),
             64 => 
@@ -1186,7 +1186,7 @@ class LaraEntEntityCustomColumnsTableSeeder extends Seeder
                 'condition_field' => 'type',
                 'condition_operator' => 'isequal',
                 'condition_value' => 'module',
-                'position' => 101,
+                'position' => 102,
                 'field_lock' => 0,
             ),
             65 => 
@@ -1204,7 +1204,7 @@ class LaraEntEntityCustomColumnsTableSeeder extends Seeder
                 'condition_field' => 'type',
                 'condition_operator' => 'isequal',
                 'condition_value' => 'module',
-                'position' => 102,
+                'position' => 103,
                 'field_lock' => 0,
             ),
             66 => 
@@ -1222,7 +1222,7 @@ class LaraEntEntityCustomColumnsTableSeeder extends Seeder
                 'condition_field' => 'type',
                 'condition_operator' => 'isequal',
                 'condition_value' => 'module',
-                'position' => 103,
+                'position' => 104,
                 'field_lock' => 0,
             ),
             67 => 
@@ -1240,7 +1240,7 @@ class LaraEntEntityCustomColumnsTableSeeder extends Seeder
                 'condition_field' => NULL,
                 'condition_operator' => NULL,
                 'condition_value' => NULL,
-                'position' => 104,
+                'position' => 105,
                 'field_lock' => 0,
             ),
             68 => 
@@ -1258,7 +1258,7 @@ class LaraEntEntityCustomColumnsTableSeeder extends Seeder
                 'condition_field' => 'NULL',
                 'condition_operator' => 'NULL',
                 'condition_value' => 'NULL',
-                'position' => 105,
+                'position' => 106,
                 'field_lock' => 0,
             ),
             69 => 
@@ -1276,7 +1276,7 @@ class LaraEntEntityCustomColumnsTableSeeder extends Seeder
                 'condition_field' => NULL,
                 'condition_operator' => NULL,
                 'condition_value' => NULL,
-                'position' => 106,
+                'position' => 107,
                 'field_lock' => 0,
             ),
             70 => 
@@ -1294,7 +1294,7 @@ class LaraEntEntityCustomColumnsTableSeeder extends Seeder
                 'condition_field' => NULL,
                 'condition_operator' => NULL,
                 'condition_value' => NULL,
-                'position' => 107,
+                'position' => 108,
                 'field_lock' => 0,
             ),
             71 => 
@@ -1312,7 +1312,7 @@ class LaraEntEntityCustomColumnsTableSeeder extends Seeder
                 'condition_field' => 'type',
                 'condition_operator' => 'isequal',
                 'condition_value' => 'feature || featuresmall',
-                'position' => 108,
+                'position' => 109,
                 'field_lock' => 0,
             ),
             72 => 
@@ -1330,7 +1330,7 @@ class LaraEntEntityCustomColumnsTableSeeder extends Seeder
                 'condition_field' => NULL,
                 'condition_operator' => NULL,
                 'condition_value' => NULL,
-                'position' => 110,
+                'position' => 111,
                 'field_lock' => 0,
             ),
             73 => 
@@ -1348,7 +1348,7 @@ class LaraEntEntityCustomColumnsTableSeeder extends Seeder
                 'condition_field' => NULL,
                 'condition_operator' => NULL,
                 'condition_value' => NULL,
-                'position' => 111,
+                'position' => 112,
                 'field_lock' => 0,
             ),
             74 => 
@@ -1366,7 +1366,7 @@ class LaraEntEntityCustomColumnsTableSeeder extends Seeder
                 'condition_field' => NULL,
                 'condition_operator' => NULL,
                 'condition_value' => NULL,
-                'position' => 112,
+                'position' => 113,
                 'field_lock' => 0,
             ),
             75 => 
@@ -1384,7 +1384,7 @@ class LaraEntEntityCustomColumnsTableSeeder extends Seeder
                 'condition_field' => NULL,
                 'condition_operator' => NULL,
                 'condition_value' => NULL,
-                'position' => 113,
+                'position' => 114,
                 'field_lock' => 0,
             ),
             76 => 
@@ -1402,7 +1402,7 @@ class LaraEntEntityCustomColumnsTableSeeder extends Seeder
                 'condition_field' => NULL,
                 'condition_operator' => NULL,
                 'condition_value' => NULL,
-                'position' => 114,
+                'position' => 115,
                 'field_lock' => 0,
             ),
             77 => 
@@ -1420,7 +1420,7 @@ class LaraEntEntityCustomColumnsTableSeeder extends Seeder
                 'condition_field' => NULL,
                 'condition_operator' => NULL,
                 'condition_value' => NULL,
-                'position' => 119,
+                'position' => 120,
                 'field_lock' => 0,
             ),
             78 => 
@@ -1726,7 +1726,7 @@ class LaraEntEntityCustomColumnsTableSeeder extends Seeder
                 'condition_field' => NULL,
                 'condition_operator' => NULL,
                 'condition_value' => NULL,
-                'position' => 120,
+                'position' => 121,
                 'field_lock' => 0,
             ),
             95 => 
@@ -1744,7 +1744,7 @@ class LaraEntEntityCustomColumnsTableSeeder extends Seeder
                 'condition_field' => NULL,
                 'condition_operator' => NULL,
                 'condition_value' => NULL,
-                'position' => 121,
+                'position' => 122,
                 'field_lock' => 0,
             ),
             96 => 
@@ -1762,7 +1762,7 @@ class LaraEntEntityCustomColumnsTableSeeder extends Seeder
                 'condition_field' => NULL,
                 'condition_operator' => NULL,
                 'condition_value' => NULL,
-                'position' => 122,
+                'position' => 123,
                 'field_lock' => 0,
             ),
             97 => 
@@ -1798,7 +1798,7 @@ class LaraEntEntityCustomColumnsTableSeeder extends Seeder
                 'condition_field' => NULL,
                 'condition_operator' => NULL,
                 'condition_value' => NULL,
-                'position' => 123,
+                'position' => 124,
                 'field_lock' => 0,
             ),
             99 => 
@@ -1816,7 +1816,7 @@ class LaraEntEntityCustomColumnsTableSeeder extends Seeder
                 'condition_field' => NULL,
                 'condition_operator' => NULL,
                 'condition_value' => NULL,
-                'position' => 124,
+                'position' => 125,
                 'field_lock' => 0,
             ),
             100 => 
@@ -1834,7 +1834,7 @@ class LaraEntEntityCustomColumnsTableSeeder extends Seeder
                 'condition_field' => NULL,
                 'condition_operator' => NULL,
                 'condition_value' => NULL,
-                'position' => 125,
+                'position' => 126,
                 'field_lock' => 0,
             ),
             101 => 
@@ -1870,7 +1870,7 @@ class LaraEntEntityCustomColumnsTableSeeder extends Seeder
                 'condition_field' => NULL,
                 'condition_operator' => NULL,
                 'condition_value' => NULL,
-                'position' => 128,
+                'position' => 129,
                 'field_lock' => 0,
             ),
             103 => 
@@ -1888,7 +1888,7 @@ class LaraEntEntityCustomColumnsTableSeeder extends Seeder
                 'condition_field' => NULL,
                 'condition_operator' => NULL,
                 'condition_value' => NULL,
-                'position' => 129,
+                'position' => 130,
                 'field_lock' => 0,
             ),
             104 => 
@@ -1906,7 +1906,7 @@ class LaraEntEntityCustomColumnsTableSeeder extends Seeder
                 'condition_field' => NULL,
                 'condition_operator' => NULL,
                 'condition_value' => NULL,
-                'position' => 130,
+                'position' => 131,
                 'field_lock' => 0,
             ),
             105 => 
@@ -1924,7 +1924,7 @@ class LaraEntEntityCustomColumnsTableSeeder extends Seeder
                 'condition_field' => NULL,
                 'condition_operator' => NULL,
                 'condition_value' => NULL,
-                'position' => 131,
+                'position' => 132,
                 'field_lock' => 0,
             ),
             106 => 
@@ -1942,7 +1942,7 @@ class LaraEntEntityCustomColumnsTableSeeder extends Seeder
                 'condition_field' => NULL,
                 'condition_operator' => NULL,
                 'condition_value' => NULL,
-                'position' => 132,
+                'position' => 133,
                 'field_lock' => 0,
             ),
             107 => 
@@ -1960,7 +1960,7 @@ class LaraEntEntityCustomColumnsTableSeeder extends Seeder
                 'condition_field' => NULL,
                 'condition_operator' => NULL,
                 'condition_value' => NULL,
-                'position' => 133,
+                'position' => 134,
                 'field_lock' => 0,
             ),
         ));

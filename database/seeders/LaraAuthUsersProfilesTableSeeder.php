@@ -45,11 +45,11 @@ class LaraAuthUsersProfilesTableSeeder extends Seeder
             ),
             3 => 
             array (
-                'id' => 4,
-                'user_id' => 17,
+                'id' => 6,
+                'user_id' => 19,
                 'dark_mode' => 0,
-                'created_at' => '2024-07-02 16:34:37',
-                'updated_at' => '2024-07-02 16:34:44',
+                'created_at' => '2024-10-25 13:54:08',
+                'updated_at' => '2024-10-25 13:57:15',
             ),
         ));
         

@@ -723,32 +723,6 @@ class LaraObjectTagsTableSeeder extends Seeder
             ),
             27 => 
             array (
-                'id' => 47,
-                'language' => 'nl',
-                'language_parent' => NULL,
-                'taxonomy_id' => 1,
-                'entity_key' => 'location',
-                'title' => 'root',
-                'slug' => 'root-11',
-                'slug_lock' => 0,
-                'lead' => '',
-                'body' => '',
-                'route' => NULL,
-                'locked_by_admin' => 0,
-                'created_at' => '2018-08-28 20:06:55',
-                'updated_at' => '2018-08-28 20:06:55',
-                'publish' => 0,
-                'publish_from' => NULL,
-                'publish_to' => NULL,
-                'parent_id' => NULL,
-                'lft' => 1,
-                'rgt' => 2,
-                'depth' => 0,
-                'locked_at' => NULL,
-                'locked_by' => NULL,
-            ),
-            28 => 
-            array (
                 'id' => 49,
                 'language' => 'nl',
                 'language_parent' => NULL,
@@ -773,7 +747,7 @@ class LaraObjectTagsTableSeeder extends Seeder
                 'locked_at' => NULL,
                 'locked_by' => NULL,
             ),
-            29 => 
+            28 => 
             array (
                 'id' => 51,
                 'language' => 'nl',
@@ -799,7 +773,7 @@ class LaraObjectTagsTableSeeder extends Seeder
                 'locked_at' => NULL,
                 'locked_by' => NULL,
             ),
-            30 => 
+            29 => 
             array (
                 'id' => 52,
                 'language' => 'nl',
@@ -825,7 +799,7 @@ class LaraObjectTagsTableSeeder extends Seeder
                 'locked_at' => NULL,
                 'locked_by' => NULL,
             ),
-            31 => 
+            30 => 
             array (
                 'id' => 59,
                 'language' => 'nl',
@@ -851,7 +825,7 @@ class LaraObjectTagsTableSeeder extends Seeder
                 'locked_at' => NULL,
                 'locked_by' => NULL,
             ),
-            32 => 
+            31 => 
             array (
                 'id' => 1896,
                 'language' => 'en',
@@ -877,7 +851,7 @@ class LaraObjectTagsTableSeeder extends Seeder
                 'locked_at' => NULL,
                 'locked_by' => NULL,
             ),
-            33 => 
+            32 => 
             array (
                 'id' => 1897,
                 'language' => 'en',
@@ -903,7 +877,7 @@ class LaraObjectTagsTableSeeder extends Seeder
                 'locked_at' => NULL,
                 'locked_by' => NULL,
             ),
-            34 => 
+            33 => 
             array (
                 'id' => 1898,
                 'language' => 'en',
@@ -929,7 +903,7 @@ class LaraObjectTagsTableSeeder extends Seeder
                 'locked_at' => NULL,
                 'locked_by' => NULL,
             ),
-            35 => 
+            34 => 
             array (
                 'id' => 1899,
                 'language' => 'en',
@@ -955,7 +929,7 @@ class LaraObjectTagsTableSeeder extends Seeder
                 'locked_at' => NULL,
                 'locked_by' => NULL,
             ),
-            36 => 
+            35 => 
             array (
                 'id' => 1900,
                 'language' => 'en',
@@ -981,7 +955,7 @@ class LaraObjectTagsTableSeeder extends Seeder
                 'locked_at' => NULL,
                 'locked_by' => NULL,
             ),
-            37 => 
+            36 => 
             array (
                 'id' => 1901,
                 'language' => 'en',
@@ -1007,7 +981,7 @@ class LaraObjectTagsTableSeeder extends Seeder
                 'locked_at' => NULL,
                 'locked_by' => NULL,
             ),
-            38 => 
+            37 => 
             array (
                 'id' => 1902,
                 'language' => 'en',
@@ -1033,7 +1007,7 @@ class LaraObjectTagsTableSeeder extends Seeder
                 'locked_at' => NULL,
                 'locked_by' => NULL,
             ),
-            39 => 
+            38 => 
             array (
                 'id' => 1903,
                 'language' => 'en',
@@ -1059,7 +1033,7 @@ class LaraObjectTagsTableSeeder extends Seeder
                 'locked_at' => NULL,
                 'locked_by' => NULL,
             ),
-            40 => 
+            39 => 
             array (
                 'id' => 1904,
                 'language' => 'en',
@@ -1085,7 +1059,7 @@ class LaraObjectTagsTableSeeder extends Seeder
                 'locked_at' => NULL,
                 'locked_by' => NULL,
             ),
-            41 => 
+            40 => 
             array (
                 'id' => 1905,
                 'language' => 'en',
@@ -1111,7 +1085,7 @@ class LaraObjectTagsTableSeeder extends Seeder
                 'locked_at' => NULL,
                 'locked_by' => NULL,
             ),
-            42 => 
+            41 => 
             array (
                 'id' => 1906,
                 'language' => 'en',
@@ -1137,7 +1111,7 @@ class LaraObjectTagsTableSeeder extends Seeder
                 'locked_at' => NULL,
                 'locked_by' => NULL,
             ),
-            43 => 
+            42 => 
             array (
                 'id' => 1907,
                 'language' => 'en',
@@ -1163,7 +1137,7 @@ class LaraObjectTagsTableSeeder extends Seeder
                 'locked_at' => NULL,
                 'locked_by' => NULL,
             ),
-            44 => 
+            43 => 
             array (
                 'id' => 1908,
                 'language' => 'en',
@@ -1189,7 +1163,7 @@ class LaraObjectTagsTableSeeder extends Seeder
                 'locked_at' => NULL,
                 'locked_by' => NULL,
             ),
-            45 => 
+            44 => 
             array (
                 'id' => 1909,
                 'language' => 'en',
@@ -1215,7 +1189,7 @@ class LaraObjectTagsTableSeeder extends Seeder
                 'locked_at' => NULL,
                 'locked_by' => NULL,
             ),
-            46 => 
+            45 => 
             array (
                 'id' => 1910,
                 'language' => 'en',
@@ -1241,7 +1215,7 @@ class LaraObjectTagsTableSeeder extends Seeder
                 'locked_at' => NULL,
                 'locked_by' => NULL,
             ),
-            47 => 
+            46 => 
             array (
                 'id' => 1911,
                 'language' => 'en',
@@ -1267,7 +1241,7 @@ class LaraObjectTagsTableSeeder extends Seeder
                 'locked_at' => NULL,
                 'locked_by' => NULL,
             ),
-            48 => 
+            47 => 
             array (
                 'id' => 1912,
                 'language' => 'en',
@@ -1293,7 +1267,7 @@ class LaraObjectTagsTableSeeder extends Seeder
                 'locked_at' => NULL,
                 'locked_by' => NULL,
             ),
-            49 => 
+            48 => 
             array (
                 'id' => 1913,
                 'language' => 'en',
@@ -1319,7 +1293,7 @@ class LaraObjectTagsTableSeeder extends Seeder
                 'locked_at' => NULL,
                 'locked_by' => NULL,
             ),
-            50 => 
+            49 => 
             array (
                 'id' => 1914,
                 'language' => 'en',
@@ -1345,7 +1319,7 @@ class LaraObjectTagsTableSeeder extends Seeder
                 'locked_at' => NULL,
                 'locked_by' => NULL,
             ),
-            51 => 
+            50 => 
             array (
                 'id' => 1915,
                 'language' => 'en',
@@ -1371,7 +1345,7 @@ class LaraObjectTagsTableSeeder extends Seeder
                 'locked_at' => NULL,
                 'locked_by' => NULL,
             ),
-            52 => 
+            51 => 
             array (
                 'id' => 1916,
                 'language' => 'en',
@@ -1397,7 +1371,7 @@ class LaraObjectTagsTableSeeder extends Seeder
                 'locked_at' => NULL,
                 'locked_by' => NULL,
             ),
-            53 => 
+            52 => 
             array (
                 'id' => 1917,
                 'language' => 'en',
@@ -1423,7 +1397,7 @@ class LaraObjectTagsTableSeeder extends Seeder
                 'locked_at' => NULL,
                 'locked_by' => NULL,
             ),
-            54 => 
+            53 => 
             array (
                 'id' => 1918,
                 'language' => 'en',
@@ -1449,7 +1423,7 @@ class LaraObjectTagsTableSeeder extends Seeder
                 'locked_at' => NULL,
                 'locked_by' => NULL,
             ),
-            55 => 
+            54 => 
             array (
                 'id' => 1919,
                 'language' => 'en',
@@ -1475,7 +1449,7 @@ class LaraObjectTagsTableSeeder extends Seeder
                 'locked_at' => NULL,
                 'locked_by' => NULL,
             ),
-            56 => 
+            55 => 
             array (
                 'id' => 1920,
                 'language' => 'en',
@@ -1501,7 +1475,7 @@ class LaraObjectTagsTableSeeder extends Seeder
                 'locked_at' => NULL,
                 'locked_by' => NULL,
             ),
-            57 => 
+            56 => 
             array (
                 'id' => 1921,
                 'language' => 'en',
@@ -1527,7 +1501,7 @@ class LaraObjectTagsTableSeeder extends Seeder
                 'locked_at' => NULL,
                 'locked_by' => NULL,
             ),
-            58 => 
+            57 => 
             array (
                 'id' => 1922,
                 'language' => 'en',
@@ -1553,7 +1527,7 @@ class LaraObjectTagsTableSeeder extends Seeder
                 'locked_at' => NULL,
                 'locked_by' => NULL,
             ),
-            59 => 
+            58 => 
             array (
                 'id' => 1923,
                 'language' => 'en',
@@ -1579,7 +1553,7 @@ class LaraObjectTagsTableSeeder extends Seeder
                 'locked_at' => NULL,
                 'locked_by' => NULL,
             ),
-            60 => 
+            59 => 
             array (
                 'id' => 1924,
                 'language' => 'en',
@@ -1605,7 +1579,7 @@ class LaraObjectTagsTableSeeder extends Seeder
                 'locked_at' => NULL,
                 'locked_by' => NULL,
             ),
-            61 => 
+            60 => 
             array (
                 'id' => 1925,
                 'language' => 'en',
@@ -1631,7 +1605,7 @@ class LaraObjectTagsTableSeeder extends Seeder
                 'locked_at' => NULL,
                 'locked_by' => NULL,
             ),
-            62 => 
+            61 => 
             array (
                 'id' => 1926,
                 'language' => 'en',
@@ -1657,7 +1631,7 @@ class LaraObjectTagsTableSeeder extends Seeder
                 'locked_at' => NULL,
                 'locked_by' => NULL,
             ),
-            63 => 
+            62 => 
             array (
                 'id' => 1927,
                 'language' => 'en',
@@ -1683,7 +1657,7 @@ class LaraObjectTagsTableSeeder extends Seeder
                 'locked_at' => NULL,
                 'locked_by' => NULL,
             ),
-            64 => 
+            63 => 
             array (
                 'id' => 1928,
                 'language' => 'en',
@@ -1709,7 +1683,7 @@ class LaraObjectTagsTableSeeder extends Seeder
                 'locked_at' => NULL,
                 'locked_by' => NULL,
             ),
-            65 => 
+            64 => 
             array (
                 'id' => 1929,
                 'language' => 'en',
@@ -1735,7 +1709,7 @@ class LaraObjectTagsTableSeeder extends Seeder
                 'locked_at' => NULL,
                 'locked_by' => NULL,
             ),
-            66 => 
+            65 => 
             array (
                 'id' => 1930,
                 'language' => 'en',
@@ -1761,7 +1735,7 @@ class LaraObjectTagsTableSeeder extends Seeder
                 'locked_at' => NULL,
                 'locked_by' => NULL,
             ),
-            67 => 
+            66 => 
             array (
                 'id' => 1931,
                 'language' => 'en',
@@ -1787,7 +1761,7 @@ class LaraObjectTagsTableSeeder extends Seeder
                 'locked_at' => NULL,
                 'locked_by' => NULL,
             ),
-            68 => 
+            67 => 
             array (
                 'id' => 1932,
                 'language' => 'en',
@@ -1813,7 +1787,7 @@ class LaraObjectTagsTableSeeder extends Seeder
                 'locked_at' => NULL,
                 'locked_by' => NULL,
             ),
-            69 => 
+            68 => 
             array (
                 'id' => 1933,
                 'language' => 'en',
@@ -1839,7 +1813,7 @@ class LaraObjectTagsTableSeeder extends Seeder
                 'locked_at' => NULL,
                 'locked_by' => NULL,
             ),
-            70 => 
+            69 => 
             array (
                 'id' => 1934,
                 'language' => 'en',
@@ -1865,7 +1839,7 @@ class LaraObjectTagsTableSeeder extends Seeder
                 'locked_at' => NULL,
                 'locked_by' => NULL,
             ),
-            71 => 
+            70 => 
             array (
                 'id' => 1935,
                 'language' => 'nl',
@@ -1891,7 +1865,7 @@ class LaraObjectTagsTableSeeder extends Seeder
                 'locked_at' => NULL,
                 'locked_by' => NULL,
             ),
-            72 => 
+            71 => 
             array (
                 'id' => 1936,
                 'language' => 'nl',
@@ -1917,7 +1891,7 @@ class LaraObjectTagsTableSeeder extends Seeder
                 'locked_at' => NULL,
                 'locked_by' => NULL,
             ),
-            73 => 
+            72 => 
             array (
                 'id' => 1937,
                 'language' => 'nl',
@@ -1943,7 +1917,7 @@ class LaraObjectTagsTableSeeder extends Seeder
                 'locked_at' => NULL,
                 'locked_by' => NULL,
             ),
-            74 => 
+            73 => 
             array (
                 'id' => 1938,
                 'language' => 'nl',
@@ -1969,7 +1943,7 @@ class LaraObjectTagsTableSeeder extends Seeder
                 'locked_at' => NULL,
                 'locked_by' => NULL,
             ),
-            75 => 
+            74 => 
             array (
                 'id' => 1939,
                 'language' => 'nl',
@@ -1995,7 +1969,7 @@ class LaraObjectTagsTableSeeder extends Seeder
                 'locked_at' => NULL,
                 'locked_by' => NULL,
             ),
-            76 => 
+            75 => 
             array (
                 'id' => 1941,
                 'language' => 'nl',
@@ -2021,7 +1995,7 @@ class LaraObjectTagsTableSeeder extends Seeder
                 'locked_at' => NULL,
                 'locked_by' => NULL,
             ),
-            77 => 
+            76 => 
             array (
                 'id' => 1942,
                 'language' => 'nl',
@@ -2047,7 +2021,7 @@ class LaraObjectTagsTableSeeder extends Seeder
                 'locked_at' => NULL,
                 'locked_by' => NULL,
             ),
-            78 => 
+            77 => 
             array (
                 'id' => 1943,
                 'language' => 'nl',
@@ -2073,7 +2047,7 @@ class LaraObjectTagsTableSeeder extends Seeder
                 'locked_at' => NULL,
                 'locked_by' => NULL,
             ),
-            79 => 
+            78 => 
             array (
                 'id' => 1944,
                 'language' => 'nl',
@@ -2099,7 +2073,7 @@ class LaraObjectTagsTableSeeder extends Seeder
                 'locked_at' => NULL,
                 'locked_by' => NULL,
             ),
-            80 => 
+            79 => 
             array (
                 'id' => 1945,
                 'language' => 'nl',
@@ -2125,7 +2099,7 @@ class LaraObjectTagsTableSeeder extends Seeder
                 'locked_at' => NULL,
                 'locked_by' => NULL,
             ),
-            81 => 
+            80 => 
             array (
                 'id' => 1946,
                 'language' => 'nl',
@@ -2151,7 +2125,7 @@ class LaraObjectTagsTableSeeder extends Seeder
                 'locked_at' => NULL,
                 'locked_by' => NULL,
             ),
-            82 => 
+            81 => 
             array (
                 'id' => 1947,
                 'language' => 'nl',
@@ -2177,7 +2151,7 @@ class LaraObjectTagsTableSeeder extends Seeder
                 'locked_at' => NULL,
                 'locked_by' => NULL,
             ),
-            83 => 
+            82 => 
             array (
                 'id' => 1948,
                 'language' => 'nl',
@@ -2203,7 +2177,7 @@ class LaraObjectTagsTableSeeder extends Seeder
                 'locked_at' => NULL,
                 'locked_by' => NULL,
             ),
-            84 => 
+            83 => 
             array (
                 'id' => 1949,
                 'language' => 'nl',
@@ -2229,7 +2203,7 @@ class LaraObjectTagsTableSeeder extends Seeder
                 'locked_at' => NULL,
                 'locked_by' => NULL,
             ),
-            85 => 
+            84 => 
             array (
                 'id' => 1950,
                 'language' => 'nl',
@@ -2255,7 +2229,7 @@ class LaraObjectTagsTableSeeder extends Seeder
                 'locked_at' => NULL,
                 'locked_by' => NULL,
             ),
-            86 => 
+            85 => 
             array (
                 'id' => 1951,
                 'language' => 'nl',
@@ -2281,7 +2255,7 @@ class LaraObjectTagsTableSeeder extends Seeder
                 'locked_at' => NULL,
                 'locked_by' => NULL,
             ),
-            87 => 
+            86 => 
             array (
                 'id' => 1952,
                 'language' => 'nl',
@@ -2307,7 +2281,7 @@ class LaraObjectTagsTableSeeder extends Seeder
                 'locked_at' => NULL,
                 'locked_by' => NULL,
             ),
-            88 => 
+            87 => 
             array (
                 'id' => 1953,
                 'language' => 'nl',
@@ -2333,7 +2307,7 @@ class LaraObjectTagsTableSeeder extends Seeder
                 'locked_at' => NULL,
                 'locked_by' => NULL,
             ),
-            89 => 
+            88 => 
             array (
                 'id' => 1954,
                 'language' => 'nl',
@@ -2359,7 +2333,7 @@ class LaraObjectTagsTableSeeder extends Seeder
                 'locked_at' => NULL,
                 'locked_by' => NULL,
             ),
-            90 => 
+            89 => 
             array (
                 'id' => 1955,
                 'language' => 'nl',
@@ -2385,7 +2359,7 @@ class LaraObjectTagsTableSeeder extends Seeder
                 'locked_at' => NULL,
                 'locked_by' => NULL,
             ),
-            91 => 
+            90 => 
             array (
                 'id' => 1956,
                 'language' => 'nl',
@@ -2411,7 +2385,7 @@ class LaraObjectTagsTableSeeder extends Seeder
                 'locked_at' => NULL,
                 'locked_by' => NULL,
             ),
-            92 => 
+            91 => 
             array (
                 'id' => 1962,
                 'language' => 'nl',
@@ -2437,7 +2411,7 @@ class LaraObjectTagsTableSeeder extends Seeder
                 'locked_at' => NULL,
                 'locked_by' => NULL,
             ),
-            93 => 
+            92 => 
             array (
                 'id' => 1963,
                 'language' => 'nl',
@@ -2463,7 +2437,7 @@ class LaraObjectTagsTableSeeder extends Seeder
                 'locked_at' => NULL,
                 'locked_by' => NULL,
             ),
-            94 => 
+            93 => 
             array (
                 'id' => 1964,
                 'language' => 'nl',
@@ -2489,7 +2463,7 @@ class LaraObjectTagsTableSeeder extends Seeder
                 'locked_at' => NULL,
                 'locked_by' => NULL,
             ),
-            95 => 
+            94 => 
             array (
                 'id' => 1965,
                 'language' => 'nl',
@@ -2515,7 +2489,7 @@ class LaraObjectTagsTableSeeder extends Seeder
                 'locked_at' => NULL,
                 'locked_by' => NULL,
             ),
-            96 => 
+            95 => 
             array (
                 'id' => 1967,
                 'language' => 'nl',
@@ -2541,7 +2515,7 @@ class LaraObjectTagsTableSeeder extends Seeder
                 'locked_at' => NULL,
                 'locked_by' => NULL,
             ),
-            97 => 
+            96 => 
             array (
                 'id' => 1968,
                 'language' => 'en',
@@ -2567,7 +2541,7 @@ class LaraObjectTagsTableSeeder extends Seeder
                 'locked_at' => NULL,
                 'locked_by' => NULL,
             ),
-            98 => 
+            97 => 
             array (
                 'id' => 1969,
                 'language' => 'nl',
@@ -2593,7 +2567,7 @@ class LaraObjectTagsTableSeeder extends Seeder
                 'locked_at' => NULL,
                 'locked_by' => NULL,
             ),
-            99 => 
+            98 => 
             array (
                 'id' => 1970,
                 'language' => 'nl',
@@ -2619,7 +2593,7 @@ class LaraObjectTagsTableSeeder extends Seeder
                 'locked_at' => NULL,
                 'locked_by' => NULL,
             ),
-            100 => 
+            99 => 
             array (
                 'id' => 1971,
                 'language' => 'nl',
@@ -2645,7 +2619,7 @@ class LaraObjectTagsTableSeeder extends Seeder
                 'locked_at' => NULL,
                 'locked_by' => NULL,
             ),
-            101 => 
+            100 => 
             array (
                 'id' => 1972,
                 'language' => 'nl',
@@ -2671,7 +2645,7 @@ class LaraObjectTagsTableSeeder extends Seeder
                 'locked_at' => NULL,
                 'locked_by' => NULL,
             ),
-            102 => 
+            101 => 
             array (
                 'id' => 1973,
                 'language' => 'nl',
@@ -2697,7 +2671,7 @@ class LaraObjectTagsTableSeeder extends Seeder
                 'locked_at' => NULL,
                 'locked_by' => NULL,
             ),
-            103 => 
+            102 => 
             array (
                 'id' => 1974,
                 'language' => 'nl',
@@ -2723,7 +2697,7 @@ class LaraObjectTagsTableSeeder extends Seeder
                 'locked_at' => NULL,
                 'locked_by' => NULL,
             ),
-            104 => 
+            103 => 
             array (
                 'id' => 1975,
                 'language' => 'nl',
@@ -2749,7 +2723,7 @@ class LaraObjectTagsTableSeeder extends Seeder
                 'locked_at' => NULL,
                 'locked_by' => NULL,
             ),
-            105 => 
+            104 => 
             array (
                 'id' => 1976,
                 'language' => 'nl',
@@ -2775,7 +2749,7 @@ class LaraObjectTagsTableSeeder extends Seeder
                 'locked_at' => NULL,
                 'locked_by' => NULL,
             ),
-            106 => 
+            105 => 
             array (
                 'id' => 1977,
                 'language' => 'nl',
@@ -2801,7 +2775,7 @@ class LaraObjectTagsTableSeeder extends Seeder
                 'locked_at' => NULL,
                 'locked_by' => NULL,
             ),
-            107 => 
+            106 => 
             array (
                 'id' => 1979,
                 'language' => 'nl',
@@ -2827,7 +2801,7 @@ class LaraObjectTagsTableSeeder extends Seeder
                 'locked_at' => NULL,
                 'locked_by' => NULL,
             ),
-            108 => 
+            107 => 
             array (
                 'id' => 1980,
                 'language' => 'nl',
@@ -2853,7 +2827,7 @@ class LaraObjectTagsTableSeeder extends Seeder
                 'locked_at' => NULL,
                 'locked_by' => NULL,
             ),
-            109 => 
+            108 => 
             array (
                 'id' => 1981,
                 'language' => 'nl',
@@ -2868,7 +2842,7 @@ class LaraObjectTagsTableSeeder extends Seeder
                 'route' => 'team-news',
                 'locked_by_admin' => 0,
                 'created_at' => '2023-03-16 14:11:10',
-                'updated_at' => '2023-08-24 14:10:05',
+                'updated_at' => '2024-10-24 10:28:01',
                 'publish' => 1,
                 'publish_from' => NULL,
                 'publish_to' => NULL,
@@ -2879,7 +2853,7 @@ class LaraObjectTagsTableSeeder extends Seeder
                 'locked_at' => NULL,
                 'locked_by' => NULL,
             ),
-            110 => 
+            109 => 
             array (
                 'id' => 1982,
                 'language' => 'nl',
@@ -2905,7 +2879,7 @@ class LaraObjectTagsTableSeeder extends Seeder
                 'locked_at' => NULL,
                 'locked_by' => NULL,
             ),
-            111 => 
+            110 => 
             array (
                 'id' => 1983,
                 'language' => 'nl',
@@ -2931,7 +2905,7 @@ class LaraObjectTagsTableSeeder extends Seeder
                 'locked_at' => NULL,
                 'locked_by' => NULL,
             ),
-            112 => 
+            111 => 
             array (
                 'id' => 1984,
                 'language' => 'nl',
@@ -2957,7 +2931,7 @@ class LaraObjectTagsTableSeeder extends Seeder
                 'locked_at' => NULL,
                 'locked_by' => NULL,
             ),
-            113 => 
+            112 => 
             array (
                 'id' => 1985,
                 'language' => 'nl',
@@ -2983,7 +2957,7 @@ class LaraObjectTagsTableSeeder extends Seeder
                 'locked_at' => NULL,
                 'locked_by' => NULL,
             ),
-            114 => 
+            113 => 
             array (
                 'id' => 1986,
                 'language' => 'nl',
@@ -3009,7 +2983,7 @@ class LaraObjectTagsTableSeeder extends Seeder
                 'locked_at' => NULL,
                 'locked_by' => NULL,
             ),
-            115 => 
+            114 => 
             array (
                 'id' => 1987,
                 'language' => 'nl',
@@ -3035,7 +3009,7 @@ class LaraObjectTagsTableSeeder extends Seeder
                 'locked_at' => NULL,
                 'locked_by' => NULL,
             ),
-            116 => 
+            115 => 
             array (
                 'id' => 1988,
                 'language' => 'nl',
@@ -3061,7 +3035,7 @@ class LaraObjectTagsTableSeeder extends Seeder
                 'locked_at' => NULL,
                 'locked_by' => NULL,
             ),
-            117 => 
+            116 => 
             array (
                 'id' => 1989,
                 'language' => 'nl',
@@ -3087,7 +3061,7 @@ class LaraObjectTagsTableSeeder extends Seeder
                 'locked_at' => NULL,
                 'locked_by' => NULL,
             ),
-            118 => 
+            117 => 
             array (
                 'id' => 1991,
                 'language' => 'nl',
@@ -3113,7 +3087,7 @@ class LaraObjectTagsTableSeeder extends Seeder
                 'locked_at' => NULL,
                 'locked_by' => NULL,
             ),
-            119 => 
+            118 => 
             array (
                 'id' => 1992,
                 'language' => 'nl',
@@ -3139,7 +3113,7 @@ class LaraObjectTagsTableSeeder extends Seeder
                 'locked_at' => NULL,
                 'locked_by' => NULL,
             ),
-            120 => 
+            119 => 
             array (
                 'id' => 1993,
                 'language' => 'nl',
@@ -3165,7 +3139,7 @@ class LaraObjectTagsTableSeeder extends Seeder
                 'locked_at' => NULL,
                 'locked_by' => NULL,
             ),
-            121 => 
+            120 => 
             array (
                 'id' => 2014,
                 'language' => 'nl',
@@ -3191,7 +3165,7 @@ class LaraObjectTagsTableSeeder extends Seeder
                 'locked_at' => NULL,
                 'locked_by' => NULL,
             ),
-            122 => 
+            121 => 
             array (
                 'id' => 2015,
                 'language' => 'nl',
@@ -3217,7 +3191,7 @@ class LaraObjectTagsTableSeeder extends Seeder
                 'locked_at' => NULL,
                 'locked_by' => NULL,
             ),
-            123 => 
+            122 => 
             array (
                 'id' => 2016,
                 'language' => 'nl',
@@ -3243,7 +3217,7 @@ class LaraObjectTagsTableSeeder extends Seeder
                 'locked_at' => NULL,
                 'locked_by' => NULL,
             ),
-            124 => 
+            123 => 
             array (
                 'id' => 2017,
                 'language' => 'nl',
@@ -3269,7 +3243,7 @@ class LaraObjectTagsTableSeeder extends Seeder
                 'locked_at' => NULL,
                 'locked_by' => NULL,
             ),
-            125 => 
+            124 => 
             array (
                 'id' => 2018,
                 'language' => 'en',
@@ -3295,14 +3269,14 @@ class LaraObjectTagsTableSeeder extends Seeder
                 'locked_at' => NULL,
                 'locked_by' => NULL,
             ),
-            126 => 
+            125 => 
             array (
                 'id' => 2019,
                 'language' => 'nl',
                 'language_parent' => NULL,
                 'taxonomy_id' => 1,
                 'entity_key' => 'blog',
-                'title' => 'Tech Team News',
+                'title' => 'Tech Team New',
                 'slug' => 'tech-team-news',
                 'slug_lock' => 0,
                 'lead' => '',
@@ -3310,7 +3284,7 @@ class LaraObjectTagsTableSeeder extends Seeder
                 'route' => 'team-news.tech-team-news',
                 'locked_by_admin' => 0,
                 'created_at' => '2023-08-24 13:24:32',
-                'updated_at' => '2023-10-13 16:30:00',
+                'updated_at' => '2024-10-24 10:28:15',
                 'publish' => 1,
                 'publish_from' => NULL,
                 'publish_to' => NULL,
@@ -3321,7 +3295,7 @@ class LaraObjectTagsTableSeeder extends Seeder
                 'locked_at' => NULL,
                 'locked_by' => NULL,
             ),
-            127 => 
+            126 => 
             array (
                 'id' => 2020,
                 'language' => 'nl',
@@ -3336,7 +3310,7 @@ class LaraObjectTagsTableSeeder extends Seeder
                 'route' => 'team-news.marketing-team-news',
                 'locked_by_admin' => 0,
                 'created_at' => '2023-08-24 13:24:50',
-                'updated_at' => '2023-08-24 13:24:50',
+                'updated_at' => '2024-10-24 10:28:15',
                 'publish' => 1,
                 'publish_from' => NULL,
                 'publish_to' => NULL,
@@ -3347,7 +3321,7 @@ class LaraObjectTagsTableSeeder extends Seeder
                 'locked_at' => NULL,
                 'locked_by' => NULL,
             ),
-            128 => 
+            127 => 
             array (
                 'id' => 2021,
                 'language' => 'nl',
@@ -3373,7 +3347,7 @@ class LaraObjectTagsTableSeeder extends Seeder
                 'locked_at' => NULL,
                 'locked_by' => NULL,
             ),
-            129 => 
+            128 => 
             array (
                 'id' => 2022,
                 'language' => 'nl',
@@ -3399,7 +3373,7 @@ class LaraObjectTagsTableSeeder extends Seeder
                 'locked_at' => NULL,
                 'locked_by' => NULL,
             ),
-            130 => 
+            129 => 
             array (
                 'id' => 2023,
                 'language' => 'nl',
@@ -3425,7 +3399,7 @@ class LaraObjectTagsTableSeeder extends Seeder
                 'locked_at' => NULL,
                 'locked_by' => NULL,
             ),
-            131 => 
+            130 => 
             array (
                 'id' => 2024,
                 'language' => 'nl',
@@ -3451,7 +3425,7 @@ class LaraObjectTagsTableSeeder extends Seeder
                 'locked_at' => NULL,
                 'locked_by' => NULL,
             ),
-            132 => 
+            131 => 
             array (
                 'id' => 2025,
                 'language' => 'nl',
@@ -3477,7 +3451,7 @@ class LaraObjectTagsTableSeeder extends Seeder
                 'locked_at' => NULL,
                 'locked_by' => NULL,
             ),
-            133 => 
+            132 => 
             array (
                 'id' => 2026,
                 'language' => 'nl',

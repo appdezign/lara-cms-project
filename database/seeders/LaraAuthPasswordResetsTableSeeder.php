@@ -28,8 +28,8 @@ class LaraAuthPasswordResetsTableSeeder extends Seeder
             1 => 
             array (
                 'email' => 'beheer@firmaq.nl',
-                'token' => '$2y$10$XC6b5ueFiOYb2Awh43BTduFFeqYoqV8qjVlyh6vmcNlndqfQcS4Pm',
-                'created_at' => '2024-09-18 14:04:05',
+                'token' => '$2y$10$voUSagSLWrrsp.N3wW6vxepyoIzq/fSE424pmbBBhUk7qdCe48x0q',
+                'created_at' => '2024-09-23 15:36:08',
             ),
         ));
         
