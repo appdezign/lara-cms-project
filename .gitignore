@@ -19,6 +19,7 @@
 /storage/framework/testing/*
 /storage/framework/views/*
 /storage/httpcache/*
+/storage/imgcache/*
 /storage/logs/*
 /vendor/
 /*.sh
