@@ -79,6 +79,21 @@ class LaraFormContactformsTableSeeder extends Seeder
                 'locked_by' => NULL,
                 'ipaddress' => '123.234.345.456',
             ),
+            4 => 
+            array (
+                'id' => 6,
+                'title' => 'Sybrand Hoeksma',
+                'telephone' => '0651392621',
+                'comment' => 'test',
+                'email' => 's.hoeksma@firmaq.nl',
+                'name' => 'Sybrand Hoeksma',
+                'created_at' => '2024-10-23 15:44:20',
+                'updated_at' => '2024-10-25 15:33:06',
+                'deleted_at' => '2024-10-25 15:33:06',
+                'locked_at' => NULL,
+                'locked_by' => NULL,
+                'ipaddress' => '127.0.0.1',
+            ),
         ));
         
         

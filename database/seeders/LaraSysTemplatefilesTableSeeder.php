@@ -315,6 +315,22 @@ class LaraSysTemplatefilesTableSeeder extends Seeder
                 'created_at' => '2024-03-06 15:43:33',
                 'updated_at' => '2024-03-06 15:43:33',
             ),
+            37 => 
+            array (
+                'id' => 39,
+                'template_file' => 'cal_index',
+                'type' => 'module',
+                'created_at' => '2024-10-24 16:29:17',
+                'updated_at' => '2024-10-24 16:29:17',
+            ),
+            38 => 
+            array (
+                'id' => 40,
+                'template_file' => 'cal_show',
+                'type' => 'module',
+                'created_at' => '2024-10-24 16:30:26',
+                'updated_at' => '2024-10-24 16:30:26',
+            ),
         ));
         
         

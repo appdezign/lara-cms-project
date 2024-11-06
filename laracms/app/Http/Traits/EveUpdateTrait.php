@@ -16,6 +16,7 @@ trait EveUpdateTrait
 
 		$builds = [
 			'8.0.1',
+			'8.5.0',
 		];
 
 		// current Eve version
@@ -40,6 +41,13 @@ trait EveUpdateTrait
 					$this->myFirstUpdate();
 
 					$this->setEveSetting('system', 'lara_eve_version', '8.0.1');
+
+				}
+
+				if (in_array('8.5.0', $updates)) {
+
+					// version bump
+					$this->setEveSetting('system', 'lara_eve_version', '8.5.0');
 
 				}
 
