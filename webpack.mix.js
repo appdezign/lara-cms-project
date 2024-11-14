@@ -11,9 +11,6 @@ const PUBLIC_ASSET_PATH = './public/assets/';
 // const PUBLIC_ASSET_PATH = './../httpdocs/assets/';
 // const PUBLIC_ASSET_PATH = './../public/assets/';
 
-// Media Temp Folder (copy media files only once)
-const mediafolder = PUBLIC_ASSET_PATH + 'media/_temp';
-
 // Theme - Client
 const CLIENT_THEME = activeTheme;
 
@@ -197,13 +194,6 @@ if (processClient && activeTheme != 'demo') {
 			.copy(SRC_CLIENT_PUBLIC + '/images', DEST_CLIENT_DIR + '/images')
 			.copy(SRC_CLIENT_PUBLIC + '/vendor', DEST_CLIENT_DIR + '/vendor/')
 			.options({processCssUrls: false});
-
-		if (fs.existsSync(mediafolder)) {
-			console.log('mediafolder already copied');
-		} else {
-			console.log('copying demo mediafolder');
-			mix.copy(SRC_DEMO_PUBLIC + '/media', PUBLIC_ASSET_PATH + '/media')
-		}
 
 	}
 }
