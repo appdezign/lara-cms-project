@@ -257,6 +257,12 @@ class ClassicformsController extends Controller
 			// seo
 			$data->seo = $this->getSeo($data->object);
 
+			// get language versions
+			$data->langversions = $this->getFrontLanguageVersions($this->language, $this->entity, $data->object);
+
+			// header tags
+			$data->htag = $this->getEntityHeaderTag($this->entity);
+
 			// override default layout with custom page layout
 			$data->layout = $this->getObjectThemeLayout($data->object);
 			$data->grid = $this->getGrid($this->data->layout);
