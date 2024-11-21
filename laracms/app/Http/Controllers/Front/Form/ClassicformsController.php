@@ -206,13 +206,34 @@ class ClassicformsController extends Controller
 		}
 		$validatedData = $request->validate($validationRules);
 
-		// save data
-		$request->merge(['title' => $request->input('name')]);
-		$newObject = $this->modelClass::create($request->only([
-			'title',
-			'name',
-			'email',
-		]));
+		$formfields = array();
+		$formfields[] = 'title';
+		foreach ($this->entity->getCustomColumns() as $field) {
+			// fix empty strings
+			if ($field->required == 0) {
+				if ($field->fieldtype == 'text' || $field->fieldtype == 'string') {
+					$fieldname = $field->fieldname;
+					if (empty($request->input($fieldname))) {
+						$request->merge([$fieldname => '']);
+					}
+				}
+			}
+			// add field to array
+			$formfields[] = $field->fieldname;
+		}
+		if ($request->has('name')) {
+			$request->merge(['title' => $request->input('name')]);
+		}
+
+		// patch 6.2.23 - start
+		if ($request->has('_ipaddress')) {
+			$this->checkBlackListColumn($this->entity);
+			$formfields[] = 'ipaddress';
+			$request->merge(['ipaddress' => $request->input('_ipaddress')]);
+		}
+		// patch 6.2.23 - end
+
+		$newObject = $this->modelClass::create($request->only($formfields));
 
 		// SEND MAIL
 		$this->sendMail($request);
@@ -330,9 +351,17 @@ class ClassicformsController extends Controller
 		$maildata->content->data = $app->make('stdClass');
 		foreach ($this->entity->getCustomColumns() as $field) {
 			$fieldname = $field->fieldname;
-			$fieldvalue = $request->input($fieldname);
+			if($field->fieldtype == 'boolean' || $field->fieldtype == 'yesno') {
+				if($request->input($fieldname) == 1) {
+					$fieldvalue = _lanq('lara-admin::default.value.yes');
+				} else {
+					$fieldvalue = _lanq('lara-admin::default.value.no');
+				}
+			} else {
+				$fieldvalue = $request->input($fieldname);
+			}
 			$maildata->content->data->$fieldname = [
-				'colname' => _lanq('lara-front::' . $this->entity->getEntityKey() . '.column.' . $fieldname),
+				'colname' => _lanq('lara-eve::' . $this->entity->getEntityKey() . '.column.' . $fieldname),
 				'colval'  => $fieldvalue,
 			];
 		}
