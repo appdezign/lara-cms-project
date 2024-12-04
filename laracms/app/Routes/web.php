@@ -404,7 +404,7 @@ if (!App::runningInConsole() && !config('lara.needs_setup')) {
 				});
 
 				// 404
-				Route::get('/{any}', '\Lara\Front\Http\Controllers\Error\ErrorController@show')->where('any', '.*')->name('error.show.404');
+				Route::get('/{any}', '\Eve\Http\Controllers\Front\Error\AppErrorController@show')->where('any', '.*')->name('error.show.404');
 
 			}
 
