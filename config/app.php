@@ -163,6 +163,8 @@ return [
 		Eve\Providers\EveServiceProvider::class,
 		Eve\Providers\RouteServiceProvider::class,
 
+		PragmaRX\Google2FALaravel\ServiceProvider::class,
+
 	])->toArray(),
 
 	/*
@@ -178,6 +180,7 @@ return [
 
 	'aliases' => Facade::defaultAliases()->merge([
 		'Theme' => \Lara\Front\Facades\LaraTheme::class,
+		'Google2FA' => PragmaRX\Google2FALaravel\Facade::class,
 	])->toArray(),
 
 ];

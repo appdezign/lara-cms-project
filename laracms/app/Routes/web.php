@@ -33,7 +33,7 @@ if (!App::runningInConsole() && !config('lara.needs_setup')) {
 
 	// ADMIN Entity Routes
 	$adminprefix = config('lara.adminprefix');
-	Route::group(['prefix' => $adminprefix, 'middleware' => ['web', 'auth', 'backend', 'userLocale']], function () {
+	Route::group(['prefix' => $adminprefix, 'middleware' => ['web', 'auth', 'lara2fa', 'force2fa', 'backend', 'userLocale']], function () {
 
 		// Entity routes
 		$entities = Lara\Common\Models\Entity::entityGroupIsOneOf(['entity', 'form'])
