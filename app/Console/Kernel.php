@@ -12,6 +12,8 @@ use Lara\Admin\Http\Traits\AdminAnalyticsTrait;
 use Lara\Admin\Http\Traits\AdminSyncTrait;
 use Lara\Admin\Http\Traits\AdminCfsTrait;
 
+use Lara\Common\Http\Traits\CommonImageCacheTrait;
+
 use Eve\Http\Traits\GoogleSitemapTrait;
 
 class Kernel extends ConsoleKernel
@@ -19,10 +21,12 @@ class Kernel extends ConsoleKernel
 
 	use AdminTrait;
 	use AdminMediaTrait;
-
 	use AdminAnalyticsTrait;
 	use AdminSyncTrait;
 	use AdminCfsTrait;
+
+	use CommonImageCacheTrait;
+
 	use GoogleSitemapTrait;
 
 
@@ -66,6 +70,10 @@ class Kernel extends ConsoleKernel
 		$schedule->call(function () {
 			$this->generateGoogleSitemap();
 		})->dailyAt('04:' . $minutes);
+
+		$schedule->call(function () {
+			$this->purgeImageChache();
+		})->weeklyOn(1, '05:' . $minutes);
 
 	}
 
